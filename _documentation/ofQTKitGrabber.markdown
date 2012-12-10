@@ -1,4 +1,4 @@
-#class ofVec4f
+#class ofQTKitGrabber
 
 
 ##Description
@@ -12,1377 +12,14 @@
 
 
 
-###ofVec4f average(*points, num)
+###void close()
 
 <!--
-_syntax: average(*points, num)_
-_name: average_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f *points, int num_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float distance(&pnt)
-
-<!--
-_syntax: distance(&pnt)_
-_name: distance_
-_returns: float_
-_returns_description: _
-_parameters: const ofVec4f &pnt_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float distanceSquared(&pnt)
-
-<!--
-_syntax: distanceSquared(&pnt)_
-_name: distanceSquared_
-_returns: float_
-_returns_description: _
-_parameters: const ofVec4f &pnt_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float dot(&vec)
-
-<!--
-_syntax: dot(&vec)_
-_name: dot_
-_returns: float_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f getInterpolated(&pnt, p)
-
-<!--
-_syntax: getInterpolated(&pnt, p)_
-_name: getInterpolated_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &pnt, float p_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f getLimited(max)
-
-<!--
-_syntax: getLimited(max)_
-_name: getLimited_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: float max_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f getMiddle(&pnt)
-
-<!--
-_syntax: getMiddle(&pnt)_
-_name: getMiddle_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &pnt_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f getNormalized()
-
-<!--
-_syntax: getNormalized()_
-_name: getNormalized_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###const float * getPtr()
-
-<!--
-_syntax: getPtr()_
-_name: getPtr_
-_returns: const float *_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f getScaled(length)
-
-<!--
-_syntax: getScaled(length)_
-_name: getScaled_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float length_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f interpolate(&pnt, p)
-
-<!--
-_syntax: interpolate(&pnt, p)_
-_name: interpolate_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &pnt, float p_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f interpolated(&pnt, p)
-
-<!--
-_syntax: interpolated(&pnt, p)_
-_name: interpolated_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &pnt, float p_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float length()
-
-<!--
-_syntax: length()_
-_name: length_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float lengthSquared()
-
-<!--
-_syntax: lengthSquared()_
-_name: lengthSquared_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f limit(max)
-
-<!--
-_syntax: limit(max)_
-_name: limit_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: float max_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f limited(max)
-
-<!--
-_syntax: limited(max)_
-_name: limited_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: float max_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool match(&vec, tolerance = 0.0001)
-
-<!--
-_syntax: match(&vec, tolerance = 0.0001)_
-_name: match_
-_returns: bool_
-_returns_description: _
-_parameters: const ofVec4f &vec, float tolerance=0.0001_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f middle(&pnt)
-
-<!--
-_syntax: middle(&pnt)_
-_name: middle_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &pnt_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f middled(&pnt)
-
-<!--
-_syntax: middled(&pnt)_
-_name: middled_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &pnt_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f normalize()
-
-<!--
-_syntax: normalize()_
-_name: normalize_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f normalized()
-
-<!--
-_syntax: normalized()_
-_name: normalized_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec4f(_x = 0.f, _y = 0.f, _z = 0.f, _w = 0.f)
-
-<!--
-_syntax: ofVec4f(_x = 0.f, _y = 0.f, _z = 0.f, _w = 0.f)_
-_name: ofVec4f_
-_returns: _
-_returns_description: _
-_parameters: float _x=0.f, float _y=0.f, float _z=0.f, float _w=0.f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec4f(&vec)
-
-<!--
-_syntax: ofVec4f(&vec)_
-_name: ofVec4f_
-_returns: _
-_returns_description: _
-_parameters: const ofVec2f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec4f(&vec)
-
-<!--
-_syntax: ofVec4f(&vec)_
-_name: ofVec4f_
-_returns: _
-_returns_description: _
-_parameters: const ofVec3f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool operator!=(&vec)
-
-<!--
-_syntax: operator!=(&vec)_
-_name: operator!=_
-_returns: bool_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator*(&vec)
-
-<!--
-_syntax: operator*(&vec)_
-_name: operator*_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator*(f)
-
-<!--
-_syntax: operator*(f)_
-_name: operator*_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator*=(&vec)
-
-<!--
-_syntax: operator*=(&vec)_
-_name: operator*=_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator*=(f)
-
-<!--
-_syntax: operator*=(f)_
-_name: operator*=_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator+(&vec)
-
-<!--
-_syntax: operator+(&vec)_
-_name: operator+_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator+(f)
-
-<!--
-_syntax: operator+(f)_
-_name: operator+_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator+=(&vec)
-
-<!--
-_syntax: operator+=(&vec)_
-_name: operator+=_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator+=(f)
-
-<!--
-_syntax: operator+=(f)_
-_name: operator+=_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator-(f)
-
-<!--
-_syntax: operator-(f)_
-_name: operator-_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator-(&vec)
-
-<!--
-_syntax: operator-(&vec)_
-_name: operator-_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator-()
-
-<!--
-_syntax: operator-()_
-_name: operator-_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator-=(f)
-
-<!--
-_syntax: operator-=(f)_
-_name: operator-=_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator-=(&vec)
-
-<!--
-_syntax: operator-=(&vec)_
-_name: operator-=_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator/(&vec)
-
-<!--
-_syntax: operator/(&vec)_
-_name: operator/_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator/(f)
-
-<!--
-_syntax: operator/(f)_
-_name: operator/_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator/=(&vec)
-
-<!--
-_syntax: operator/=(&vec)_
-_name: operator/=_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f operator/=(f)
-
-<!--
-_syntax: operator/=(f)_
-_name: operator/=_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool operator==(&vec)
-
-<!--
-_syntax: operator==(&vec)_
-_name: operator==_
-_returns: bool_
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float operator[](n)
-
-<!--
-_syntax: operator[](n)_
-_name: operator[]_
-_returns: float_
-_returns_description: _
-_parameters: int n_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f rescale(length)
-
-<!--
-_syntax: rescale(length)_
-_name: rescale_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float length_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f rescaled(length)
-
-<!--
-_syntax: rescaled(length)_
-_name: rescaled_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float length_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f scale(length)
-
-<!--
-_syntax: scale(length)_
-_name: scale_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: const float length_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void set(_x, _y, _z, _w)
-
-<!--
-_syntax: set(_x, _y, _z, _w)_
-_name: set_
+_syntax: close()_
+_name: close_
 _returns: void_
 _returns_description: _
-_parameters: float _x, float _y, float _z, float _w_
+_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -1404,14 +41,565 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void set(&vec)
+###bool confirmInit()
 
 <!--
-_syntax: set(&vec)_
-_name: set_
+_syntax: confirmInit()_
+_name: confirmInit_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int getAudioDeviceID()
+
+<!--
+_syntax: getAudioDeviceID()_
+_name: getAudioDeviceID_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int getDeviceID()
+
+<!--
+_syntax: getDeviceID()_
+_name: getDeviceID_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getHeight()
+
+<!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelFormat getPixelFormat()
+
+<!--
+_syntax: getPixelFormat()_
+_name: getPixelFormat_
+_returns: ofPixelFormat_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###unsigned char * getPixels()
+
+<!--
+_syntax: getPixels()_
+_name: getPixels_
+_returns: unsigned char *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelsRef getPixelsRef()
+
+<!--
+_syntax: getPixelsRef()_
+_name: getPixelsRef_
+_returns: ofPixelsRef_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int getVideoDeviceID()
+
+<!--
+_syntax: getVideoDeviceID()_
+_name: getVideoDeviceID_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getWidth()
+
+<!--
+_syntax: getWidth()_
+_name: getWidth_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool hasPreview()
+
+<!--
+_syntax: hasPreview()_
+_name: hasPreview_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool initGrabber(w, h)
+
+<!--
+_syntax: initGrabber(w, h)_
+_name: initGrabber_
+_returns: bool_
+_returns_description: _
+_parameters: int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool initGrabberWithoutPreview()
+
+<!--
+_syntax: initGrabberWithoutPreview()_
+_name: initGrabberWithoutPreview_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool initRecording()
+
+<!--
+_syntax: initRecording()_
+_name: initRecording_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isFrameNew()
+
+<!--
+_syntax: isFrameNew()_
+_name: isFrameNew_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isReady()
+
+<!--
+_syntax: isReady()_
+_name: isReady_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isRecording()
+
+<!--
+_syntax: isRecording()_
+_name: isRecording_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isRecordingReady()
+
+<!--
+_syntax: isRecordingReady()_
+_name: isRecordingReady_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###vector< string > & listAudioCodecs()
+
+<!--
+_syntax: listAudioCodecs()_
+_name: listAudioCodecs_
+_returns: vector< string > &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###vector< string > & listAudioDevices()
+
+<!--
+_syntax: listAudioDevices()_
+_name: listAudioDevices_
+_returns: vector< string > &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void listDevices()
+
+<!--
+_syntax: listDevices()_
+_name: listDevices_
 _returns: void_
 _returns_description: _
-_parameters: const ofVec4f &vec_
+_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -1433,41 +621,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float squareDistance(&pnt)
+###vector< string > & listVideoCodecs()
 
 <!--
-_syntax: squareDistance(&pnt)_
-_name: squareDistance_
-_returns: float_
-_returns_description: _
-_parameters: const ofVec4f &pnt_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float squareLength()
-
-<!--
-_syntax: squareLength()_
-_name: squareLength_
-_returns: float_
+_syntax: listVideoCodecs()_
+_name: listVideoCodecs_
+_returns: vector< string > &_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -1491,25 +650,26 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofVec4f zero()
+###vector< string > & listVideoDevices()
 
 <!--
-_syntax: zero()_
-_name: zero_
-_returns: ofVec4f_
+_syntax: listVideoDevices()_
+_name: listVideoDevices_
+_returns: vector< string > &_
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: yes_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -1519,25 +679,519 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofVec4f one()
+### ofQTKitGrabber()
 
 <!--
-_syntax: one()_
-_name: one_
-_returns: ofVec4f_
+_syntax: ofQTKitGrabber()_
+_name: ofQTKitGrabber_
+_returns: _
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: yes_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
 
 _description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setAudioCodec(audioCodecIDString)
+
+<!--
+_syntax: setAudioCodec(audioCodecIDString)_
+_name: setAudioCodec_
+_returns: void_
+_returns_description: _
+_parameters: string audioCodecIDString_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setAudioDeviceID(audioDeviceID)
+
+<!--
+_syntax: setAudioDeviceID(audioDeviceID)_
+_name: setAudioDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: int audioDeviceID_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setAudioDeviceID(audioDeviceIDString)
+
+<!--
+_syntax: setAudioDeviceID(audioDeviceIDString)_
+_name: setAudioDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: string audioDeviceIDString_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setDesiredFrameRate(framerate)
+
+<!--
+_syntax: setDesiredFrameRate(framerate)_
+_name: setDesiredFrameRate_
+_returns: void_
+_returns_description: _
+_parameters: int framerate_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setDeviceID(videoDeviceID)
+
+<!--
+_syntax: setDeviceID(videoDeviceID)_
+_name: setDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: int videoDeviceID_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setDeviceID(videoDeviceIDString)
+
+<!--
+_syntax: setDeviceID(videoDeviceIDString)_
+_name: setDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: string videoDeviceIDString_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool setPixelFormat(pixelFormat)
+
+<!--
+_syntax: setPixelFormat(pixelFormat)_
+_name: setPixelFormat_
+_returns: bool_
+_returns_description: _
+_parameters: ofPixelFormat pixelFormat_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setUseAudio(bUseAudio)
+
+<!--
+_syntax: setUseAudio(bUseAudio)_
+_name: setUseAudio_
+_returns: void_
+_returns_description: _
+_parameters: bool bUseAudio_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setVerbose(bTalkToMe)
+
+<!--
+_syntax: setVerbose(bTalkToMe)_
+_name: setVerbose_
+_returns: void_
+_returns_description: _
+_parameters: bool bTalkToMe_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setVideoCodec(videoCodecIDString)
+
+<!--
+_syntax: setVideoCodec(videoCodecIDString)_
+_name: setVideoCodec_
+_returns: void_
+_returns_description: _
+_parameters: string videoCodecIDString_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setVideoDeviceID(videoDeviceID)
+
+<!--
+_syntax: setVideoDeviceID(videoDeviceID)_
+_name: setVideoDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: int videoDeviceID_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setVideoDeviceID(videoDeviceIDString)
+
+<!--
+_syntax: setVideoDeviceID(videoDeviceIDString)_
+_name: setVideoDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: string videoDeviceIDString_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void startRecording(filePath)
+
+<!--
+_syntax: startRecording(filePath)_
+_name: startRecording_
+_returns: void_
+_returns_description: _
+_parameters: string filePath_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void stopRecording()
+
+<!--
+_syntax: stopRecording()_
+_name: stopRecording_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void update()
+
+<!--
+_syntax: update()_
+_name: update_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void videoSettings()
+
+<!--
+_syntax: videoSettings()_
+_name: videoSettings_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofQTKitGrabber()
+
+<!--
+_syntax: ~ofQTKitGrabber()_
+_name: ~ofQTKitGrabber_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -1551,12 +1205,12 @@ _description: _
 
 
 
-###float w
+###string audioCodecIDString
 
 <!--
-_name: w_
-_type: float_
-_access: public_
+_name: audioCodecIDString_
+_type: string_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -1576,12 +1230,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float x
+###vector< string > audioCodecsVec
 
 <!--
-_name: x_
-_type: float_
-_access: public_
+_name: audioCodecsVec_
+_type: vector< string >_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -1601,12 +1255,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float y
+###int audioDeviceID
 
 <!--
-_name: y_
-_type: float_
-_access: public_
+_name: audioDeviceID_
+_type: int_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -1626,12 +1280,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float z
+###vector< string > audioDeviceVec
 
 <!--
-_name: z_
-_type: float_
-_access: public_
+_name: audioDeviceVec_
+_type: vector< string >_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -1651,13 +1305,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###const int DIM
+###bool bPreview
 
 <!--
-_name: DIM_
-_type: const int_
-_access: public_
-_version_started: 0071_
+_name: bPreview_
+_type: bool_
+_access: protected_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1666,6 +1320,257 @@ _advanced: False_
 -->
 
 _description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bUseAudio
+
+<!--
+_name: bUseAudio_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void * grabber
+
+<!--
+_name: grabber_
+_type: void *_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isInited
+
+<!--
+_name: isInited_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelFormat pixelFormat
+
+<!--
+_name: pixelFormat_
+_type: ofPixelFormat_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixels pixels
+
+<!--
+_name: pixels_
+_type: ofPixels_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###string videoCodecIDString
+
+<!--
+_name: videoCodecIDString_
+_type: string_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###vector< string > videoCodecsVec
+
+<!--
+_name: videoCodecsVec_
+_type: vector< string >_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int videoDeviceID
+
+<!--
+_name: videoDeviceID_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###vector< string > videoDeviceVec
+
+<!--
+_name: videoDeviceVec_
+_type: vector< string >_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVideoSavedEventArgs videoSavedEvent
+
+<!--
+_name: videoSavedEvent_
+_type: ofVideoSavedEventArgs_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 

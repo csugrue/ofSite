@@ -8,14 +8,14 @@
 
 <!----------------------------------------------------------------------------->
 
-###void ofFmodSoundStopAll()
+###void ofFmodSoundSetVolume(vol)
 
 <!--
-_syntax: ofFmodSoundStopAll()_
-_name: ofFmodSoundStopAll_
+_syntax: ofFmodSoundSetVolume(vol)_
+_name: ofFmodSoundSetVolume_
 _returns: void_
 _returns_description: _
-_parameters: _
+_parameters: float vol_
 _version_started: _
 _version_deprecated: _
 _summary: _
@@ -35,14 +35,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofFmodSoundSetVolume(vol)
+###void ofFmodSoundStopAll()
 
 <!--
-_syntax: ofFmodSoundSetVolume(vol)_
-_name: ofFmodSoundSetVolume_
+_syntax: ofFmodSoundStopAll()_
+_name: ofFmodSoundStopAll_
 _returns: void_
 _returns_description: _
-_parameters: float vol_
+_parameters: _
 _version_started: _
 _version_deprecated: _
 _summary: _

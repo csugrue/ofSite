@@ -1,4 +1,4 @@
-#class ofMatrix3x3
+#class ofQuickTimeGrabber
 
 
 ##Description
@@ -12,98 +12,11 @@
 
 
 
-###float determinant()
+###void clearMemory()
 
 <!--
-_syntax: determinant()_
-_name: determinant_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float determinant(&A)
-
-<!--
-_syntax: determinant(&A)_
-_name: determinant_
-_returns: float_
-_returns_description: _
-_parameters: const ofMatrix3x3 &A_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix3x3 inverse(&A)
-
-<!--
-_syntax: inverse(&A)_
-_name: inverse_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: const ofMatrix3x3 &A_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void invert()
-
-<!--
-_syntax: invert()_
-_name: invert_
+_syntax: clearMemory()_
+_name: clearMemory_
 _returns: void_
 _returns_description: _
 _parameters: _
@@ -128,14 +41,304 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ofMatrix3x3(_a = 0.0, _b = 0.0, _c = 0.0, _d = 0.0, _e = 0.0, _f = 0.0, _g = 0.0, _h = 0.0, _i = 0.0)
+###void close()
 
 <!--
-_syntax: ofMatrix3x3(_a = 0.0, _b = 0.0, _c = 0.0, _d = 0.0, _e = 0.0, _f = 0.0, _g = 0.0, _h = 0.0, _i = 0.0)_
-_name: ofMatrix3x3_
+_syntax: close()_
+_name: close_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getHeight()
+
+<!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelFormat getPixelFormat()
+
+<!--
+_syntax: getPixelFormat()_
+_name: getPixelFormat_
+_returns: ofPixelFormat_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###unsigned char * getPixels()
+
+<!--
+_syntax: getPixels()_
+_name: getPixels_
+_returns: unsigned char *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelsRef getPixelsRef()
+
+<!--
+_syntax: getPixelsRef()_
+_name: getPixelsRef_
+_returns: ofPixelsRef_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getWidth()
+
+<!--
+_syntax: getWidth()_
+_name: getWidth_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool initGrabber(w, h)
+
+<!--
+_syntax: initGrabber(w, h)_
+_name: initGrabber_
+_returns: bool_
+_returns_description: _
+_parameters: int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isFrameNew()
+
+<!--
+_syntax: isFrameNew()_
+_name: isFrameNew_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void listDevices()
+
+<!--
+_syntax: listDevices()_
+_name: listDevices_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool loadSettings()
+
+<!--
+_syntax: loadSettings()_
+_name: loadSettings_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofQuickTimeGrabber()
+
+<!--
+_syntax: ofQuickTimeGrabber()_
+_name: ofQuickTimeGrabber_
 _returns: _
 _returns_description: _
-_parameters: float _a=0.0, float _b=0.0, float _c=0.0, float _d=0.0, float _e=0.0, float _f=0.0, float _g=0.0, float _h=0.0, float _i=0.0_
+_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -157,15 +360,15 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofMatrix3x3 operator*(scalar)
+###bool qtCloseSeqGrabber()
 
 <!--
-_syntax: operator*(scalar)_
-_name: operator*_
-_returns: ofMatrix3x3_
+_syntax: qtCloseSeqGrabber()_
+_name: qtCloseSeqGrabber_
+_returns: bool_
 _returns_description: _
-_parameters: float scalar_
-_access: public_
+_parameters: _
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -186,15 +389,15 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofMatrix3x3 operator*(&B)
+###bool qtInitSeqGrabber()
 
 <!--
-_syntax: operator*(&B)_
-_name: operator*_
-_returns: ofMatrix3x3_
+_syntax: qtInitSeqGrabber()_
+_name: qtInitSeqGrabber_
+_returns: bool_
 _returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
+_parameters: _
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -215,14 +418,72 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void operator*=(&B)
+###bool qtSelectDevice(deviceNumber, didWeChooseADevice)
 
 <!--
-_syntax: operator*=(&B)_
-_name: operator*=_
+_syntax: qtSelectDevice(deviceNumber, didWeChooseADevice)_
+_name: qtSelectDevice_
+_returns: bool_
+_returns_description: _
+_parameters: int deviceNumber, bool didWeChooseADevice_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool saveSettings()
+
+<!--
+_syntax: saveSettings()_
+_name: saveSettings_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setDesiredFrameRate(framerate)
+
+<!--
+_syntax: setDesiredFrameRate(framerate)_
+_name: setDesiredFrameRate_
 _returns: void_
 _returns_description: _
-_parameters: const ofMatrix3x3 &B_
+_parameters: int framerate_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -244,14 +505,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void operator*=(scalar)
+###void setDeviceID(_deviceID)
 
 <!--
-_syntax: operator*=(scalar)_
-_name: operator*=_
+_syntax: setDeviceID(_deviceID)_
+_name: setDeviceID_
 _returns: void_
 _returns_description: _
-_parameters: float scalar_
+_parameters: int _deviceID_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -273,20 +534,20 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofMatrix3x3 operator+(&B)
+###bool setPixelFormat(pixelFormat)
 
 <!--
-_syntax: operator+(&B)_
-_name: operator+_
-_returns: ofMatrix3x3_
+_syntax: setPixelFormat(pixelFormat)_
+_name: setPixelFormat_
+_returns: bool_
 _returns_description: _
-_parameters: const ofMatrix3x3 &B_
+_parameters: ofPixelFormat pixelFormat_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -302,14 +563,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void operator+=(&B)
+###void setVerbose(bTalkToMe)
 
 <!--
-_syntax: operator+=(&B)_
-_name: operator+=_
+_syntax: setVerbose(bTalkToMe)_
+_name: setVerbose_
 _returns: void_
 _returns_description: _
-_parameters: const ofMatrix3x3 &B_
+_parameters: bool bTalkToMe_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -331,214 +592,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofMatrix3x3 operator-(&B)
+###void update()
 
 <!--
-_syntax: operator-(&B)_
-_name: operator-_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void operator-=(&B)
-
-<!--
-_syntax: operator-=(&B)_
-_name: operator-=_
-_returns: void_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix3x3 operator/(scalar)
-
-<!--
-_syntax: operator/(scalar)_
-_name: operator/_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: float scalar_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void operator/=(&B)
-
-<!--
-_syntax: operator/=(&B)_
-_name: operator/=_
-_returns: void_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void operator/=(scalar)
-
-<!--
-_syntax: operator/=(scalar)_
-_name: operator/=_
-_returns: void_
-_returns_description: _
-_parameters: float scalar_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float & operator[](&index)
-
-<!--
-_syntax: operator[](&index)_
-_name: operator[]_
-_returns: float &_
-_returns_description: _
-_parameters: const int &index_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void set(_a, _b, _c, _d, _e, _f, _g, _h, _i)
-
-<!--
-_syntax: set(_a, _b, _c, _d, _e, _f, _g, _h, _i)_
-_name: set_
-_returns: void_
-_returns_description: _
-_parameters: float _a, float _b, float _c, float _d, float _e, float _f, float _g, float _h, float _i_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void transpose()
-
-<!--
-_syntax: transpose()_
-_name: transpose_
+_syntax: update()_
+_name: update_
 _returns: void_
 _returns_description: _
 _parameters: _
@@ -563,14 +621,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofMatrix3x3 transpose(&A)
+###void videoSettings()
 
 <!--
-_syntax: transpose(&A)_
-_name: transpose_
-_returns: ofMatrix3x3_
+_syntax: videoSettings()_
+_name: videoSettings_
+_returns: void_
 _returns_description: _
-_parameters: const ofMatrix3x3 &A_
+_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -592,16 +650,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofMatrix3x3 entrywiseTimes(&A)
+### ~ofQuickTimeGrabber()
 
 <!--
-_syntax: entrywiseTimes(&A)_
-_name: entrywiseTimes_
-_returns: ofMatrix3x3_
+_syntax: ~ofQuickTimeGrabber()_
+_name: ~ofQuickTimeGrabber_
+_returns: _
 _returns_description: _
-_parameters: const ofMatrix3x3 &A_
+_parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -611,6 +669,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -624,12 +683,12 @@ _description: _
 
 
 
-###float a
+###int attemptFramerate
 
 <!--
-_name: a_
-_type: float_
-_access: public_
+_name: attemptFramerate_
+_type: int_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -649,12 +708,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float b
+###bool bChooseDevice
 
 <!--
-_name: b_
-_type: float_
-_access: public_
+_name: bChooseDevice_
+_type: bool_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -674,12 +733,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float c
+###bool bGrabberInited
 
 <!--
-_name: c_
-_type: float_
-_access: public_
+_name: bGrabberInited_
+_type: bool_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -699,12 +758,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float d
+###bool bHavePixelsChanged
 
 <!--
-_name: d_
-_type: float_
-_access: public_
+_name: bHavePixelsChanged_
+_type: bool_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -724,12 +783,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float e
+###bool bIsFrameNew
 
 <!--
-_name: e_
-_type: float_
-_access: public_
+_name: bIsFrameNew_
+_type: bool_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -749,12 +808,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float f
+###bool bSgInited
 
 <!--
-_name: f_
-_type: float_
-_access: public_
+_name: bSgInited_
+_type: bool_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -774,12 +833,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float g
+###bool bVerbose
 
 <!--
-_name: g_
-_type: float_
-_access: public_
+_name: bVerbose_
+_type: bool_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -799,12 +858,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float h
+###int deviceID
 
 <!--
-_name: h_
-_type: float_
-_access: public_
+_name: deviceID_
+_type: int_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -824,12 +883,187 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float i
+###string deviceName
 
 <!--
-_name: i_
-_type: float_
-_access: public_
+_name: deviceName_
+_type: string_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###SeqGrabComponent gSeqGrabber
+
+<!--
+_name: gSeqGrabber_
+_type: SeqGrabComponent_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###SGChannel gVideoChannel
+
+<!--
+_name: gVideoChannel_
+_type: SGChannel_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###SGGrabCompleteBottleUPP myGrabCompleteProc
+
+<!--
+_name: myGrabCompleteProc_
+_type: SGGrabCompleteBottleUPP_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###unsigned char * offscreenGWorldPixels
+
+<!--
+_name: offscreenGWorldPixels_
+_type: unsigned char *_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixels pixels
+
+<!--
+_name: pixels_
+_type: ofPixels_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###Rect videoRect
+
+<!--
+_name: videoRect_
+_type: Rect_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GWorldPtr videogworld
+
+<!--
+_name: videogworld_
+_type: GWorldPtr_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
