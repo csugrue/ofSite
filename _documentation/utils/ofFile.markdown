@@ -45,6 +45,139 @@ cout << "is foo less than foo2? " << ((file < file2) ? "true" : "false") << endl
 
 
 
+### ofFile()
+
+<!--
+_syntax: ofFile()_
+_name: ofFile_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Creates an empty ofFile.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofFile(filePath, mode = ReadOnly, binary = false)
+
+<!--
+_syntax: ofFile(filePath, mode = ReadOnly, binary = false)_
+_name: ofFile_
+_returns: _
+_returns_description: _
+_parameters: string filePath, Mode mode=ReadOnly, bool binary=false_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Creates an ofFile using the file path and mode specified. Note that if the file doesn't actually exist on the file system this doesn't actually create file until you call create().
+
+~~~~.cpp
+ofFile fileToRead(ofToDataPath("dictionary.txt")); // a file that exists
+~~~~
+
+~~~~.cpp
+ofFile newFile(ofToDataPath("temp.txt"), ofFile::Write); //file doesn't exist yet
+newFile.create(); // now file doesn't exist 
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofFile(&mom)
+
+<!--
+_syntax: ofFile(&mom)_
+_name: ofFile_
+_returns: _
+_returns_description: _
+_parameters: const ofFile &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Copy constructor for copying one ofFile into another 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofFile()
+
+<!--
+_syntax: ~ofFile()_
+_name: ~ofFile_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Destructor
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool canExecute()
 
 <!--
@@ -885,108 +1018,6 @@ Moves the file to the location specified by path. This is similar to the mv comm
 
 <!----------------------------------------------------------------------------->
 
-### ofFile()
-
-<!--
-_syntax: ofFile()_
-_name: ofFile_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates an empty ofFile.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofFile(filePath, mode = ReadOnly, binary = false)
-
-<!--
-_syntax: ofFile(filePath, mode = ReadOnly, binary = false)_
-_name: ofFile_
-_returns: _
-_returns_description: _
-_parameters: string filePath, Mode mode=ReadOnly, bool binary=false_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates an ofFile using the file path and mode specified. Note that if the file doesn't actually exist on the file system this doesn't actually create file until you call create().
-
-~~~~.cpp
-ofFile fileToRead(ofToDataPath("dictionary.txt")); // a file that exists
-~~~~
-
-~~~~.cpp
-ofFile newFile(ofToDataPath("temp.txt"), ofFile::Write); //file doesn't exist yet
-newFile.create(); // now file doesn't exist 
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofFile(&mom)
-
-<!--
-_syntax: ofFile(&mom)_
-_name: ofFile_
-_returns: _
-_returns_description: _
-_parameters: const ofFile &mom_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Copy constructor for copying one ofFile into another 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool open(path, mode = ReadOnly, binary = false)
 
 <!--
@@ -1546,46 +1577,15 @@ Write an ofBuffer instance to the file path.
 
 <!----------------------------------------------------------------------------->
 
-### ~ofFile()
-
-<!--
-_syntax: ~ofFile()_
-_name: ~ofFile_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Destructor
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
 
-###Mode mode
+###Poco myFile
 
 <!--
-_name: mode_
-_type: Mode_
+_name: myFile_
+_type: Poco_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -1606,11 +1606,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###Poco myFile
+###Mode mode
 
 <!--
-_name: myFile_
-_type: Poco_
+_name: mode_
+_type: Mode_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

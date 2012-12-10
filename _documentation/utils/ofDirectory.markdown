@@ -31,6 +31,68 @@ for(int i = 0; i < dir.numFiles(); i++){
 
 
 
+### ofDirectory()
+
+<!--
+_syntax: ofDirectory()_
+_name: ofDirectory_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Constructs an empty directory object.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofDirectory(path)
+
+<!--
+_syntax: ofDirectory(path)_
+_name: ofDirectory_
+_returns: _
+_returns_description: _
+_parameters: string path_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Constructs a directory object and calls open() on the provided path.  The contents of the path are not accessible until listDir() is called.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void allowExt(extension)
 
 <!--
@@ -713,35 +775,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofFile getFile(position, mode = ofFile
-
-<!--
-_syntax: getFile(position, mode = ofFile_
-_name: getFile_
-_returns: ofFile_
-_returns_description: _
-_parameters: unsigned int position, ofFile_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofFile getFiles()
 
 <!--
@@ -1134,68 +1167,6 @@ _description: _
 
 
 deprecated. Use size().
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofDirectory()
-
-<!--
-_syntax: ofDirectory()_
-_name: ofDirectory_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Constructs an empty directory object.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofDirectory(path)
-
-<!--
-_syntax: ofDirectory(path)_
-_name: ofDirectory_
-_returns: _
-_returns_description: _
-_parameters: string path_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Constructs a directory object and calls open() on the provided path.  The contents of the path are not accessible until listDir() is called.
 
 
 
@@ -1796,34 +1767,6 @@ Sorts the contents of the directory by filename.
 
 <!----------------------------------------------------------------------------->
 
-###string getAbsolutePath()
-
-<!--
-_syntax: getAbsolutePath()_
-_name: getAbsolutePath_
-_returns: string_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofFile getFile(position, mode = ofFile::Reference, binary = false)
 
 <!--
@@ -1856,56 +1799,6 @@ _description: _
 
 
 
-###vector< string > extensions
-
-<!--
-_name: extensions_
-_type: vector< string >_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofFile files
-
-<!--
-_name: files_
-_type: ofFile_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###Poco myDir
 
 <!--
@@ -1936,6 +1829,56 @@ _description: _
 <!--
 _name: originalDirectory_
 _type: string_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###vector< string > extensions
+
+<!--
+_name: extensions_
+_type: vector< string >_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofFile files
+
+<!--
+_name: files_
+_type: ofFile_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

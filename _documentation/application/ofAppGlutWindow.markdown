@@ -18,6 +18,64 @@ The functionality provided by this class or any other inheriting from ofAppBaseW
 
 
 
+### ofAppGlutWindow()
+
+<!--
+_syntax: ofAppGlutWindow()_
+_name: ofAppGlutWindow_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofAppGlutWindow()
+
+<!--
+_syntax: ~ofAppGlutWindow()_
+_name: ~ofAppGlutWindow_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void disableSetupScreen()
 
 <!--
@@ -743,35 +801,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ofAppGlutWindow()
-
-<!--
-_syntax: ofAppGlutWindow()_
-_name: ofAppGlutWindow_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void passive_motion_cb(x, y)
 
 <!--
@@ -869,35 +898,6 @@ _returns_description: _
 _parameters: ofBaseApp *appPtr_
 _access: public_
 _version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setDoubleBuffering(_bDoubleBuffered)
-
-<!--
-_syntax: setDoubleBuffering(_bDoubleBuffered)_
-_name: setDoubleBuffering_
-_returns: void_
-_returns_description: _
-_parameters: bool _bDoubleBuffered_
-_access: public_
-_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1265,26 +1265,25 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ~ofAppGlutWindow()
+###void setDoubleBuffering(_bDoubleBuffered)
 
 <!--
-_syntax: ~ofAppGlutWindow()_
-_name: ~ofAppGlutWindow_
-_returns: _
+_syntax: setDoubleBuffering(_bDoubleBuffered)_
+_name: setDoubleBuffering_
+_returns: void_
 _returns_description: _
-_parameters: _
+_parameters: bool _bDoubleBuffered_
 _access: public_
-_version_started: 006_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
 _static: no_
-_visible: False_
+_visible: True_
 _advanced: False_
 -->
 
 _description: _
-
 
 
 

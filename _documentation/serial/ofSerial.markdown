@@ -14,6 +14,66 @@ ofSerial provides a cross platform system for interfacing with the serial port. 
 
 
 
+### ofSerial()
+
+<!--
+_syntax: ofSerial()_
+_name: ofSerial_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+This initializes the serial connection, but doesn't actually open the connection to any devices. You'll need to use the setup() method before doing that.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofSerial()
+
+<!--
+_syntax: ~ofSerial()_
+_name: ~ofSerial_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###int available()
 
 <!--
@@ -281,37 +341,6 @@ This lists out all the available serial devices to the console or standard outpu
 
 <!----------------------------------------------------------------------------->
 
-### ofSerial()
-
-<!--
-_syntax: ofSerial()_
-_name: ofSerial_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-This initializes the serial connection, but doesn't actually open the connection to any devices. You'll need to use the setup() method before doing that.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###int readByte()
 
 <!--
@@ -489,7 +518,7 @@ _version_started: 006_
 _version_deprecated: 0.06_
 _summary: _
 _constant: False_
-_static: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -741,55 +770,28 @@ device.writeBytes(&buf[0], 3);
 
 <!----------------------------------------------------------------------------->
 
-### ~ofSerial()
-
-<!--
-_syntax: ~ofSerial()_
-_name: ~ofSerial_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
 
-###bool bHaveEnumeratedDevices
+###bool bVerbose
 
 <!--
-_name: bHaveEnumeratedDevices_
+_name: bVerbose_
 _type: bool_
-_access: protected_
-_version_started: 007_
+_access: public_
+_version_started: 006_
 _version_deprecated: _
 _summary: _
-_visible: True_
-_constant: True_
+_visible: False_
+_constant: False_
 _advanced: False_
 -->
 
 _description: _
 
+
+bVerbose is a boolean varible controlling verbosity on the ofSerial class. 
 
 
 
@@ -826,16 +828,16 @@ h
 
 <!----------------------------------------------------------------------------->
 
-###bool bVerbose
+###int fd
 
 <!--
-_name: bVerbose_
-_type: bool_
-_access: public_
+_name: fd_
+_type: int_
+_access: protected_
 _version_started: 006_
 _version_deprecated: _
 _summary: _
-_visible: False_
+_visible: True_
 _constant: False_
 _advanced: False_
 -->
@@ -843,7 +845,30 @@ _advanced: False_
 _description: _
 
 
-bVerbose is a boolean varible controlling verbosity on the ofSerial class. 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###struct termios oldoptions
+
+<!--
+_name: oldoptions_
+_type: struct termios_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -903,42 +928,17 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int fd
+###bool bHaveEnumeratedDevices
 
 <!--
-_name: fd_
-_type: int_
+_name: bHaveEnumeratedDevices_
+_type: bool_
 _access: protected_
-_version_started: 006_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###struct termios oldoptions
-
-<!--
-_name: oldoptions_
-_type: struct termios_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
+_constant: True_
 _advanced: False_
 -->
 

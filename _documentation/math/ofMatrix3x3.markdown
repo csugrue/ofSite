@@ -12,6 +12,35 @@
 
 
 
+### ofMatrix3x3(_a = 0.0, _b = 0.0, _c = 0.0, _d = 0.0, _e = 0.0, _f = 0.0, _g = 0.0, _h = 0.0, _i = 0.0)
+
+<!--
+_syntax: ofMatrix3x3(_a = 0.0, _b = 0.0, _c = 0.0, _d = 0.0, _e = 0.0, _f = 0.0, _g = 0.0, _h = 0.0, _i = 0.0)_
+_name: ofMatrix3x3_
+_returns: _
+_returns_description: _
+_parameters: float _a=0.0, float _b=0.0, float _c=0.0, float _d=0.0, float _e=0.0, float _f=0.0, float _g=0.0, float _h=0.0, float _i=0.0_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###float determinant()
 
 <!--
@@ -70,35 +99,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofMatrix3x3 entrywiseTimes(&A)
-
-<!--
-_syntax: entrywiseTimes(&A)_
-_name: entrywiseTimes_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: const ofMatrix3x3 &A_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofMatrix3x3 inverse(&A)
 
 <!--
@@ -136,35 +136,6 @@ _name: invert_
 _returns: void_
 _returns_description: _
 _parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofMatrix3x3(_a = 0.0, _b = 0.0, _c = 0.0, _d = 0.0, _e = 0.0, _f = 0.0, _g = 0.0, _h = 0.0, _i = 0.0)
-
-<!--
-_syntax: ofMatrix3x3(_a = 0.0, _b = 0.0, _c = 0.0, _d = 0.0, _e = 0.0, _f = 0.0, _g = 0.0, _h = 0.0, _i = 0.0)_
-_name: ofMatrix3x3_
-_returns: _
-_returns_description: _
-_parameters: float _a=0.0, float _b=0.0, float _c=0.0, float _d=0.0, float _e=0.0, float _f=0.0, float _g=0.0, float _h=0.0, float _i=0.0_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -612,6 +583,34 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofMatrix3x3 entrywiseTimes(&A)
+
+<!--
+_syntax: entrywiseTimes(&A)_
+_name: entrywiseTimes_
+_returns: ofMatrix3x3_
+_returns_description: _
+_parameters: const ofMatrix3x3 &A_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 

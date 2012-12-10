@@ -12,6 +12,64 @@
 
 
 
+### ofSerialDeviceInfo(devicePathIn, deviceNameIn, deviceIDIn)
+
+<!--
+_syntax: ofSerialDeviceInfo(devicePathIn, deviceNameIn, deviceIDIn)_
+_name: ofSerialDeviceInfo_
+_returns: _
+_returns_description: _
+_parameters: string devicePathIn, string deviceNameIn, int deviceIDIn_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofSerialDeviceInfo()
+
+<!--
+_syntax: ofSerialDeviceInfo()_
+_name: ofSerialDeviceInfo_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###int getDeviceID()
 
 <!--
@@ -99,73 +157,15 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ofSerialDeviceInfo(devicePathIn, deviceNameIn, deviceIDIn)
-
-<!--
-_syntax: ofSerialDeviceInfo(devicePathIn, deviceNameIn, deviceIDIn)_
-_name: ofSerialDeviceInfo_
-_returns: _
-_returns_description: _
-_parameters: string devicePathIn, string deviceNameIn, int deviceIDIn_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofSerialDeviceInfo()
-
-<!--
-_syntax: ofSerialDeviceInfo()_
-_name: ofSerialDeviceInfo_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
 
-###int deviceID
+###string devicePath
 
 <!--
-_name: deviceID_
-_type: int_
+_name: devicePath_
+_type: string_
 _access: protected_
 _version_started: 007_
 _version_deprecated: _
@@ -211,11 +211,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###string devicePath
+###int deviceID
 
 <!--
-_name: devicePath_
-_type: string_
+_name: deviceID_
+_type: int_
 _access: protected_
 _version_started: 007_
 _version_deprecated: _

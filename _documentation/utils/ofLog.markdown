@@ -97,64 +97,6 @@ Last, it's useful to be able to record log messages to a file or send them to a 
 
 
 
-###void _log(level, &module, &message)
-
-<!--
-_syntax: _log(level, &module, &message)_
-_name: _log_
-_returns: void_
-_returns_description: _
-_parameters: ofLogLevel level, const string &module, const string &message_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool checkLog(level, &module)
-
-<!--
-_syntax: checkLog(level, &module)_
-_name: checkLog_
-_returns: bool_
-_returns_description: _
-_parameters: ofLogLevel level, const string &module_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ### ofLog()
 
 <!--
@@ -365,6 +307,35 @@ There are other formatting options such as setting the decimal precision of floa
 
 <!----------------------------------------------------------------------------->
 
+### ~ofLog()
+
+<!--
+_syntax: ~ofLog()_
+_name: ~ofLog_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ### ofLog(&)
 
 <!--
@@ -374,6 +345,64 @@ _returns: _
 _returns_description: _
 _parameters: ofLog const &_
 _access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void _log(level, &module, &message)
+
+<!--
+_syntax: _log(level, &module, &message)_
+_name: _log_
+_returns: void_
+_returns_description: _
+_parameters: ofLogLevel level, const string &module, const string &message_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool checkLog(level, &module)
+
+<!--
+_syntax: checkLog(level, &module)_
+_name: checkLog_
+_returns: bool_
+_returns_description: _
+_parameters: ofLogLevel level, const string &module_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -423,35 +452,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofLog operator<<(&))
-
-<!--
-_syntax: operator<<(&))_
-_name: operator<<_
-_returns: ofLog_
-_returns_description: _
-_parameters: std_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofLog operator=(&from)
 
 <!--
@@ -467,35 +467,6 @@ _summary: _
 _constant: False_
 _static: no_
 _visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setAutoSpace(autoSpace)
-
-<!--
-_syntax: setAutoSpace(autoSpace)_
-_name: setAutoSpace_
-_returns: void_
-_returns_description: _
-_parameters: bool autoSpace_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
 _advanced: False_
 -->
 
@@ -543,35 +514,6 @@ See [ofSetLoggerChannel()](./ofLog.html#functions) for more detail.
 
 <!----------------------------------------------------------------------------->
 
-### ~ofLog()
-
-<!--
-_syntax: ~ofLog()_
-_name: ~ofLog_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofLog operator<<(&))
 
 <!--
@@ -600,20 +542,48 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void setAutoSpace(autoSpace)
+
+<!--
+_syntax: setAutoSpace(autoSpace)_
+_name: setAutoSpace_
+_returns: void_
+_returns_description: _
+_parameters: bool autoSpace_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ##Variables
 
 
 
-###bool bAutoSpace
+###ofLogLevel level
 
 <!--
-_name: bAutoSpace_
-_type: bool_
-_access: private_
-_version_started: 0071_
+_name: level_
+_type: ofLogLevel_
+_access: protected_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
-_visible: True_
+_visible: False_
 _constant: True_
 _advanced: False_
 -->
@@ -654,36 +624,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPtr channel
+###string module
 
 <!--
-_name: channel_
-_type: ofPtr_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: False_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofLogLevel level
-
-<!--
-_name: level_
-_type: ofLogLevel_
+_name: module_
+_type: string_
 _access: protected_
 _version_started: 007_
 _version_deprecated: _
@@ -729,12 +674,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###string module
+###ofPtr channel
 
 <!--
-_name: module_
-_type: string_
-_access: protected_
+_name: channel_
+_type: ofPtr_
+_access: private_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -745,6 +690,30 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bAutoSpace
+
+<!--
+_name: bAutoSpace_
+_type: bool_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 
@@ -769,7 +738,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

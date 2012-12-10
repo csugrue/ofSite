@@ -72,7 +72,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ### ofPtr(*__p)
@@ -94,7 +93,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -130,7 +128,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ### ofPtr(*__p, __d, &__a)
@@ -152,7 +149,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -188,7 +184,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ### ofPtr(&__r)
@@ -217,36 +212,6 @@ _description: _
 
 
 
-
-<!----------------------------------------------------------------------------->
-
-### ofPtr(&__r)
-
-<!--
-_syntax: ofPtr(&__r)_
-_name: ofPtr_
-_returns: _
-_returns_description: _
-_parameters: const std_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
 <!----------------------------------------------------------------------------->
 
 ### ofPtr(&__r)
@@ -257,34 +222,6 @@ _name: ofPtr_
 _returns: _
 _returns_description: _
 _parameters: const std::tr1::weak_ptr< Tp1 > &__r_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofPtr(&__r, std::tr1::__dynamic_cast_tag)
-
-<!--
-_syntax: ofPtr(&__r, std::tr1::__dynamic_cast_tag)_
-_name: ofPtr_
-_returns: _
-_returns_description: _
-_parameters: const ofPtr< Tp1 > &__r, std::tr1::__dynamic_cast_tag_
 _access: public_
 _version_started: 0071_
 _version_deprecated: _

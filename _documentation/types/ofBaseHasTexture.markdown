@@ -12,6 +12,35 @@
 
 
 
+### ~ofBaseHasTexture()
+
+<!--
+_syntax: ~ofBaseHasTexture()_
+_name: ~ofBaseHasTexture_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofTexture getTextureReference()
 
 <!--
@@ -51,35 +80,6 @@ _returns_description: _
 _parameters: bool bUseTex_
 _access: public_
 _version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofBaseHasTexture()
-
-<!--
-_syntax: ~ofBaseHasTexture()_
-_name: ~ofBaseHasTexture_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
 _version_deprecated: _
 _summary: _
 _constant: False_

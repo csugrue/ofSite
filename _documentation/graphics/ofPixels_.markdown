@@ -759,35 +759,6 @@ This reflects the pixels across the vertical and/or horizontal axis.
 
 <!----------------------------------------------------------------------------->
 
-###void mirrorTo(&dst, vertically, horizontal)
-
-<!--
-_syntax: mirrorTo(&dst, vertically, horizontal)_
-_name: mirrorTo_
-_returns: void_
-_returns_description: _
-_parameters: ofPixels_< PixelType > &dst, bool vertically, bool horizontal_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ### ofPixels_()
 
 <!--
@@ -1813,93 +1784,6 @@ _returns_description: _
 _parameters: const ofPixels_< SrcType > &mom_
 _access: public_
 _version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofPixels_()
-
-<!--
-_syntax: ofPixels_()_
-_name: ofPixels_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofPixels_(&mom)
-
-<!--
-_syntax: ofPixels_(&mom)_
-_name: ofPixels_
-_returns: _
-_returns_description: _
-_parameters: const ofPixels_< PixelType > &mom_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofPixels_(&mom)
-
-<!--
-_syntax: ofPixels_(&mom)_
-_name: ofPixels_
-_returns: _
-_returns_description: _
-_parameters: const ofPixels_< SrcType > &mom_
-_access: public_
-_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2139,35 +2023,6 @@ _description: _
 
 
 crop to a new width and height, this reallocates memory.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void rotate90To(&dst, nClockwiseRotations)
-
-<!--
-_syntax: rotate90To(&dst, nClockwiseRotations)_
-_name: rotate90To_
-_returns: void_
-_returns_description: _
-_parameters: ofPixels_< PixelType > &dst, int nClockwiseRotations_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -2435,35 +2290,6 @@ _description: _
 
 
 This gives you the number of values that the ofPixels object contains, so an RGB data 400x400 would be 480,000, whereas RGBA data of the same dimensions would be 640,000.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void swap(&pix)
-
-<!--
-_syntax: swap(&pix)_
-_name: swap_
-_returns: void_
-_returns_description: _
-_parameters: ofPixels_< PixelType > &pix_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -2852,35 +2678,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ~ofPixels_()
-
-<!--
-_syntax: ~ofPixels_()_
-_name: ~ofPixels_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ### ofPixels_()
 
 <!--
@@ -2993,14 +2790,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setImageType(imageType)
+###void swap(&pix)
 
 <!--
-_syntax: setImageType(imageType)_
-_name: setImageType_
+_syntax: swap(&pix)_
+_name: swap_
 _returns: void_
 _returns_description: _
-_parameters: ofImageType imageType_
+_parameters: ofPixels_< PixelType > &pix_
 _access: public_
 _version_started: 0071_
 _version_deprecated: _
@@ -3021,14 +2818,42 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setNumChannels(numChannels)
+###void rotate90To(&dst, nClockwiseRotations)
 
 <!--
-_syntax: setNumChannels(numChannels)_
-_name: setNumChannels_
+_syntax: rotate90To(&dst, nClockwiseRotations)_
+_name: rotate90To_
 _returns: void_
 _returns_description: _
-_parameters: int numChannels_
+_parameters: ofPixels_< PixelType > &dst, int nClockwiseRotations_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void mirrorTo(&dst, vertically, horizontal)
+
+<!--
+_syntax: mirrorTo(&dst, vertically, horizontal)_
+_name: mirrorTo_
+_returns: void_
+_returns_description: _
+_parameters: ofPixels_< PixelType > &dst, bool vertically, bool horizontal_
 _access: public_
 _version_started: 0071_
 _version_deprecated: _
@@ -3053,11 +2878,11 @@ _description: _
 
 
 
-###bool bAllocated
+###PixelType * pixels
 
 <!--
-_name: bAllocated_
-_type: bool_
+_name: pixels_
+_type: PixelType *_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -3078,10 +2903,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int channels
+###int width
 
 <!--
-_name: channels_
+_name: width_
 _type: int_
 _access: private_
 _version_started: 007_
@@ -3128,11 +2953,36 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###PixelType * pixels
+###int channels
 
 <!--
-_name: pixels_
-_type: PixelType *_
+_name: channels_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bAllocated
+
+<!--
+_name: bAllocated_
+_type: bool_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -3158,31 +3008,6 @@ _description: _
 <!--
 _name: pixelsOwner_
 _type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int width
-
-<!--
-_name: width_
-_type: int_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

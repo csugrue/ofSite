@@ -25,6 +25,172 @@ ofBuffer fileBuffer = ofBufferFromFile("someFile.txt");
 
 
 
+### ofBuffer()
+
+<!--
+_syntax: ofBuffer()_
+_name: ofBuffer_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Constructor.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofBuffer(*buffer, size)
+
+<!--
+_syntax: ofBuffer(*buffer, size)_
+_name: ofBuffer_
+_returns: _
+_returns_description: _
+_parameters: const char *buffer, int size_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Create a buffer with a character array.
+
+~~~~.cpp
+string giantDataString;
+ofBuffer buff(giantDataString.c_str(), giantDataString.size());
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofBuffer(&stream)
+
+<!--
+_syntax: ofBuffer(&stream)_
+_name: ofBuffer_
+_returns: _
+_returns_description: _
+_parameters: istream &stream_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Construct a buffer from a file stream istream object.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofBuffer(&buffer_)
+
+<!--
+_syntax: ofBuffer(&buffer_)_
+_name: ofBuffer_
+_returns: _
+_returns_description: _
+_parameters: const ofBuffer &buffer_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Copy constructor, allows you to do:
+
+~~~~.cpp
+ofBuffer aBuff;
+// put some stuff in aBuff
+ofBuffer bBuff(aBuff); // now it's in bBuff as well
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofBuffer()
+
+<!--
+_syntax: ~ofBuffer()_
+_name: ~ofBuffer_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Destructor.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void allocate(_size)
 
 <!--
@@ -242,141 +408,6 @@ Get whether the current text is the last line in the text file.
 
 <!----------------------------------------------------------------------------->
 
-### ofBuffer()
-
-<!--
-_syntax: ofBuffer()_
-_name: ofBuffer_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Constructor.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofBuffer(*buffer, size)
-
-<!--
-_syntax: ofBuffer(*buffer, size)_
-_name: ofBuffer_
-_returns: _
-_returns_description: _
-_parameters: const char *buffer, int size_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Create a buffer with a character array.
-
-~~~~.cpp
-string giantDataString;
-ofBuffer buff(giantDataString.c_str(), giantDataString.size());
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofBuffer(&stream)
-
-<!--
-_syntax: ofBuffer(&stream)_
-_name: ofBuffer_
-_returns: _
-_returns_description: _
-_parameters: istream &stream_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Construct a buffer from a file stream istream object.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofBuffer(&buffer_)
-
-<!--
-_syntax: ofBuffer(&buffer_)_
-_name: ofBuffer_
-_returns: _
-_returns_description: _
-_parameters: const ofBuffer &buffer_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Copy constructor, allows you to do:
-
-~~~~.cpp
-ofBuffer aBuff;
-// put some stuff in aBuff
-ofBuffer bBuff(aBuff); // now it's in bBuff as well
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ### operator string()
 
 <!--
@@ -452,7 +483,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -564,205 +595,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofBuffer()
-
-<!--
-_syntax: ~ofBuffer()_
-_name: ~ofBuffer_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Destructor.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofBuffer(*buffer, size)
-
-<!--
-_syntax: ofBuffer(*buffer, size)_
-_name: ofBuffer_
-_returns: _
-_returns_description: _
-_parameters: const char *buffer, unsigned int size_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofBuffer(&text)
-
-<!--
-_syntax: ofBuffer(&text)_
-_name: ofBuffer_
-_returns: _
-_returns_description: _
-_parameters: const string &text_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void set(*_buffer, _size)
-
-<!--
-_syntax: set(*_buffer, _size)_
-_name: set_
-_returns: void_
-_returns_description: _
-_parameters: const char *_buffer, unsigned int _size_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void set(&text)
-
-<!--
-_syntax: set(&text)_
-_name: set_
-_returns: void_
-_returns_description: _
-_parameters: const string &text_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void append(*_buffer, _size)
-
-<!--
-_syntax: append(*_buffer, _size)_
-_name: append_
-_returns: void_
-_returns_description: _
-_parameters: const char *_buffer, unsigned int _size_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofBuffer operator=(&text)
-
-<!--
-_syntax: operator=(&text)_
-_name: operator=_
-_returns: ofBuffer_
-_returns_description: _
-_parameters: const string &text_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

@@ -168,6 +168,136 @@ two = one;
 
 <!----------------------------------------------------------------------------->
 
+### ofVbo()
+
+<!--
+_syntax: ofVbo()_
+_name: ofVbo_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Simple constructor for the ofVbo. When the ofVbo is first created there are no vertices or normals within it.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVbo(mom)
+
+<!--
+_syntax: ofVbo(mom)_
+_name: ofVbo_
+_returns: _
+_returns_description: _
+_parameters: const ofVbo & mom_
+_access: _
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Allows you copy one ofVbo from another ofVbo.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofVbo()
+
+<!--
+_syntax: ~ofVbo()_
+_name: ~ofVbo_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+This is the destructor for the ofVbo, it clears all the vertices, texture coordinates, and normals from the graphics card.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVbo(&mom)
+
+<!--
+_syntax: ofVbo(&mom)_
+_name: ofVbo_
+_returns: _
+_returns_description: _
+_parameters: const ofVbo &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+This is the copy constructor, so that you can do the following:
+
+~~~~{.cpp}
+ofVbo v1;
+// filll v1;
+ofVbo v2(v1); // v2 now contains all of v1s properties in a separate VBO
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void bind()
 
 <!--
@@ -626,105 +756,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVbo()
-
-<!--
-_syntax: ofVbo()_
-_name: ofVbo_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Simple constructor for the ofVbo. When the ofVbo is first created there are no vertices or normals within it.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVbo(mom)
-
-<!--
-_syntax: ofVbo(mom)_
-_name: ofVbo_
-_returns: _
-_returns_description: _
-_parameters: const ofVbo & mom_
-_access: _
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Allows you copy one ofVbo from another ofVbo.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVbo(&mom)
-
-<!--
-_syntax: ofVbo(&mom)_
-_name: ofVbo_
-_returns: _
-_returns_description: _
-_parameters: const ofVbo &mom_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-This is the copy constructor, so that you can do the following:
-
-~~~~{.cpp}
-ofVbo v1;
-// filll v1;
-ofVbo v2(v1); // v2 now contains all of v1s properties in a separate VBO
-~~~~
 
 
 
@@ -2270,509 +2301,139 @@ If the vertices of the VBO have been declared as GL_DYNAMIC_DRAW, then you can u
 
 <!----------------------------------------------------------------------------->
 
-### ~ofVbo()
-
-<!--
-_syntax: ~ofVbo()_
-_name: ~ofVbo_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-This is the destructor for the ofVbo, it clears all the vertices, texture coordinates, and normals from the graphics card.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void enableColors()
-
-<!--
-_syntax: enableColors()_
-_name: enableColors_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void enableNormals()
-
-<!--
-_syntax: enableNormals()_
-_name: enableNormals_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void enableTexCoords()
-
-<!--
-_syntax: enableTexCoords()_
-_name: enableTexCoords_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void enableIndices()
-
-<!--
-_syntax: enableIndices()_
-_name: enableIndices_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void disableColors()
-
-<!--
-_syntax: disableColors()_
-_name: disableColors_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void disableNormals()
-
-<!--
-_syntax: disableNormals()_
-_name: disableNormals_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void disableTexCoords()
-
-<!--
-_syntax: disableTexCoords()_
-_name: disableTexCoords_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void disableIndices()
-
-<!--
-_syntax: disableIndices()_
-_name: disableIndices_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void clearVertices()
-
-<!--
-_syntax: clearVertices()_
-_name: clearVertices_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void clearNormals()
-
-<!--
-_syntax: clearNormals()_
-_name: clearNormals_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void clearColors()
-
-<!--
-_syntax: clearColors()_
-_name: clearColors_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void clearTexCoords()
-
-<!--
-_syntax: clearTexCoords()_
-_name: clearTexCoords_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void clearIndices()
-
-<!--
-_syntax: clearIndices()_
-_name: clearIndices_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
+
+###GLuint indexId
+
+<!--
+_name: indexId_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLuint vertId
+
+<!--
+_name: vertId_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLuint colorId
+
+<!--
+_name: colorId_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLuint normalId
+
+<!--
+_name: normalId_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLuint texCoordId
+
+<!--
+_name: texCoordId_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
 
 ###bool bAllocated
 
 <!--
 _name: bAllocated_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bUsingColors
-
-<!--
-_name: bUsingColors_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bUsingIndices
-
-<!--
-_name: bUsingIndices_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bUsingNormals
-
-<!--
-_name: bUsingNormals_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bUsingTexCoords
-
-<!--
-_name: bUsingTexCoords_
 _type: bool_
 _access: private_
 _version_started: 007_
@@ -2819,11 +2480,111 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###GLuint colorId
+###bool bUsingTexCoords
 
 <!--
-_name: colorId_
-_type: GLuint_
+_name: bUsingTexCoords_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bUsingColors
+
+<!--
+_name: bUsingColors_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bUsingNormals
+
+<!--
+_name: bUsingNormals_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bUsingIndices
+
+<!--
+_name: bUsingIndices_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLsizei vertStride
+
+<!--
+_name: vertStride_
+_type: GLsizei_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -2869,136 +2630,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int colorUsage
-
-<!--
-_name: colorUsage_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GLuint indexId
-
-<!--
-_name: indexId_
-_type: GLuint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int normUsage
-
-<!--
-_name: normUsage_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GLuint normalId
-
-<!--
-_name: normalId_
-_type: GLuint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###GLsizei normalStride
 
 <!--
 _name: normalStride_
 _type: GLsizei_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GLuint texCoordId
-
-<!--
-_name: texCoordId_
-_type: GLuint_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -3044,10 +2680,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int texUsage
+###int vertSize
 
 <!--
-_name: texUsage_
+_name: vertSize_
 _type: int_
 _access: private_
 _version_started: 007_
@@ -3094,35 +2730,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###GLuint vertId
+###int vertUsage
 
 <!--
-_name: vertId_
-_type: GLuint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int vertSize
-
-<!--
-_name: vertSize_
+_name: vertUsage_
 _type: int_
 _access: private_
 _version_started: 007_
@@ -3144,11 +2755,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###GLsizei vertStride
+###int colorUsage
 
 <!--
-_name: vertStride_
-_type: GLsizei_
+_name: colorUsage_
+_type: int_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -3169,10 +2780,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int vertUsage
+###int normUsage
 
 <!--
-_name: vertUsage_
+_name: normUsage_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int texUsage
+
+<!--
+_name: texUsage_
 _type: int_
 _access: private_
 _version_started: 007_

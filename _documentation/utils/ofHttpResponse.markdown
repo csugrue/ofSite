@@ -132,56 +132,6 @@ _description: _
 
 
 
-###ofBuffer data
-
-<!--
-_name: data_
-_type: ofBuffer_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###string error
-
-<!--
-_name: error_
-_type: string_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofHttpRequest request
 
 <!--
@@ -207,11 +157,61 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###ofBuffer data
+
+<!--
+_name: data_
+_type: ofBuffer_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###int status
 
 <!--
 _name: status_
 _type: int_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###string error
+
+<!--
+_name: error_
+_type: string_
 _access: public_
 _version_started: 007_
 _version_deprecated: _

@@ -12,6 +12,35 @@
 
 
 
+### ~ofBaseDraws()
+
+<!--
+_syntax: ~ofBaseDraws()_
+_name: ~ofBaseDraws_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void draw(x, y)
 
 <!--
@@ -109,35 +138,6 @@ _returns_description: _
 _parameters: const ofRectangle &rect_
 _access: public_
 _version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&point, w, h)
-
-<!--
-_syntax: draw(&point, w, h)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &point, float w, float h_
-_access: public_
-_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -331,16 +331,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ~ofBaseDraws()
+###void draw(&point, w, h)
 
 <!--
-_syntax: ~ofBaseDraws()_
-_name: ~ofBaseDraws_
-_returns: _
+_syntax: draw(&point, w, h)_
+_name: draw_
+_returns: void_
 _returns_description: _
-_parameters: _
+_parameters: const ofPoint &point, float w, float h_
 _access: public_
-_version_started: 006_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -350,7 +350,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

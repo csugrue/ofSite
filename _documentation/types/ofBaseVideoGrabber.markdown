@@ -12,6 +12,35 @@
 
 
 
+### ~ofBaseVideoGrabber()
+
+<!--
+_syntax: ~ofBaseVideoGrabber()_
+_name: ~ofBaseVideoGrabber_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void close()
 
 <!--
@@ -302,12 +331,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool setPixelFormat(pixelFormat)
+###void setPixelFormat(pixelFormat)
 
 <!--
 _syntax: setPixelFormat(pixelFormat)_
 _name: setPixelFormat_
-_returns: bool_
+_returns: void_
 _returns_description: _
 _parameters: ofPixelFormat pixelFormat_
 _access: public_
@@ -395,35 +424,6 @@ _description: _
 _syntax: videoSettings()_
 _name: videoSettings_
 _returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofBaseVideoGrabber()
-
-<!--
-_syntax: ~ofBaseVideoGrabber()_
-_name: ~ofBaseVideoGrabber_
-_returns: _
 _returns_description: _
 _parameters: _
 _access: public_

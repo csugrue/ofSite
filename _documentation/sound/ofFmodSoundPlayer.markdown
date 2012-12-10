@@ -12,6 +12,64 @@
 
 
 
+### ofFmodSoundPlayer()
+
+<!--
+_syntax: ofFmodSoundPlayer()_
+_name: ofFmodSoundPlayer_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofFmodSoundPlayer()
+
+<!--
+_syntax: ~ofFmodSoundPlayer()_
+_name: ~ofFmodSoundPlayer_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void closeFmod()
 
 <!--
@@ -186,35 +244,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float getVolume()
-
-<!--
-_syntax: getVolume()_
-_name: getVolume_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void initializeFmod()
 
 <!--
@@ -244,72 +273,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool isLoaded()
-
-<!--
-_syntax: isLoaded()_
-_name: isLoaded_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool loadSound(fileName, stream = false)
+###void loadSound(fileName, stream = false)
 
 <!--
 _syntax: loadSound(fileName, stream = false)_
 _name: loadSound_
-_returns: bool_
+_returns: void_
 _returns_description: _
 _parameters: string fileName, bool stream=false_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofFmodSoundPlayer()
-
-<!--
-_syntax: ofFmodSoundPlayer()_
-_name: ofFmodSoundPlayer_
-_returns: _
-_returns_description: _
-_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -650,16 +621,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ~ofFmodSoundPlayer()
+###float getVolume()
 
 <!--
-_syntax: ~ofFmodSoundPlayer()_
-_name: ~ofFmodSoundPlayer_
-_returns: _
+_syntax: getVolume()_
+_name: getVolume_
+_returns: float_
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -676,24 +647,23 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-##Variables
-
-
-
-###bool bLoadedOk
+###bool isLoaded()
 
 <!--
-_name: bLoadedOk_
-_type: bool_
+_syntax: isLoaded()_
+_name: isLoaded_
+_returns: bool_
+_returns_description: _
+_parameters: _
 _access: public_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
+_constant: False_
+_static: no_
 _visible: True_
-_constant: True_
 _advanced: False_
 -->
 
@@ -705,13 +675,16 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###bool bLoop
+##Variables
+
+
+
+###bool isStreaming
 
 <!--
-_name: bLoop_
+_name: isStreaming_
 _type: bool_
 _access: public_
 _version_started: 007_
@@ -758,111 +731,61 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###bool bLoop
+
+<!--
+_name: bLoop_
+_type: bool_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bLoadedOk
+
+<!--
+_name: bLoadedOk_
+_type: bool_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool bPaused
 
 <!--
 _name: bPaused_
 _type: bool_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###FMOD_CHANNEL * channel
-
-<!--
-_name: channel_
-_type: FMOD_CHANNEL *_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float internalFreq
-
-<!--
-_name: internalFreq_
-_type: float_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isStreaming
-
-<!--
-_name: isStreaming_
-_type: bool_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###unsigned int length
-
-<!--
-_name: length_
-_type: unsigned int_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -908,11 +831,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###FMOD_RESULT result
+###float volume
 
 <!--
-_name: result_
-_type: FMOD_RESULT_
+_name: volume_
+_type: float_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -933,11 +856,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###FMOD_SOUND * sound
+###float internalFreq
 
 <!--
-_name: sound_
-_type: FMOD_SOUND *_
+_name: internalFreq_
+_type: float_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -983,11 +906,86 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float volume
+###unsigned int length
 
 <!--
-_name: volume_
-_type: float_
+_name: length_
+_type: unsigned int_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###FMOD_RESULT result
+
+<!--
+_name: result_
+_type: FMOD_RESULT_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###FMOD_CHANNEL * channel
+
+<!--
+_name: channel_
+_type: FMOD_CHANNEL *_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###FMOD_SOUND * sound
+
+<!--
+_name: sound_
+_type: FMOD_SOUND *_
 _access: public_
 _version_started: 007_
 _version_deprecated: _

@@ -12,6 +12,64 @@
 
 
 
+### ofDirectShowGrabber()
+
+<!--
+_syntax: ofDirectShowGrabber()_
+_name: ofDirectShowGrabber_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofDirectShowGrabber()
+
+<!--
+_syntax: ~ofDirectShowGrabber()_
+_name: ~ofDirectShowGrabber_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void clearMemory()
 
 <!--
@@ -273,35 +331,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ofDirectShowGrabber()
-
-<!--
-_syntax: ofDirectShowGrabber()_
-_name: ofDirectShowGrabber_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void setDesiredFrameRate(framerate)
 
 <!--
@@ -447,199 +476,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ~ofDirectShowGrabber()
-
-<!--
-_syntax: ~ofDirectShowGrabber()_
-_name: ~ofDirectShowGrabber_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool setPixelFormat(pixelFormat)
-
-<!--
-_syntax: setPixelFormat(pixelFormat)_
-_name: setPixelFormat_
-_returns: bool_
-_returns_description: _
-_parameters: ofPixelFormat pixelFormat_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPixelFormat getPixelFormat()
-
-<!--
-_syntax: getPixelFormat()_
-_name: getPixelFormat_
-_returns: ofPixelFormat_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
-
-###int attemptFramerate
-
-<!--
-_name: attemptFramerate_
-_type: int_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
 
 ###bool bChooseDevice
 
 <!--
 _name: bChooseDevice_
-_type: bool_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bGrabberInited
-
-<!--
-_name: bGrabberInited_
-_type: bool_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bIsFrameNew
-
-<!--
-_name: bIsFrameNew_
-_type: bool_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bVerbose
-
-<!--
-_name: bVerbose_
 _type: bool_
 _access: protected_
 _version_started: 007_
@@ -686,11 +530,36 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int height
+###bool bVerbose
 
 <!--
-_name: height_
-_type: int_
+_name: bVerbose_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bGrabberInited
+
+<!--
+_name: bGrabberInited_
+_type: bool_
 _access: protected_
 _version_started: 007_
 _version_deprecated: _
@@ -736,10 +605,85 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###int attemptFramerate
+
+<!--
+_name: attemptFramerate_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bIsFrameNew
+
+<!--
+_name: bIsFrameNew_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###int width
 
 <!--
 _name: width_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int height
+
+<!--
+_name: height_
 _type: int_
 _access: protected_
 _version_started: 007_

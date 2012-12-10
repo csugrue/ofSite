@@ -27,6 +27,37 @@ path.setMode(POLYLINES);
 
 
 
+### ofPath()
+
+<!--
+_syntax: ofPath()_
+_name: ofPath_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Creates a new ofPath instance.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void arc(&centre, radiusX, radiusY, angleBegin, angleEnd)
 
 <!--
@@ -126,122 +157,6 @@ _description: _
 
 
 Creates an arc at x,y,z, which has the radiusX, radiusY, and begins at angleBegin and ends at angleEnd.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arc(&centre, radiusX, radiusY, angleBegin, angleEnd, clockwise)
-
-<!--
-_syntax: arc(&centre, radiusX, radiusY, angleBegin, angleEnd, clockwise)_
-_name: arc_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &centre, float radiusX, float radiusY, float angleBegin, float angleEnd, bool clockwise_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arcNegative(&centre, radiusX, radiusY, angleBegin, angleEnd)
-
-<!--
-_syntax: arcNegative(&centre, radiusX, radiusY, angleBegin, angleEnd)_
-_name: arcNegative_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &centre, float radiusX, float radiusY, float angleBegin, float angleEnd_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd)
-
-<!--
-_syntax: arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd)_
-_name: arcNegative_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float radiusX, float radiusY, float angleBegin, float angleEnd_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd)
-
-<!--
-_syntax: arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd)_
-_name: arcNegative_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float radiusX, float radiusY, float angleBegin, float angleEnd_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -1261,37 +1176,6 @@ Creates a new subpath, either an ofPolyline instance or an ofSubPath instance. A
 
 <!----------------------------------------------------------------------------->
 
-### ofPath()
-
-<!--
-_syntax: ofPath()_
-_name: ofPath_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates a new ofPath instance.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void quadBezierTo(&cp1, &cp2, &p)
 
 <!--
@@ -2002,259 +1886,121 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void arc(&centre, radiusX, radiusY, angleBegin, angleEnd, clockwise)
+
+<!--
+_syntax: arc(&centre, radiusX, radiusY, angleBegin, angleEnd, clockwise)_
+_name: arc_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &centre, float radiusX, float radiusY, float angleBegin, float angleEnd, bool clockwise_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arcNegative(&centre, radiusX, radiusY, angleBegin, angleEnd)
+
+<!--
+_syntax: arcNegative(&centre, radiusX, radiusY, angleBegin, angleEnd)_
+_name: arcNegative_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &centre, float radiusX, float radiusY, float angleBegin, float angleEnd_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd)
+
+<!--
+_syntax: arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd)_
+_name: arcNegative_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float radiusX, float radiusY, float angleBegin, float angleEnd_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd)
+
+<!--
+_syntax: arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd)_
+_name: arcNegative_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float radiusX, float radiusY, float angleBegin, float angleEnd_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ##Variables
 
 
-
-###int arcResolution
-
-<!--
-_name: arcResolution_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bFill
-
-<!--
-_name: bFill_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bNeedsTessellation
-
-<!--
-_name: bNeedsTessellation_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bUseShapeColor
-
-<!--
-_name: bUseShapeColor_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMesh cachedTessellation
-
-<!--
-_name: cachedTessellation_
-_type: ofMesh_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool cachedTessellationValid
-
-<!--
-_name: cachedTessellationValid_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int curveResolution
-
-<!--
-_name: curveResolution_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofColor fillColor
-
-<!--
-_name: fillColor_
-_type: ofColor_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool hasChanged
-
-<!--
-_name: hasChanged_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###Mode mode
-
-<!--
-_name: mode_
-_type: Mode_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
 
 ###ofSubPath paths
 
@@ -2281,11 +2027,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPolyline polylines
+###ofPolyWindingMode windingMode
 
 <!--
-_name: polylines_
-_type: ofPolyline_
+_name: windingMode_
+_type: ofPolyWindingMode_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -2306,11 +2052,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int prevCurveRes
+###ofColor fillColor
 
 <!--
-_name: prevCurveRes_
-_type: int_
+_name: fillColor_
+_type: ofColor_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -2381,6 +2127,81 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###bool bFill
+
+<!--
+_name: bFill_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bUseShapeColor
+
+<!--
+_name: bUseShapeColor_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPolyline polylines
+
+<!--
+_name: polylines_
+_type: ofPolyline_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofPolyline tessellatedContour
 
 <!--
@@ -2406,11 +2227,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofTessellator tessellator
+###ofMesh cachedTessellation
 
 <!--
-_name: tessellator_
-_type: ofTessellator_
+_name: cachedTessellation_
+_type: ofMesh_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -2431,11 +2252,186 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPolyWindingMode windingMode
+###bool cachedTessellationValid
 
 <!--
-_name: windingMode_
-_type: ofPolyWindingMode_
+_name: cachedTessellationValid_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool hasChanged
+
+<!--
+_name: hasChanged_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int prevCurveRes
+
+<!--
+_name: prevCurveRes_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int curveResolution
+
+<!--
+_name: curveResolution_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int arcResolution
+
+<!--
+_name: arcResolution_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bNeedsTessellation
+
+<!--
+_name: bNeedsTessellation_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###Mode mode
+
+<!--
+_name: mode_
+_type: Mode_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofTessellator tessellator
+
+<!--
+_name: tessellator_
+_type: ofTessellator_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

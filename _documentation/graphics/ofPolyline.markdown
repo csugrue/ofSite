@@ -38,6 +38,78 @@ If you use the line or curveTo or bezierTo functions, you move the drawing point
 
 
 
+### ofPolyline()
+
+<!--
+_syntax: ofPolyline()_
+_name: ofPolyline_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Creates an ofPolyline.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofPolyline(&verts)
+
+<!--
+_syntax: ofPolyline(&verts)_
+_name: ofPolyline_
+_returns: _
+_returns_description: _
+_parameters: const vector< ofPoint > &verts_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Creates an ofPolyline from a vector of ofVec2f or ofPoint objects.
+~~~~{.cpp}
+vector<ofPoint> pts;
+	float j = 0;
+	while(j < TWO_PI+0.1) {
+		pts.push_back( ofPoint(cos(j) * 100, sin(j) * 100));
+		j+=0.1;
+	}
+	ofPolyline cp(pts);
+~~~~
+There is an easier way to draw circles though, using the arc() method.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void addVertex(&p)
 
 <!--
@@ -113,7 +185,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -160,7 +232,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -300,122 +372,6 @@ polyline.arc(ofGetWidth()/2,ofGetHeight()/2,100,100,100,0,360,40); // circle wit
 // at middle and -100 back
 polyline.arc(ofGetWidth()/2,ofGetHeight()/2,100,100,100,0,180,40); // semi-circle with a diameter of 100
 ~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)
-
-<!--
-_syntax: arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)_
-_name: arc_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, bool clockwise, int curveResolution=20_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
-
-<!--
-_syntax: arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arcNegative_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
-
-<!--
-_syntax: arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arcNegative_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
-
-<!--
-_syntax: arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arcNegative_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -1245,78 +1201,6 @@ Add a line from the last point added, or from 0,0 if no point is set, to the poi
 
 <!----------------------------------------------------------------------------->
 
-### ofPolyline()
-
-<!--
-_syntax: ofPolyline()_
-_name: ofPolyline_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates an ofPolyline.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofPolyline(&verts)
-
-<!--
-_syntax: ofPolyline(&verts)_
-_name: ofPolyline_
-_returns: _
-_returns_description: _
-_parameters: const vector< ofPoint > &verts_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates an ofPolyline from a vector of ofVec2f or ofPoint objects.
-~~~~{.cpp}
-vector<ofPoint> pts;
-	float j = 0;
-	while(j < TWO_PI+0.1) {
-		pts.push_back( ofPoint(cos(j) * 100, sin(j) * 100));
-		j+=0.1;
-	}
-	ofPolyline cp(pts);
-~~~~
-There is an easier way to draw circles though, using the arc() method.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofPoint operator[](index)
 
 <!--
@@ -1606,6 +1490,118 @@ The number of points in the ofPolyline.
 
 <!----------------------------------------------------------------------------->
 
+###void arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)
+
+<!--
+_syntax: arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)_
+_name: arc_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, bool clockwise, int curveResolution=20_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+
+<!--
+_syntax: arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
+_name: arcNegative_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+
+<!--
+_syntax: arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
+_name: arcNegative_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+
+<!--
+_syntax: arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
+_name: arcNegative_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###float wrapAngle(angleRad)
 
 <!--
@@ -1632,207 +1628,16 @@ _description: _
 
 
 
-
-<!----------------------------------------------------------------------------->
-
-###void addVertices(&verts)
-
-<!--
-_syntax: addVertices(&verts)_
-_name: addVertices_
-_returns: void_
-_returns_description: _
-_parameters: const vector< ofPoint > &verts_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### OF_DEPRECATED_MSG(instead", &verts))
-
-<!--
-_syntax: OF_DEPRECATED_MSG(instead", &verts))_
-_name: OF_DEPRECATED_MSG_
-_returns: _
-_returns_description: _
-_parameters: "Use ofPolyline::addVertices instead", void addVertexes(const vector< ofPoint > &verts)_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void addVertices(*verts, numverts)
-
-<!--
-_syntax: addVertices(*verts, numverts)_
-_name: addVertices_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint *verts, int numverts_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### OF_DEPRECATED_MSG(instead", *verts, numverts))
-
-<!--
-_syntax: OF_DEPRECATED_MSG(instead", *verts, numverts))_
-_name: OF_DEPRECATED_MSG_
-_returns: _
-_returns_description: _
-_parameters: "Use ofPolyline::addVertices instead", void addVertexes(const ofPoint *verts, int numverts)_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPolyline fromRectangle(&rect)
-
-<!--
-_syntax: fromRectangle(&rect)_
-_name: fromRectangle_
-_returns: ofPolyline_
-_returns_description: _
-_parameters: const ofRectangle &rect_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
 <!----------------------------------------------------------------------------->
 
 ##Variables
 
 
 
-###bool bClosed
+###ofPoint points
 
 <!--
-_name: bClosed_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bHasChanged
-
-<!--
-_name: bHasChanged_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPoint circlePoints
-
-<!--
-_name: circlePoints_
+_name: points_
 _type: ofPoint_
 _access: private_
 _version_started: 007_
@@ -1879,11 +1684,61 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPoint points
+###ofPoint circlePoints
 
 <!--
-_name: points_
+_name: circlePoints_
 _type: ofPoint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bClosed
+
+<!--
+_name: bClosed_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bHasChanged
+
+<!--
+_name: bHasChanged_
+_type: bool_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

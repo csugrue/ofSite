@@ -12,6 +12,64 @@
 
 
 
+### ofRtAudioSoundStream()
+
+<!--
+_syntax: ofRtAudioSoundStream()_
+_name: ofRtAudioSoundStream_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofRtAudioSoundStream()
+
+<!--
+_syntax: ~ofRtAudioSoundStream()_
+_name: ~ofRtAudioSoundStream_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void close()
 
 <!--
@@ -157,35 +215,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ofRtAudioSoundStream()
-
-<!--
-_syntax: ofRtAudioSoundStream()_
-_name: ofRtAudioSoundStream_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###int rtAudioCallback(*outputBuffer, *inputBuffer, bufferSize, streamTime, status, *data)
 
 <!--
@@ -244,35 +273,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setInDeviceID(deviceID)
-
-<!--
-_syntax: setInDeviceID(deviceID)_
-_name: setInDeviceID_
-_returns: void_
-_returns_description: _
-_parameters: int deviceID_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void setInput(*soundInput)
 
 <!--
@@ -283,35 +283,6 @@ _returns_description: _
 _parameters: ofBaseSoundInput *soundInput_
 _access: public_
 _version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setOutDeviceID(deviceID)
-
-<!--
-_syntax: setOutDeviceID(deviceID)_
-_name: setOutDeviceID_
-_returns: void_
-_returns_description: _
-_parameters: int deviceID_
-_access: public_
-_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -476,16 +447,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ~ofRtAudioSoundStream()
+###void setInDeviceID(deviceID)
 
 <!--
-_syntax: ~ofRtAudioSoundStream()_
-_name: ~ofRtAudioSoundStream_
-_returns: _
+_syntax: setInDeviceID(deviceID)_
+_name: setInDeviceID_
+_returns: void_
 _returns_description: _
-_parameters: _
+_parameters: int deviceID_
 _access: public_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -502,6 +473,33 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###void setOutDeviceID(deviceID)
+
+<!--
+_syntax: setOutDeviceID(deviceID)_
+_name: setOutDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: int deviceID_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
@@ -509,11 +507,61 @@ _description: _
 
 
 
+###long unsigned long tickCount
+
+<!--
+_name: tickCount_
+_type: long unsigned long_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofPtr audio
 
 <!--
 _name: audio_
 _type: ofPtr_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int sampleRate
+
+<!--
+_name: sampleRate_
+_type: int_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -541,31 +589,6 @@ _name: deviceID_
 _type: int_
 _access: private_
 _version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int inDeviceID
-
-<!--
-_name: inDeviceID_
-_type: int_
-_access: private_
-_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -613,56 +636,6 @@ _description: _
 
 <!--
 _name: nOutputChannels_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int outDeviceID
-
-<!--
-_name: outDeviceID_
-_type: int_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int sampleRate
-
-<!--
-_name: sampleRate_
 _type: int_
 _access: private_
 _version_started: 007_
@@ -734,13 +707,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###long unsigned long tickCount
+###int outDeviceID
 
 <!--
-_name: tickCount_
-_type: long unsigned long_
+_name: outDeviceID_
+_type: int_
 _access: private_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -750,6 +723,29 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int inDeviceID
+
+<!--
+_name: inDeviceID_
+_type: int_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 

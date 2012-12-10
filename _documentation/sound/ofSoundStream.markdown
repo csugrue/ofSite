@@ -12,6 +12,35 @@
 
 
 
+### ofSoundStream()
+
+<!--
+_syntax: ofSoundStream()_
+_name: ofSoundStream_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void close()
 
 <!--
@@ -105,35 +134,6 @@ _description: _
 _syntax: listDevices()_
 _name: listDevices_
 _returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofSoundStream()
-
-<!--
-_syntax: ofSoundStream()_
-_name: ofSoundStream_
-_returns: _
 _returns_description: _
 _parameters: _
 _access: public_

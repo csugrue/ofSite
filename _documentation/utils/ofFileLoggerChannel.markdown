@@ -12,6 +12,93 @@
 
 
 
+### ofFileLoggerChannel()
+
+<!--
+_syntax: ofFileLoggerChannel()_
+_name: ofFileLoggerChannel_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofFileLoggerChannel(&path, append)
+
+<!--
+_syntax: ofFileLoggerChannel(&path, append)_
+_name: ofFileLoggerChannel_
+_returns: _
+_returns_description: _
+_parameters: const string &path, bool append_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofFileLoggerChannel()
+
+<!--
+_syntax: ~ofFileLoggerChannel()_
+_name: ~ofFileLoggerChannel_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void close()
 
 <!--
@@ -128,64 +215,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ofFileLoggerChannel()
-
-<!--
-_syntax: ofFileLoggerChannel()_
-_name: ofFileLoggerChannel_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofFileLoggerChannel(&path, append)
-
-<!--
-_syntax: ofFileLoggerChannel(&path, append)_
-_name: ofFileLoggerChannel_
-_returns: _
-_returns_description: _
-_parameters: const string &path, bool append_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void setFile(&path, append = false)
 
 <!--
@@ -194,35 +223,6 @@ _name: setFile_
 _returns: void_
 _returns_description: _
 _parameters: const string &path, bool append=false_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofFileLoggerChannel()
-
-<!--
-_syntax: ~ofFileLoggerChannel()_
-_name: ~ofFileLoggerChannel_
-_returns: _
-_returns_description: _
-_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _

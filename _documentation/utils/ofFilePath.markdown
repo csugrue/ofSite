@@ -128,64 +128,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###string getCurrentExeDir()
-
-<!--
-_syntax: getCurrentExeDir()_
-_name: getCurrentExeDir_
-_returns: string_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###string getCurrentExePath()
-
-<!--
-_syntax: getCurrentExePath()_
-_name: getCurrentExePath_
-_returns: string_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###string getCurrentWorkingDirectory()
 
 <!--
@@ -331,35 +273,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###string getUserHomeDir()
-
-<!--
-_syntax: getUserHomeDir()_
-_name: getUserHomeDir_
-_returns: string_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool isAbsolute(path)
 
 <!--
@@ -370,35 +283,6 @@ _returns_description: _
 _parameters: string path_
 _access: public_
 _version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###string join(path1, path2)
-
-<!--
-_syntax: join(path1, path2)_
-_name: join_
-_returns: string_
-_returns_description: _
-_parameters: string path1, string path2_
-_access: public_
-_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -467,6 +351,118 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###string join(path1, path2)
+
+<!--
+_syntax: join(path1, path2)_
+_name: join_
+_returns: string_
+_returns_description: _
+_parameters: string path1, string path2_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###string getCurrentExePath()
+
+<!--
+_syntax: getCurrentExePath()_
+_name: getCurrentExePath_
+_returns: string_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###string getCurrentExeDir()
+
+<!--
+_syntax: getCurrentExeDir()_
+_name: getCurrentExeDir_
+_returns: string_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###string getUserHomeDir()
+
+<!--
+_syntax: getUserHomeDir()_
+_name: getUserHomeDir_
+_returns: string_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 

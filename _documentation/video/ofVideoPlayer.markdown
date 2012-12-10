@@ -19,6 +19,64 @@ ofVideoPlayer myPlayer;
 
 
 
+### ofVideoPlayer()
+
+<!--
+_syntax: ofVideoPlayer()_
+_name: ofVideoPlayer_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void ~ofVideoPlayer()
+
+<!--
+_syntax: ~ofVideoPlayer()_
+_name: ~ofVideoPlayer_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool allocate()
 
 <!--
@@ -419,12 +477,12 @@ Returns whether the movie has played all the way until the end.
 
 <!----------------------------------------------------------------------------->
 
-###ofLoopType getLoopState()
+###int getLoopState()
 
 <!--
 _syntax: getLoopState()_
 _name: getLoopState_
-_returns: ofLoopType_
+_returns: int_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -742,7 +800,7 @@ _version_started: 006_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -943,35 +1001,6 @@ _description: _
 
 
 Advances the playhead by one frame.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVideoPlayer()
-
-<!--
-_syntax: ofVideoPlayer()_
-_name: ofVideoPlayer_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -1345,12 +1374,12 @@ Sets the paused state of the movie. Use "true" to pause and false to unpause.
 
 <!----------------------------------------------------------------------------->
 
-###bool setPixelFormat(pixelFormat)
+###void setPixelFormat(pixelFormat)
 
 <!--
 _syntax: setPixelFormat(pixelFormat)_
 _name: setPixelFormat_
-_returns: bool_
+_returns: void_
 _returns_description: _
 _parameters: ofPixelFormat pixelFormat_
 _access: public_
@@ -1514,7 +1543,7 @@ _version_started: 006_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -1625,156 +1654,15 @@ Calls the idleMovie() function. This function idles the movie player, so that th
 
 <!----------------------------------------------------------------------------->
 
-###void ~ofVideoPlayer()
-
-<!--
-_syntax: ~ofVideoPlayer()_
-_name: ~ofVideoPlayer_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###string getMoviePath()
-
-<!--
-_syntax: getMoviePath()_
-_name: getMoviePath_
-_returns: string_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPixelFormat getPixelFormat()
-
-<!--
-_syntax: getPixelFormat()_
-_name: getPixelFormat_
-_returns: ofPixelFormat_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### OF_DEPRECATED_MSG(instead.", idleMovie())
-
-<!--
-_syntax: OF_DEPRECATED_MSG(instead.", idleMovie())_
-_name: OF_DEPRECATED_MSG_
-_returns: _
-_returns_description: _
-_parameters: "Use ofVideoPlayer::update() instead.", void idleMovie()_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setVolume(volume)
-
-<!--
-_syntax: setVolume(volume)_
-_name: setVolume_
-_returns: void_
-_returns_description: _
-_parameters: float volume_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
 
-###bool allocated
+###int width
 
 <!--
-_name: allocated_
-_type: bool_
+_name: width_
+_type: int_
 _access: public_
 _version_started: 006_
 _version_deprecated: _
@@ -1787,7 +1675,7 @@ _advanced: False_
 _description: _
 
 
-Boolean varible containing true if the texture has been already allocated inside our video player.
+Variable containing the width of the video.
 
 
 
@@ -1797,37 +1685,10 @@ Boolean varible containing true if the texture has been already allocated inside
 
 <!----------------------------------------------------------------------------->
 
-###bool bHavePixelsChanged
+###bool bStarted
 
 <!--
-_name: bHavePixelsChanged_
-_type: bool_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-A boolean controlling if pixels have change.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bIsFrameNew
-
-<!--
-_name: bIsFrameNew_
+_name: bStarted_
 _type: bool_
 _access: protected_
 _version_started: 006_
@@ -1849,10 +1710,89 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool bIsMovieDone
+###int height
 
 <!--
-_name: bIsMovieDone_
+_name: height_
+_type: int_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+Variable containing the height of the video.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bPlaying
+
+<!--
+_name: bPlaying_
+_type: bool_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float speed
+
+<!--
+_name: speed_
+_type: float_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+Contains the playback speed of the video. 1.0 is the normal speed. 2.0 is double the normal speed, -1 is backwards etc. 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bPaused
+
+<!--
+_name: bPaused_
 _type: bool_
 _access: protected_
 _version_started: 006_
@@ -1901,290 +1841,11 @@ A boolean that describes if the movie loaded properly.
 
 <!----------------------------------------------------------------------------->
 
-###bool bPaused
+###bool bIsFrameNew
 
 <!--
-_name: bPaused_
+_name: bIsFrameNew_
 _type: bool_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bPlaying
-
-<!--
-_name: bPlaying_
-_type: bool_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bStarted
-
-<!--
-_name: bStarted_
-_type: bool_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bUseTexture
-
-<!--
-_name: bUseTexture_
-_type: bool_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-bUseTexture enables and disables the use of ofTexture in our video player.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###gint64 durationNanos
-
-<!--
-_name: durationNanos_
-_type: gint64_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofGstVideoData gstData
-
-<!--
-_name: gstData_
-_type: ofGstVideoData_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GstElement * gstPipeline
-
-<!--
-_name: gstPipeline_
-_type: GstElement *_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GstElement * gstSink
-
-<!--
-_name: gstSink_
-_type: GstElement *_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int height
-
-<!--
-_name: height_
-_type: int_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-Variable containing the height of the video.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPixelFormat internalPixelFormat
-
-<!--
-_name: internalPixelFormat_
-_type: ofPixelFormat_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isStream
-
-<!--
-_name: isStream_
-_type: bool_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int loopMode
-
-<!--
-_name: loopMode_
-_type: int_
 _access: protected_
 _version_started: 006_
 _version_deprecated: _
@@ -2232,6 +1893,31 @@ Variable containing the number of frames of the video.
 
 <!----------------------------------------------------------------------------->
 
+###ofGstVideoData gstData
+
+<!--
+_name: gstData_
+_type: ofGstVideoData_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###unsigned char * pixels
 
 <!--
@@ -2259,17 +1945,17 @@ Array of pixels that represents the current frame of live video. The data is sto
 
 <!----------------------------------------------------------------------------->
 
-###ofPtr player
+###bool bIsMovieDone
 
 <!--
-_name: player_
-_type: ofPtr_
-_access: private_
-_version_started: 007_
+_name: bIsMovieDone_
+_type: bool_
+_access: protected_
+_version_started: 006_
 _version_deprecated: _
 _summary: _
 _visible: True_
-_constant: True_
+_constant: False_
 _advanced: False_
 -->
 
@@ -2284,17 +1970,225 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofTexture playerTex
+###bool bHavePixelsChanged
 
 <!--
-_name: playerTex_
-_type: ofTexture_
-_access: private_
-_version_started: 007_
+_name: bHavePixelsChanged_
+_type: bool_
+_access: public_
+_version_started: 006_
 _version_deprecated: _
 _summary: _
 _visible: True_
-_constant: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+A boolean controlling if pixels have change.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isStream
+
+<!--
+_name: isStream_
+_type: bool_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofTexture tex
+
+<!--
+_name: tex_
+_type: ofTexture_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+ofTexture used by the video player class. 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GstElement * gstPipeline
+
+<!--
+_name: gstPipeline_
+_type: GstElement *_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bUseTexture
+
+<!--
+_name: bUseTexture_
+_type: bool_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+bUseTexture enables and disables the use of ofTexture in our video player.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GstElement * gstSink
+
+<!--
+_name: gstSink_
+_type: GstElement *_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool allocated
+
+<!--
+_name: allocated_
+_type: bool_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+Boolean varible containing true if the texture has been already allocated inside our video player.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###gint64 durationNanos
+
+<!--
+_name: durationNanos_
+_type: gint64_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int loopMode
+
+<!--
+_name: loopMode_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
 _advanced: False_
 -->
 
@@ -2359,94 +2253,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float speed
+###ofPtr player
 
 <!--
-_name: speed_
-_type: float_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-Contains the playback speed of the video. 1.0 is the normal speed. 2.0 is double the normal speed, -1 is backwards etc. 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofTexture tex
-
-<!--
-_name: tex_
-_type: ofTexture_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-ofTexture used by the video player class. 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int width
-
-<!--
-_name: width_
-_type: int_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-Variable containing the width of the video.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###string moviePath
-
-<!--
-_name: moviePath_
-_type: string_
+_name: player_
+_type: ofPtr_
 _access: private_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -2455,6 +2268,57 @@ _advanced: False_
 -->
 
 _description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofTexture playerTex
+
+<!--
+_name: playerTex_
+_type: ofTexture_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelFormat internalPixelFormat
+
+<!--
+_name: internalPixelFormat_
+_type: ofPixelFormat_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 

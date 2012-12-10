@@ -2803,180 +2803,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ofColor_()
-
-<!--
-_syntax: ofColor_()_
-_name: ofColor_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofColor_(_r, _g, _b, _a = limit())
-
-<!--
-_syntax: ofColor_(_r, _g, _b, _a = limit())_
-_name: ofColor_
-_returns: _
-_returns_description: _
-_parameters: float _r, float _g, float _b, float _a=limit()_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofColor_(&color)
-
-<!--
-_syntax: ofColor_(&color)_
-_name: ofColor_
-_returns: _
-_returns_description: _
-_parameters: const ofColor_< PixelType > &color_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofColor_(&color, _a)
-
-<!--
-_syntax: ofColor_(&color, _a)_
-_name: ofColor_
-_returns: _
-_returns_description: _
-_parameters: const ofColor_< PixelType > &color, float _a_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofColor_(gray, _a = limit())
-
-<!--
-_syntax: ofColor_(gray, _a = limit())_
-_name: ofColor_
-_returns: _
-_returns_description: _
-_parameters: float gray, float _a=limit()_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofColor_(&color)
-
-<!--
-_syntax: ofColor_(&color)_
-_name: ofColor_
-_returns: _
-_returns_description: _
-_parameters: const ofColor_< SrcType > &color_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool operator!=(&color)
 
 <!--
@@ -4408,35 +4234,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ~ofColor_()
-
-<!--
-_syntax: ~ofColor_()_
-_name: ~ofColor_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ### ofColor_()
 
 <!--
@@ -4637,36 +4434,11 @@ _description: _
 
 
 
-###union ofColor @1
+###ofColor white
 
 <!--
-_name: @1_
-_type: union ofColor_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: False_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###PixelType a
-
-<!--
-_name: a_
-_type: PixelType_
+_name: white_
+_type: ofColor_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -4679,38 +4451,41 @@ _advanced: False_
 _description: _
 
 
-The alpha value (transparency) of a color. 0 is completely transparent, 255 is completely opaque.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###PixelType b
-
-<!--
-_name: b_
-_type: PixelType_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-The blue component of this color.
+Pre-iniatilized white color.
 
 ~~~~{.cpp}
-ofColor c = ofColor::cyan;
-float blue = c.b; // 255
+ofColor c = ofColor::white;
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofColor gray
+
+<!--
+_name: gray_
+_type: ofColor_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Pre-iniatilized gray color.
+
+~~~~{.cpp}
+ofColor c = ofColor::gray;
 ~~~~
 
 
@@ -4742,6 +4517,68 @@ Pre-iniatilized black color.
 
 ~~~~{.cpp}
 ofColor c = ofColor::black; // (0, 0, 0)
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofColor red
+
+<!--
+_name: red_
+_type: ofColor_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Pre-iniatilized red color.
+
+~~~~{.cpp}
+ofColor c = ofColor::red; // (255, 0, 0)
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofColor green
+
+<!--
+_name: green_
+_type: ofColor_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Pre-iniatilized green color.
+
+~~~~{.cpp}
+ofColor c = ofColor::green; // (0, 255, 0)
 ~~~~
 
 
@@ -4814,100 +4651,6 @@ ofColor c = ofColor::cyan; // (0, 255, 255)
 
 <!----------------------------------------------------------------------------->
 
-###PixelType g
-
-<!--
-_name: g_
-_type: PixelType_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-The green component of this color.
-
-~~~~{.cpp}
-ofColor c = ofColor::yellow;
-float green = c.g; // 255
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofColor gray
-
-<!--
-_name: gray_
-_type: ofColor_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Pre-iniatilized gray color.
-
-~~~~{.cpp}
-ofColor c = ofColor::gray;
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofColor green
-
-<!--
-_name: green_
-_type: ofColor_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Pre-iniatilized green color.
-
-~~~~{.cpp}
-ofColor c = ofColor::green; // (0, 255, 0)
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofColor magenta
 
 <!--
@@ -4929,6 +4672,37 @@ Pre-iniatilized magenta color.
 
 ~~~~{.cpp}
 ofColor c = ofColor::magenta; // (255, 0, 255)
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofColor yellow
+
+<!--
+_name: yellow_
+_type: ofColor_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Pre-iniatilized yellow color.
+
+~~~~{.cpp}
+ofColor c = ofColor::yellow; // (255, 255, 0)
 ~~~~
 
 
@@ -4971,11 +4745,11 @@ float red = c.r; // 255
 
 <!----------------------------------------------------------------------------->
 
-###ofColor red
+###PixelType g
 
 <!--
-_name: red_
-_type: ofColor_
+_name: g_
+_type: PixelType_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -4988,11 +4762,71 @@ _advanced: False_
 _description: _
 
 
-Pre-iniatilized red color.
+The green component of this color.
 
 ~~~~{.cpp}
-ofColor c = ofColor::red; // (255, 0, 0)
+ofColor c = ofColor::yellow;
+float green = c.g; // 255
 ~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###PixelType b
+
+<!--
+_name: b_
+_type: PixelType_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+The blue component of this color.
+
+~~~~{.cpp}
+ofColor c = ofColor::cyan;
+float blue = c.b; // 255
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###PixelType a
+
+<!--
+_name: a_
+_type: PixelType_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+The alpha value (transparency) of a color. 0 is completely transparent, 255 is completely opaque.
 
 
 
@@ -5029,59 +4863,22 @@ Array/pointer access. Allows the r, g, b, a components to be accessed as a point
 
 <!----------------------------------------------------------------------------->
 
-###ofColor white
+###union ofColor @1
 
 <!--
-_name: white_
-_type: ofColor_
+_name: @1_
+_type: union ofColor_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
-_visible: True_
+_visible: False_
 _constant: True_
 _advanced: False_
 -->
 
 _description: _
 
-
-Pre-iniatilized white color.
-
-~~~~{.cpp}
-ofColor c = ofColor::white;
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofColor yellow
-
-<!--
-_name: yellow_
-_type: ofColor_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Pre-iniatilized yellow color.
-
-~~~~{.cpp}
-ofColor c = ofColor::yellow; // (255, 255, 0)
-~~~~
 
 
 

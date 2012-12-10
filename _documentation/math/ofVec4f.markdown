@@ -12,6 +12,93 @@
 
 
 
+### ofVec4f(_x = 0.f, _y = 0.f, _z = 0.f, _w = 0.f)
+
+<!--
+_syntax: ofVec4f(_x = 0.f, _y = 0.f, _z = 0.f, _w = 0.f)_
+_name: ofVec4f_
+_returns: _
+_returns_description: _
+_parameters: float _x=0.f, float _y=0.f, float _z=0.f, float _w=0.f_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVec4f(&vec)
+
+<!--
+_syntax: ofVec4f(&vec)_
+_name: ofVec4f_
+_returns: _
+_returns_description: _
+_parameters: const ofVec2f &vec_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVec4f(&vec)
+
+<!--
+_syntax: ofVec4f(&vec)_
+_name: ofVec4f_
+_returns: _
+_returns_description: _
+_parameters: const ofVec3f &vec_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofVec4f average(*points, num)
 
 <!--
@@ -606,122 +693,6 @@ _version_deprecated: _
 _summary: _
 _constant: False_
 _static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec4f(_x = 0.f, _y = 0.f, _z = 0.f, _w = 0.f)
-
-<!--
-_syntax: ofVec4f(_x = 0.f, _y = 0.f, _z = 0.f, _w = 0.f)_
-_name: ofVec4f_
-_returns: _
-_returns_description: _
-_parameters: float _x=0.f, float _y=0.f, float _z=0.f, float _w=0.f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec4f(&vec)
-
-<!--
-_syntax: ofVec4f(&vec)_
-_name: ofVec4f_
-_returns: _
-_returns_description: _
-_parameters: const ofVec2f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec4f(&vec)
-
-<!--
-_syntax: ofVec4f(&vec)_
-_name: ofVec4f_
-_returns: _
-_returns_description: _
-_parameters: const ofVec3f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec4f one()
-
-<!--
-_syntax: one()_
-_name: one_
-_returns: ofVec4f_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
 _visible: True_
 _advanced: False_
 -->
@@ -1504,7 +1475,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -1546,15 +1517,14 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-### ofVec4f()
+###ofVec4f one()
 
 <!--
-_syntax: ofVec4f()_
-_name: ofVec4f_
-_returns: _
+_syntax: one()_
+_name: one_
+_returns: ofVec4f_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -1562,91 +1532,7 @@ _version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec4f(_scalar)
-
-<!--
-_syntax: ofVec4f(_scalar)_
-_name: ofVec4f_
-_returns: _
-_returns_description: _
-_parameters: float _scalar_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void set(_scalar)
-
-<!--
-_syntax: set(_scalar)_
-_name: set_
-_returns: void_
-_returns_description: _
-_parameters: float _scalar_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### OF_DEPRECATED_MSG(instead.", const)
-
-<!--
-_syntax: OF_DEPRECATED_MSG(instead.", const)_
-_name: OF_DEPRECATED_MSG_
-_returns: _
-_returns_description: _
-_parameters: "Use ofVec4f::lengthSquared() instead.", float squareLength() const_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
+_static: yes_
 _visible: True_
 _advanced: False_
 -->
@@ -1664,56 +1550,6 @@ _description: _
 ##Variables
 
 
-
-###const int DIM
-
-<!--
-_name: DIM_
-_type: const int_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float w
-
-<!--
-_name: w_
-_type: float_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
 
 ###float x
 
@@ -1781,6 +1617,55 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float w
+
+<!--
+_name: w_
+_type: float_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###const int DIM
+
+<!--
+_name: DIM_
+_type: const int_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 

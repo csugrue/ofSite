@@ -12,6 +12,35 @@
 
 
 
+### ofFileDialogResult()
+
+<!--
+_syntax: ofFileDialogResult()_
+_name: ofFileDialogResult_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###string getName()
 
 <!--
@@ -70,44 +99,15 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ofFileDialogResult()
-
-<!--
-_syntax: ofFileDialogResult()_
-_name: ofFileDialogResult_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
 
-###bool bSuccess
+###string filePath
 
 <!--
-_name: bSuccess_
-_type: bool_
+_name: filePath_
+_type: string_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -153,11 +153,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###string filePath
+###bool bSuccess
 
 <!--
-_name: filePath_
-_type: string_
+_name: bSuccess_
+_type: bool_
 _access: public_
 _version_started: 007_
 _version_deprecated: _

@@ -17,6 +17,64 @@ The fragment shader is somewhat misleadingly named because what it really allows
 
 
 
+### ofShader()
+
+<!--
+_syntax: ofShader()_
+_name: ofShader_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofShader()
+
+<!--
+_syntax: ~ofShader()_
+_name: ~ofShader_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void begin()
 
 <!--
@@ -87,35 +145,6 @@ _returns_description: _
 _parameters: GLuint program_
 _access: private_
 _version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool checkProgramLinkStatus(program)
-
-<!--
-_syntax: checkProgramLinkStatus(program)_
-_name: checkProgramLinkStatus_
-_returns: bool_
-_returns_description: _
-_parameters: GLuint program_
-_access: private_
-_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -521,35 +550,6 @@ _version_deprecated: _
 _summary: _
 _constant: False_
 _static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofShader()
-
-<!--
-_syntax: ofShader()_
-_name: ofShader_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -2107,35 +2107,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setUniformMatrix4f(*name, &m)
-
-<!--
-_syntax: setUniformMatrix4f(*name, &m)_
-_name: setUniformMatrix4f_
-_returns: void_
-_returns_description: _
-_parameters: const char *name, const ofMatrix4x4 &m_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void setUniformTexture(name, img, textureLocation)
 
 <!--
@@ -2385,16 +2356,16 @@ This unload the shader, which means that it will not be active on the graphics c
 
 <!----------------------------------------------------------------------------->
 
-### ~ofShader()
+###void setUniformMatrix4f(*name, &m)
 
 <!--
-_syntax: ~ofShader()_
-_name: ~ofShader_
-_returns: _
+_syntax: setUniformMatrix4f(*name, &m)_
+_name: setUniformMatrix4f_
+_returns: void_
 _returns_description: _
-_parameters: _
+_parameters: const char *name, const ofMatrix4x4 &m_
 _access: public_
-_version_started: _
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2411,24 +2382,23 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-##Variables
-
-
-
-###bool bLoaded
+###bool checkProgramLinkStatus(program)
 
 <!--
-_name: bLoaded_
-_type: bool_
+_syntax: checkProgramLinkStatus(program)_
+_name: checkProgramLinkStatus_
+_returns: bool_
+_returns_description: _
+_parameters: GLuint program_
 _access: private_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
+_constant: False_
+_static: no_
 _visible: True_
-_constant: True_
 _advanced: False_
 -->
 
@@ -2440,8 +2410,11 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
+
+##Variables
+
+
 
 ###GLuint program
 
@@ -2473,6 +2446,31 @@ _description: _
 <!--
 _name: shaders_
 _type: map< GLenum, GLuint >_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bLoaded
+
+<!--
+_name: bLoaded_
+_type: bool_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
