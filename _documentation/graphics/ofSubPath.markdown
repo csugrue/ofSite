@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,65 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void addCommand(&command)
-
-<!--
-_syntax: addCommand(&command)_
-_name: addCommand_
-_returns: void_
-_returns_description: _
-_parameters: const Command &command_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void close()
-
-<!--
-_syntax: close()_
-_name: close_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -125,6 +65,33 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###void addCommand(&command)
+
+<!--
+_syntax: addCommand(&command)_
+_name: addCommand_
+_returns: void_
+_returns_description: _
+_parameters: const Command &command_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
@@ -148,6 +115,33 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void close()
+
+<!--
+_syntax: close()_
+_name: close_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 
@@ -183,7 +177,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int size()
@@ -205,7 +198,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -241,7 +233,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###bool bClosed
@@ -266,7 +257,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###bool bHasChanged
@@ -284,7 +274,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,7 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -67,14 +65,13 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###void clearMemory()
+###void listDevices()
 
 <!--
-_syntax: clearMemory()_
-_name: clearMemory_
+_syntax: listDevices()_
+_name: listDevices_
 _returns: void_
 _returns_description: _
 _parameters: _
@@ -89,152 +86,6 @@ _advanced: False_
 -->
 
 _description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void close()
-
-<!--
-_syntax: close()_
-_name: close_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getHeight()
-
-<!--
-_syntax: getHeight()_
-_name: getHeight_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###unsigned char * getPixels()
-
-<!--
-_syntax: getPixels()_
-_name: getPixels_
-_returns: unsigned char *_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPixelsRef getPixelsRef()
-
-<!--
-_syntax: getPixelsRef()_
-_name: getPixelsRef_
-_returns: ofPixelsRef_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getWidth()
-
-<!--
-_syntax: getWidth()_
-_name: getWidth_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -270,6 +121,33 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###void update()
+
+<!--
+_syntax: update()_
+_name: update_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
@@ -299,14 +177,69 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###unsigned char * getPixels()
+
+<!--
+_syntax: getPixels()_
+_name: getPixels_
+_returns: unsigned char *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
-###void listDevices()
+###ofPixelsRef getPixelsRef()
 
 <!--
-_syntax: listDevices()_
-_name: listDevices_
+_syntax: getPixelsRef()_
+_name: getPixelsRef_
+_returns: ofPixelsRef_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void close()
+
+<!--
+_syntax: close()_
+_name: close_
 _returns: void_
 _returns_description: _
 _parameters: _
@@ -328,101 +261,13 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###void setDesiredFrameRate(framerate)
+###void clearMemory()
 
 <!--
-_syntax: setDesiredFrameRate(framerate)_
-_name: setDesiredFrameRate_
-_returns: void_
-_returns_description: _
-_parameters: int framerate_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setDeviceID(_deviceID)
-
-<!--
-_syntax: setDeviceID(_deviceID)_
-_name: setDeviceID_
-_returns: void_
-_returns_description: _
-_parameters: int _deviceID_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setVerbose(bTalkToMe)
-
-<!--
-_syntax: setVerbose(bTalkToMe)_
-_name: setVerbose_
-_returns: void_
-_returns_description: _
-_parameters: bool bTalkToMe_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void update()
-
-<!--
-_syntax: update()_
-_name: update_
+_syntax: clearMemory()_
+_name: clearMemory_
 _returns: void_
 _returns_description: _
 _parameters: _
@@ -437,7 +282,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -473,6 +317,145 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###float getWidth()
+
+<!--
+_syntax: getWidth()_
+_name: getWidth_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getHeight()
+
+<!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setVerbose(bTalkToMe)
+
+<!--
+_syntax: setVerbose(bTalkToMe)_
+_name: setVerbose_
+_returns: void_
+_returns_description: _
+_parameters: bool bTalkToMe_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setDeviceID(_deviceID)
+
+<!--
+_syntax: setDeviceID(_deviceID)_
+_name: setDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: int _deviceID_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setDesiredFrameRate(framerate)
+
+<!--
+_syntax: setDesiredFrameRate(framerate)_
+_name: setDesiredFrameRate_
+_returns: void_
+_returns_description: _
+_parameters: int framerate_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
@@ -495,7 +478,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -527,7 +509,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###bool bVerbose
@@ -545,7 +526,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -577,7 +557,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###ofPixels pixels
@@ -595,7 +574,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -627,7 +605,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###bool bIsFrameNew
@@ -645,7 +622,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -677,7 +653,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int height
@@ -695,7 +670,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

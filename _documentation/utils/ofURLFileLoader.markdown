@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,36 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void clear()
-
-<!--
-_syntax: clear()_
-_name: clear_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -96,7 +65,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int getAsync(url, name = "")
@@ -118,94 +86,6 @@ _advanced: False_
 -->
 
 _description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofHttpResponse handleRequest(request)
-
-<!--
-_syntax: handleRequest(request)_
-_name: handleRequest_
-_returns: ofHttpResponse_
-_returns_description: _
-_parameters: ofHttpRequest request_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void remove(id)
-
-<!--
-_syntax: remove(id)_
-_name: remove_
-_returns: void_
-_returns_description: _
-_parameters: int id_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int saveAsync(url, path)
-
-<!--
-_syntax: saveAsync(url, path)_
-_name: saveAsync_
-_returns: int_
-_returns_description: _
-_parameters: string url, string path_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -241,18 +121,17 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###void start()
+###int saveAsync(url, path)
 
 <!--
-_syntax: start()_
-_name: start_
-_returns: void_
+_syntax: saveAsync(url, path)_
+_name: saveAsync_
+_returns: int_
 _returns_description: _
-_parameters: _
-_access: protected_
+_parameters: string url, string path_
+_access: public_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -270,18 +149,17 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###void stop()
+###void remove(id)
 
 <!--
-_syntax: stop()_
-_name: stop_
+_syntax: remove(id)_
+_name: remove_
 _returns: void_
 _returns_description: _
-_parameters: _
-_access: protected_
+_parameters: int id_
+_access: public_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -293,6 +171,33 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void clear()
+
+<!--
+_syntax: clear()_
+_name: clear_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 
@@ -328,6 +233,61 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###void start()
+
+<!--
+_syntax: start()_
+_name: start_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void stop()
+
+<!--
+_syntax: stop()_
+_name: stop_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
@@ -351,6 +311,33 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofHttpResponse handleRequest(request)
+
+<!--
+_syntax: handleRequest(request)_
+_name: handleRequest_
+_returns: ofHttpResponse_
+_returns_description: _
+_parameters: ofHttpRequest request_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 
@@ -386,7 +373,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###ofHttpResponse responses
@@ -411,7 +397,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###Poco condition
@@ -429,7 +414,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

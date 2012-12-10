@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,7 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -67,15 +65,14 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###int getDeviceID()
+###string getDevicePath()
 
 <!--
-_syntax: getDeviceID()_
-_name: getDeviceID_
-_returns: int_
+_syntax: getDevicePath()_
+_name: getDevicePath_
+_returns: string_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -89,7 +86,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -125,15 +121,14 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###string getDevicePath()
+###int getDeviceID()
 
 <!--
-_syntax: getDevicePath()_
-_name: getDevicePath_
-_returns: string_
+_syntax: getDeviceID()_
+_name: getDeviceID_
+_returns: int_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -147,7 +142,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -183,7 +177,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###string deviceName
@@ -208,7 +201,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int deviceID
@@ -226,7 +218,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

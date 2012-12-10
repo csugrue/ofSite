@@ -35,14 +35,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###GLuint ofGetGLPrimitiveMode(mode)
+###ofPolyRenderMode ofGetOFPolyMode(m)
 
 <!--
-_syntax: ofGetGLPrimitiveMode(mode)_
-_name: ofGetGLPrimitiveMode_
-_returns: GLuint_
+_syntax: ofGetOFPolyMode(m)_
+_name: ofGetOFPolyMode_
+_returns: ofPolyRenderMode_
 _returns_description: _
-_parameters: ofPrimitiveMode mode_
+_parameters: GLuint m_
 _version_started: _
 _version_deprecated: _
 _summary: _
@@ -62,14 +62,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPolyRenderMode ofGetOFPolyMode(m)
+###GLuint ofGetGLPrimitiveMode(mode)
 
 <!--
-_syntax: ofGetOFPolyMode(m)_
-_name: ofGetOFPolyMode_
-_returns: ofPolyRenderMode_
+_syntax: ofGetGLPrimitiveMode(mode)_
+_name: ofGetGLPrimitiveMode_
+_returns: GLuint_
 _returns_description: _
-_parameters: GLuint m_
+_parameters: ofPrimitiveMode mode_
 _version_started: _
 _version_deprecated: _
 _summary: _

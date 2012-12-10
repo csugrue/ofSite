@@ -8,33 +8,6 @@
 
 <!----------------------------------------------------------------------------->
 
-###float * ofSoundGetSpectrum(nBands)
-
-<!--
-_syntax: ofSoundGetSpectrum(nBands)_
-_name: ofSoundGetSpectrum_
-_returns: float *_
-_returns_description: _
-_parameters: int nBands_
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void ofSoundSetVolume(vol)
 
 <!--
@@ -99,6 +72,33 @@ _name: ofSoundUpdate_
 _returns: void_
 _returns_description: _
 _parameters: _
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float * ofSoundGetSpectrum(nBands)
+
+<!--
+_syntax: ofSoundGetSpectrum(nBands)_
+_name: ofSoundGetSpectrum_
+_returns: float *_
+_returns_description: _
+_parameters: int nBands_
 _version_started: _
 _version_deprecated: _
 _summary: _

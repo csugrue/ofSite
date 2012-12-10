@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,210 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void close()
-
-<!--
-_syntax: close()_
-_name: close_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPtr getSoundStream()
-
-<!--
-_syntax: getSoundStream()_
-_name: getSoundStream_
-_returns: ofPtr_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###long unsigned long getTickCount()
-
-<!--
-_syntax: getTickCount()_
-_name: getTickCount_
-_returns: long unsigned long_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void listDevices()
-
-<!--
-_syntax: listDevices()_
-_name: listDevices_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setDeviceID(deviceID)
-
-<!--
-_syntax: setDeviceID(deviceID)_
-_name: setDeviceID_
-_returns: void_
-_returns_description: _
-_parameters: int deviceID_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setInput(*soundInput)
-
-<!--
-_syntax: setInput(*soundInput)_
-_name: setInput_
-_returns: void_
-_returns_description: _
-_parameters: ofBaseSoundInput *soundInput_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setOutput(*soundOutput)
-
-<!--
-_syntax: setOutput(*soundOutput)_
-_name: setOutput_
-_returns: void_
-_returns_description: _
-_parameters: ofBaseSoundOutput *soundOutput_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -270,6 +65,89 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###ofPtr getSoundStream()
+
+<!--
+_syntax: getSoundStream()_
+_name: getSoundStream_
+_returns: ofPtr_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void listDevices()
+
+<!--
+_syntax: listDevices()_
+_name: listDevices_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setDeviceID(deviceID)
+
+<!--
+_syntax: setDeviceID(deviceID)_
+_name: setDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: int deviceID_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
@@ -293,6 +171,61 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setInput(*soundInput)
+
+<!--
+_syntax: setInput(*soundInput)_
+_name: setInput_
+_returns: void_
+_returns_description: _
+_parameters: ofBaseSoundInput *soundInput_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setOutput(*soundOutput)
+
+<!--
+_syntax: setOutput(*soundOutput)_
+_name: setOutput_
+_returns: void_
+_returns_description: _
+_parameters: ofBaseSoundOutput *soundOutput_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 
@@ -328,7 +261,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###void start()
@@ -350,7 +282,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -386,6 +317,61 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###void close()
+
+<!--
+_syntax: close()_
+_name: close_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###long unsigned long getTickCount()
+
+<!--
+_syntax: getTickCount()_
+_name: getTickCount_
+_returns: long unsigned long_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
@@ -408,7 +394,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

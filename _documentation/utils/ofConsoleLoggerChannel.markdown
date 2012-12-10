@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,7 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -67,7 +65,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###void log(logLevel, &module, *format, ...)
@@ -96,7 +93,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###void log(logLevel, &module, *format, args)
@@ -118,7 +114,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

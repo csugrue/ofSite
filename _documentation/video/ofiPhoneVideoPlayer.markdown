@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,7 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -67,413 +65,6 @@ _description: _
 
 
 
-
-<!----------------------------------------------------------------------------->
-
-###void close()
-
-<!--
-_syntax: close()_
-_name: close_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getDuration()
-
-<!--
-_syntax: getDuration()_
-_name: getDuration_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getHeight()
-
-<!--
-_syntax: getHeight()_
-_name: getHeight_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool getIsMovieDone()
-
-<!--
-_syntax: getIsMovieDone()_
-_name: getIsMovieDone_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###unsigned char * getPixels()
-
-<!--
-_syntax: getPixels()_
-_name: getPixels_
-_returns: unsigned char *_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPixelsRef getPixelsRef()
-
-<!--
-_syntax: getPixelsRef()_
-_name: getPixelsRef_
-_returns: ofPixelsRef_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getPosition()
-
-<!--
-_syntax: getPosition()_
-_name: getPosition_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofTexture getTexture()
-
-<!--
-_syntax: getTexture()_
-_name: getTexture_
-_returns: ofTexture_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getWidth()
-
-<!--
-_syntax: getWidth()_
-_name: getWidth_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void initWithPath(path)
-
-<!--
-_syntax: initWithPath(path)_
-_name: initWithPath_
-_returns: void_
-_returns_description: _
-_parameters: string path_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isFrameNew()
-
-<!--
-_syntax: isFrameNew()_
-_name: isFrameNew_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isLoaded()
-
-<!--
-_syntax: isLoaded()_
-_name: isLoaded_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isPaused()
-
-<!--
-_syntax: isPaused()_
-_name: isPaused_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isPlaying()
-
-<!--
-_syntax: isPlaying()_
-_name: isPlaying_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
 <!----------------------------------------------------------------------------->
 
 ###bool loadMovie(name)
@@ -495,65 +86,6 @@ _advanced: False_
 -->
 
 _description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void play()
-
-<!--
-_syntax: play()_
-_name: play_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setPaused(bPause)
-
-<!--
-_syntax: setPaused(bPause)_
-_name: setPaused_
-_returns: void_
-_returns_description: _
-_parameters: bool bPause_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -589,17 +121,16 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###void setVolume(volume)
+###void close()
 
 <!--
-_syntax: setVolume(volume)_
-_name: setVolume_
+_syntax: close()_
+_name: close_
 _returns: void_
 _returns_description: _
-_parameters: int volume_
+_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -612,6 +143,33 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void play()
+
+<!--
+_syntax: play()_
+_name: play_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 
@@ -647,6 +205,257 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###bool isFrameNew()
+
+<!--
+_syntax: isFrameNew()_
+_name: isFrameNew_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###unsigned char * getPixels()
+
+<!--
+_syntax: getPixels()_
+_name: getPixels_
+_returns: unsigned char *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelsRef getPixelsRef()
+
+<!--
+_syntax: getPixelsRef()_
+_name: getPixelsRef_
+_returns: ofPixelsRef_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofTexture getTexture()
+
+<!--
+_syntax: getTexture()_
+_name: getTexture_
+_returns: ofTexture_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getWidth()
+
+<!--
+_syntax: getWidth()_
+_name: getWidth_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getHeight()
+
+<!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isPaused()
+
+<!--
+_syntax: isPaused()_
+_name: isPaused_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isLoaded()
+
+<!--
+_syntax: isLoaded()_
+_name: isLoaded_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isPlaying()
+
+<!--
+_syntax: isPlaying()_
+_name: isPlaying_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
@@ -670,6 +479,173 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getPosition()
+
+<!--
+_syntax: getPosition()_
+_name: getPosition_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getDuration()
+
+<!--
+_syntax: getDuration()_
+_name: getDuration_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool getIsMovieDone()
+
+<!--
+_syntax: getIsMovieDone()_
+_name: getIsMovieDone_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setPaused(bPause)
+
+<!--
+_syntax: setPaused(bPause)_
+_name: setPaused_
+_returns: void_
+_returns_description: _
+_parameters: bool bPause_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setVolume(volume)
+
+<!--
+_syntax: setVolume(volume)_
+_name: setVolume_
+_returns: void_
+_returns_description: _
+_parameters: int volume_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void initWithPath(path)
+
+<!--
+_syntax: initWithPath(path)_
+_name: initWithPath_
+_returns: void_
+_returns_description: _
+_parameters: string path_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 
@@ -705,7 +681,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ##Variables
@@ -727,7 +702,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -759,7 +733,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###bool videoWasStopped
@@ -777,7 +750,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -809,7 +781,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int height
@@ -827,7 +798,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -859,7 +829,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int vol
@@ -877,7 +846,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -909,7 +877,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###ofTexture videoTexture
@@ -927,7 +894,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -959,7 +925,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###GLint internalGLFormat
@@ -984,7 +949,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###GLubyte * pixelsTmp
@@ -994,55 +958,6 @@ _name: pixelsTmp_
 _type: GLubyte *_
 _access: protected_
 _version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bFrameNew
-
-<!--
-_name: bFrameNew_
-_type: bool_
-_access: protected_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bUpdatePixels
-
-<!--
-_name: bUpdatePixels_
-_type: bool_
-_access: protected_
-_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_

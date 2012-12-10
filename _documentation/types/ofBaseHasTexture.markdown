@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,7 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -67,7 +65,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###void setUseTexture(bUseTex)
@@ -89,7 +86,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

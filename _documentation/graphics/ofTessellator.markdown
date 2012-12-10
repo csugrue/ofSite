@@ -11,9 +11,6 @@ The fairly simple shape shown on the left needs to be broken into triangles to b
 ![tessellation](tessellation.png)
 
 
-
-
-
 ##Methods
 
 
@@ -37,7 +34,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -73,7 +69,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ### ofTessellator(&mom)
@@ -97,40 +92,8 @@ _advanced: False_
 _description: _
 
 
+
 Copy constructor to copy properties from one tessellator to another. 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void init()
-
-<!--
-_syntax: init()_
-_name: init_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
 
 
 
@@ -157,69 +120,8 @@ _advanced: False_
 _description: _
 
 
+
 Operator overloading to copy properties from one tessellator to another. 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void performTessellation(polyWindingMode, &dstmesh, bIs2D)
-
-<!--
-_syntax: performTessellation(polyWindingMode, &dstmesh, bIs2D)_
-_name: performTessellation_
-_returns: void_
-_returns_description: _
-_parameters: ofPolyWindingMode polyWindingMode, ofMesh &dstmesh, bool bIs2D_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void performTessellation(polyWindingMode, &dstpoly, bIs2D)
-
-<!--
-_syntax: performTessellation(polyWindingMode, &dstpoly, bIs2D)_
-_name: performTessellation_
-_returns: void_
-_returns_description: _
-_parameters: ofPolyWindingMode polyWindingMode, vector< ofPolyline > &dstpoly, bool bIs2D_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
 
 
 
@@ -247,9 +149,6 @@ _description: _
 
 
 Tessellates a vector of ofPolyline instances into a single ofMesh instance using the winding mode set in ofPolyWindingMode.
-
-
-
 
 
 
@@ -282,9 +181,6 @@ Tessellates a ofPolyline instance into a single ofMesh instance using the windin
 
 
 
-
-
-
 <!----------------------------------------------------------------------------->
 
 ###void tessellateToPolylines(&src, polyWindingMode, &dstpoly, bIs2D = false)
@@ -313,9 +209,6 @@ Tessellates a vector of ofPolyline instances into vector of ofPolyline instances
 
 
 
-
-
-
 <!----------------------------------------------------------------------------->
 
 ###void tessellateToPolylines(&src, polyWindingMode, &dstpoly, bIs2D = false)
@@ -338,7 +231,6 @@ _advanced: False_
 
 _description: _
 
-
 Tessellate multiple polylines into a single polyline.
 
 ~~~~{.cpp}
@@ -347,6 +239,82 @@ ofPolyline destination;
 // ... fill vec
 tess.performTessellation(destination, OF_POLY_WINDING_ODD, sources, true ); // true is for 2d
 ~~~~
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void performTessellation(polyWindingMode, &dstmesh, bIs2D)
+
+<!--
+_syntax: performTessellation(polyWindingMode, &dstmesh, bIs2D)_
+_name: performTessellation_
+_returns: void_
+_returns_description: _
+_parameters: ofPolyWindingMode polyWindingMode, ofMesh &dstmesh, bool bIs2D_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void performTessellation(polyWindingMode, &dstpoly, bIs2D)
+
+<!--
+_syntax: performTessellation(polyWindingMode, &dstpoly, bIs2D)_
+_name: performTessellation_
+_returns: void_
+_returns_description: _
+_parameters: ofPolyWindingMode polyWindingMode, vector< ofPolyline > &dstpoly, bool bIs2D_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void init()
+
+<!--
+_syntax: init()_
+_name: init_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 
@@ -382,7 +350,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###TESSalloc tessAllocator
@@ -400,7 +367,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

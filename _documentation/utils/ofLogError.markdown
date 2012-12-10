@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -38,7 +37,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ### ofLogError(&module, &message)
@@ -60,7 +58,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

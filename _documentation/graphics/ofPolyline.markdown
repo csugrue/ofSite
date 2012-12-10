@@ -4,7 +4,11 @@
 ##Description
 
 
+
+
+
 ofPolyLine allows you to combine multiple points into a single vector data object that can be drawn to the screen, manipulated point by point, and combined with other ofPolyline instances. It is less complex than the [ofPath](ofPath.html) and generally represents a single line or vector shape rather than multiple lines or shapes.
+
 
 You can add points to an ofPolyline by adding vertices:
 ~~~~{.cpp}
@@ -33,7 +37,6 @@ If you use the line or curveTo or bezierTo functions, you move the drawing point
 
 
 
-
 ##Methods
 
 
@@ -58,9 +61,7 @@ _advanced: False_
 
 _description: _
 
-
 Creates an ofPolyline.
-
 
 
 
@@ -89,7 +90,6 @@ _advanced: False_
 
 _description: _
 
-
 Creates an ofPolyline from a vector of ofVec2f or ofPoint objects.
 ~~~~{.cpp}
 vector<ofPoint> pts;
@@ -101,394 +101,6 @@ vector<ofPoint> pts;
 	ofPolyline cp(pts);
 ~~~~
 There is an easier way to draw circles though, using the arc() method.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void addVertex(&p)
-
-<!--
-_syntax: addVertex(&p)_
-_name: addVertex_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &p_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Adds a point using an ofPoint at the end of the ofPolyline.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void addVertex(x, y, z = 0)
-
-<!--
-_syntax: addVertex(x, y, z = 0)_
-_name: addVertex_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z=0_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Adds a point using floats instead of an ofPoint at the end of the ofPolyline.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void addVertexes(&verts)
-
-<!--
-_syntax: addVertexes(&verts)_
-_name: addVertexes_
-_returns: void_
-_returns_description: _
-_parameters: const vector< ofPoint > &verts_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Adds multiple points at the end of the ofPolyline using a vector of ofPoint objects, which can be declared like so:
-~~~~{.cpp}
-vector<ofPoint> verts;
-// make a pentagon
-float size = 80.f;
-float X1 = 0.125*sqrt(10 + 2*sqrt(5)) * size;
-float X2 = 0.125*sqrt(10 - 2*sqrt(5)) * size;
-float Y1 = 0.125*(sqrt(5) - 1) * size;
-float Y2 = 0.125*(sqrt(5) + 1) * size;
-verts.push_back(ofPoint(0, -0.5 * size));
-verts.push_back(ofPoint(-X1, -Y1));
-verts.push_back(ofPoint(-X2, Y2));
-verts.push_back(ofPoint(X2, Y2));
-verts.push_back(ofPoint(X1, -Y1));
-ofPolyline p;
-p.addVertexes(verts);
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void addVertexes(*verts, numverts)
-
-<!--
-_syntax: addVertexes(*verts, numverts)_
-_name: addVertexes_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint *verts, int numverts_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Adds multiple points at the end of the ofPolyline using a pointer to an array of ofPoint objects.
-~~~~{.cpp}
-ofPoint* verts = new ofPoint[5];
-// make a pentagon
-float size = 80.f;
-float X1 = 0.125*sqrt(10 + 2*sqrt(5)) * size;
-float X2 = 0.125*sqrt(10 - 2*sqrt(5)) * size;
-float Y1 = 0.125*(sqrt(5) - 1) * size;
-float Y2 = 0.125*(sqrt(5) + 1) * size;
-verts[0] = ofPoint(0, -0.5 * size);
-verts[1] = ofPoint(-X1, -Y1);
-verts[2] = ofPoint(-X2, Y2);
-verts[3] = ofPoint(X2, Y2);
-verts[4] = ofPoint(X1, -Y1);
-ofPolyline p;
-p.addVertexes(verts, 5);
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arc(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
-
-<!--
-_syntax: arc(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arc_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Draw an arc around the ofPoint p with the width of radiusX and the height of radiusY. The angleBegin and angleEnd indicate how far around you want the arc to extend. For instance, to draw a circle:
-~~~~{.cpp}
-ofPoint p(0, 0);
-polyline.arc(p,100,100,0,360,40); // circle with a diameter of 100
-~~~~
-~~~~{.cpp}
-ofPoint p(100, 0);
-polyline.arc(p,100,100,0,180,40); // semi-circle with a diameter of 100
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arc(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
-
-<!--
-_syntax: arc(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arc_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Draw an arc around the point x,y with the width of radiusX and the height of radiusY. The angleBegin and angleEnd indicate how far around you want the arc to extend. For instance, to draw a circle:
-~~~~{.cpp}
-polyline.arc(0,0,100,100,0,360,40); // circle with a diameter of 100
-~~~~
-~~~~{.cpp}
-polyline.arc(0,0,100,100,0,180,40); // semi-circle with a diameter of 100
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arc(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
-
-<!--
-_syntax: arc(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arc_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Draw an arc around the point x,y,z with the width of radiusX and the height of radiusY. The angleBegin and angleEnd indicate how far around you want the arc to extend. For instance, to draw a circle:
-~~~~{.cpp}
-// at middle and -100 back
-polyline.arc(ofGetWidth()/2,ofGetHeight()/2,100,100,100,0,360,40); // circle with a diameter of 100
-~~~~
-~~~~{.cpp}
-// at middle and -100 back
-polyline.arc(ofGetWidth()/2,ofGetHeight()/2,100,100,100,0,180,40); // semi-circle with a diameter of 100
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void bezierTo(&cp1, &cp2, &to, curveResolution = 16)
-
-<!--
-_syntax: bezierTo(&cp1, &cp2, &to, curveResolution = 16)_
-_name: bezierTo_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &cp1, const ofPoint &cp2, const ofPoint &to, int curveResolution=16_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates a cubic bezier line from the current drawing point with the 2 control points indicated by ofPoint cp1 and cp2, that ends at ofPoint to. For instance, the following:
-~~~~{.cpp}
-line.addVertex(ofPoint(200, 400));
-line.bezierTo(100, 100, 800, 100, 700, 400);
-~~~~
-Creates this:
-![polyline bezier](bezier.png)
-The control points are shown in yellow.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void bezierTo(cx1, cy1, cx2, cy2, x, y, curveResolution = 16)
-
-<!--
-_syntax: bezierTo(cx1, cy1, cx2, cy2, x, y, curveResolution = 16)_
-_name: bezierTo_
-_returns: void_
-_returns_description: _
-_parameters: float cx1, float cy1, float cx2, float cy2, float x, float y, int curveResolution=16_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates a cubic bezier line from the current drawing point with the 2 control points indicated by the coordinates cx1, cy1 and cx2, cy2, that ends at the coordinates x, y.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void bezierTo(cx1, cy1, cz1, cx2, cy2, cz2, x, y, z, curveResolution = 16)
-
-<!--
-_syntax: bezierTo(cx1, cy1, cz1, cx2, cy2, cz2, x, y, z, curveResolution = 16)_
-_name: bezierTo_
-_returns: void_
-_returns_description: _
-_parameters: float cx1, float cy1, float cz1, float cx2, float cy2, float cz2, float x, float y, float z, int curveResolution=16_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates a cubic bezier line in 3D space from the current drawing point with the 2 control points indicated by the coordinates cx1, cy1, cz1 and cx2, cy2, cz2, that ends at the coordinates x, y, z.
-~~~~{.cpp}
-float cx = ofGetWidth()/2;
-float cy = 200;
-float step = TWO_PI / 60;
-for (float i = 0.0; i < TWO_PI; i+=step) {
-	
-	
-	if(i == 0.0) {
-		line.addVertex(cx + (400*cos(i)), cy+400, 400 * sin(i));
-	} else {
-		line.bezierTo( cx - (200*cos(i)), cy-100, 400 * sin(i), 
-					   cx + (200*cos(i)), cy+600, 400 * sin(i), 
-					   cx + (400*cos(i)), cy+400, 400 * sin(i));
-	}
-}
-~~~~
-
 
 
 
@@ -517,7 +129,6 @@ _advanced: False_
 
 _description: _
 
-
 Removes all the points from the ofPolyline.
 
 
@@ -525,502 +136,14 @@ Removes all the points from the ofPolyline.
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###void close()
+###void addVertex(&p)
 
 <!--
-_syntax: close()_
-_name: close_
+_syntax: addVertex(&p)_
+_name: addVertex_
 _returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Closes the ofPolyline, meaning that all the vertices will be linked and can be "walked".
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void curveTo(&to, curveResolution = 16)
-
-<!--
-_syntax: curveTo(&to, curveResolution = 16)_
-_name: curveTo_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &to, int curveResolution=16_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Draws a curve to an ofPoint object passed in:
-~~~~{.cpp}
-float angle = 0;
-while (angle < TWO_PI ) {
-	b.curveTo( ofPoint(100*cos(angle), 100*sin(angle)));
-	b.curveTo( ofPoint(300*cos(angle), 300*sin(angle)));
-	angle += TWO_PI / 30;
-}
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void curveTo(x, y, z = 0, curveResolution = 16)
-
-<!--
-_syntax: curveTo(x, y, z = 0, curveResolution = 16)_
-_name: curveTo_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z=0, int curveResolution=16_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Draws a curve to the x,y,z points passed in with the optional resolution.
-~~~~{.cpp}
-float angle = 0;
-while (angle < TWO_PI ) {
-	polyline.curveTo(100*cos(angle), 0, 100*sin(angle));
-	polyline.curveTo(300*cos(angle), 300, 300*sin(angle));
-	angle += TWO_PI / 30;
-}
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw()
-
-<!--
-_syntax: draw()_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Draw the line using the current renderer.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getArea()
-
-<!--
-_syntax: getArea()_
-_name: getArea_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Gets the precise area bounded by the line.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofRectangle getBoundingBox()
-
-<!--
-_syntax: getBoundingBox()_
-_name: getBoundingBox_
-_returns: ofRectangle_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Returns the bounding box of the shape, taking into account all the points to determine the extents of the polyline.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPoint getCentroid2D()
-
-<!--
-_syntax: getCentroid2D()_
-_name: getCentroid2D_
-_returns: ofPoint_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Get the center of the area bounded by the line.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPoint getClosestPoint(&target, *nearestIndex = NULL)
-
-<!--
-_syntax: getClosestPoint(&target, *nearestIndex = NULL)_
-_name: getClosestPoint_
-_returns: ofPoint_
-_returns_description: _
-_parameters: const ofPoint &target, unsigned int *nearestIndex=NULL_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-This returns the point on the line closest to the target. You can also optionally pass a pointer to/address of an unsigned int to get the index of the closest vertex.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getPerimeter()
-
-<!--
-_syntax: getPerimeter()_
-_name: getPerimeter_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Returns the size of the perimeter of the polyline, good for determining length of the line, rather than just the bounding box shape.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPolyline getResampledByCount(count)
-
-<!--
-_syntax: getResampledByCount(count)_
-_name: getResampledByCount_
-_returns: ofPolyline_
-_returns_description: _
-_parameters: int count_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-This resamples the line based on the spacing passed in. The lower the count passed in, the more points will be eliminated. This doesn't add new points to the line though.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPolyline getResampledBySpacing(spacing)
-
-<!--
-_syntax: getResampledBySpacing(spacing)_
-_name: getResampledBySpacing_
-_returns: ofPolyline_
-_returns_description: _
-_parameters: float spacing_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-This resamples the line based on the spacing passed in. The larger the spacing, the more points will be eliminated.
-~~~~{.cpp}
-line.draw();
-ofTranslate(400, 0);
-line.getResampledBySpacing(100).draw();
-~~~~
-![polyline resample](resample.png)
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPolyline getSmoothed(smoothingSize, smoothingShape = 0)
-
-<!--
-_syntax: getSmoothed(smoothingSize, smoothingShape = 0)_
-_name: getSmoothed_
-_returns: ofPolyline_
-_returns_description: _
-_parameters: int smoothingSize, float smoothingShape=0_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-This returns a smoothed version of the ofPolyline.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPoint getVertices()
-
-<!--
-_syntax: getVertices()_
-_name: getVertices_
-_returns: ofPoint_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Returns the vector of vertices that the line contains, vector<ofPoint> &.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool hasChanged()
-
-<!--
-_syntax: hasChanged()_
-_name: hasChanged_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Returns whether the vertices within the line have changed.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool inside(x, y)
-
-<!--
-_syntax: inside(x, y)_
-_name: inside_
-_returns: bool_
-_returns_description: _
-_parameters: float x, float y_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Tests whether the x,y coordinates are within a closed ofPolyline.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool inside(&p)
-
-<!--
-_syntax: inside(&p)_
-_name: inside_
-_returns: bool_
 _returns_description: _
 _parameters: const ofPoint &p_
 _access: public_
@@ -1035,9 +158,7 @@ _advanced: False_
 
 _description: _
 
-
-Tests whether the ofPoint is within a closed ofPolyline.
-
+Adds a point using an ofPoint at the end of the ofPolyline.
 
 
 
@@ -1046,76 +167,14 @@ Tests whether the ofPoint is within a closed ofPolyline.
 
 <!----------------------------------------------------------------------------->
 
-###bool inside(x, y, &polyline)
+###void addVertex(x, y, z = 0)
 
 <!--
-_syntax: inside(x, y, &polyline)_
-_name: inside_
-_returns: bool_
+_syntax: addVertex(x, y, z = 0)_
+_name: addVertex_
+_returns: void_
 _returns_description: _
-_parameters: float x, float y, const ofPolyline &polyline_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Test whether the x,y point is within anothe polyline, passed in as ofPolyline&
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool inside(&p, &polyline)
-
-<!--
-_syntax: inside(&p, &polyline)_
-_name: inside_
-_returns: bool_
-_returns_description: _
-_parameters: const ofPoint &p, const ofPolyline &polyline_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Test whether the ofPoint is within anothe polyline, passed in as ofPolyline&
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isClosed()
-
-<!--
-_syntax: isClosed()_
-_name: isClosed_
-_returns: bool_
-_returns_description: _
-_parameters: _
+_parameters: float x, float y, float z=0_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -1128,9 +187,97 @@ _advanced: False_
 
 _description: _
 
+Adds a point using floats instead of an ofPoint at the end of the ofPolyline.
 
-Whether the shape is closed or not. Certain operations, like getSmoothed() can only be performed on closed shapes.
 
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void addVertexes(&verts)
+
+<!--
+_syntax: addVertexes(&verts)_
+_name: addVertexes_
+_returns: void_
+_returns_description: _
+_parameters: const vector< ofPoint > &verts_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Adds multiple points at the end of the ofPolyline using a vector of ofPoint objects, which can be declared like so:
+~~~~{.cpp}
+vector<ofPoint> verts;
+// make a pentagon
+float size = 80.f;
+float X1 = 0.125*sqrt(10 + 2*sqrt(5)) * size;
+float X2 = 0.125*sqrt(10 - 2*sqrt(5)) * size;
+float Y1 = 0.125*(sqrt(5) - 1) * size;
+float Y2 = 0.125*(sqrt(5) + 1) * size;
+verts.push_back(ofPoint(0, -0.5 * size));
+verts.push_back(ofPoint(-X1, -Y1));
+verts.push_back(ofPoint(-X2, Y2));
+verts.push_back(ofPoint(X2, Y2));
+verts.push_back(ofPoint(X1, -Y1));
+ofPolyline p;
+p.addVertexes(verts);
+~~~~
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void addVertexes(*verts, numverts)
+
+<!--
+_syntax: addVertexes(*verts, numverts)_
+_name: addVertexes_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint *verts, int numverts_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Adds multiple points at the end of the ofPolyline using a pointer to an array of ofPoint objects.
+~~~~{.cpp}
+ofPoint* verts = new ofPoint[5];
+// make a pentagon
+float size = 80.f;
+float X1 = 0.125*sqrt(10 + 2*sqrt(5)) * size;
+float X2 = 0.125*sqrt(10 - 2*sqrt(5)) * size;
+float Y1 = 0.125*(sqrt(5) - 1) * size;
+float Y2 = 0.125*(sqrt(5) + 1) * size;
+verts[0] = ofPoint(0, -0.5 * size);
+verts[1] = ofPoint(-X1, -Y1);
+verts[2] = ofPoint(-X2, Y2);
+verts[3] = ofPoint(X2, Y2);
+verts[4] = ofPoint(X1, -Y1);
+ofPolyline p;
+p.addVertexes(verts, 5);
+~~~~
 
 
 
@@ -1159,9 +306,7 @@ _advanced: False_
 
 _description: _
 
-
 Add a line from the last point added, or from 0,0 if no point is set, to the point indicated by the ofPoint passesd in.
-
 
 
 
@@ -1190,9 +335,7 @@ _advanced: False_
 
 _description: _
 
-
 Add a line from the last point added, or from 0,0 if no point is set, to the point indicated by the floats x,y,z passesd in.
-
 
 
 
@@ -1201,14 +344,14 @@ Add a line from the last point added, or from 0,0 if no point is set, to the poi
 
 <!----------------------------------------------------------------------------->
 
-###ofPoint operator[](index)
+###void arc(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
 
 <!--
-_syntax: operator[](index)_
-_name: operator[]_
-_returns: ofPoint_
+_syntax: arc(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
+_name: arc_
+_returns: void_
 _returns_description: _
-_parameters: int index_
+_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -1221,20 +364,271 @@ _advanced: False_
 
 _description: _
 
-
-The [] operator allows you to access the points of the ofPolyline just like you would in an array, so to make the points of a line follow the mouse movement, you could do:
+Draw an arc around the ofPoint p with the width of radiusX and the height of radiusY. The angleBegin and angleEnd indicate how far around you want the arc to extend. For instance, to draw a circle:
 ~~~~{.cpp}
-line[0].set(mouseX, mouseY);
-int i = 1;
-while ( i<bounds.size()) {
-	
-	float angle = atan2(line[i-1].y - line[i].y, line[i-1].x - line[i].x);  
-	bounds[i].set(bounds[i-1].x - cos(angle) * 20, bounds[i-1].y - sin(angle) * 20);
-	
-	i++;
+ofPoint p(0, 0);
+polyline.arc(p,100,100,0,360,40); // circle with a diameter of 100
+~~~~
+~~~~{.cpp}
+ofPoint p(100, 0);
+polyline.arc(p,100,100,0,180,40); // semi-circle with a diameter of 100
+~~~~
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arc(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+
+<!--
+_syntax: arc(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
+_name: arc_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Draw an arc around the point x,y with the width of radiusX and the height of radiusY. The angleBegin and angleEnd indicate how far around you want the arc to extend. For instance, to draw a circle:
+~~~~{.cpp}
+polyline.arc(0,0,100,100,0,360,40); // circle with a diameter of 100
+~~~~
+~~~~{.cpp}
+polyline.arc(0,0,100,100,0,180,40); // semi-circle with a diameter of 100
+~~~~
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arc(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+
+<!--
+_syntax: arc(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
+_name: arc_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Draw an arc around the point x,y,z with the width of radiusX and the height of radiusY. The angleBegin and angleEnd indicate how far around you want the arc to extend. For instance, to draw a circle:
+~~~~{.cpp}
+// at middle and -100 back
+polyline.arc(ofGetWidth()/2,ofGetHeight()/2,100,100,100,0,360,40); // circle with a diameter of 100
+~~~~
+~~~~{.cpp}
+// at middle and -100 back
+polyline.arc(ofGetWidth()/2,ofGetHeight()/2,100,100,100,0,180,40); // semi-circle with a diameter of 100
+~~~~
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void curveTo(&to, curveResolution = 16)
+
+<!--
+_syntax: curveTo(&to, curveResolution = 16)_
+_name: curveTo_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &to, int curveResolution=16_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Draws a curve to an ofPoint object passed in:
+~~~~{.cpp}
+float angle = 0;
+while (angle < TWO_PI ) {
+	b.curveTo( ofPoint(100*cos(angle), 100*sin(angle)));
+	b.curveTo( ofPoint(300*cos(angle), 300*sin(angle)));
+	angle += TWO_PI / 30;
 }
 ~~~~
 
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void curveTo(x, y, z = 0, curveResolution = 16)
+
+<!--
+_syntax: curveTo(x, y, z = 0, curveResolution = 16)_
+_name: curveTo_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z=0, int curveResolution=16_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Draws a curve to the x,y,z points passed in with the optional resolution.
+~~~~{.cpp}
+float angle = 0;
+while (angle < TWO_PI ) {
+	polyline.curveTo(100*cos(angle), 0, 100*sin(angle));
+	polyline.curveTo(300*cos(angle), 300, 300*sin(angle));
+	angle += TWO_PI / 30;
+}
+~~~~
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void bezierTo(&cp1, &cp2, &to, curveResolution = 16)
+
+<!--
+_syntax: bezierTo(&cp1, &cp2, &to, curveResolution = 16)_
+_name: bezierTo_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &cp1, const ofPoint &cp2, const ofPoint &to, int curveResolution=16_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Creates a cubic bezier line from the current drawing point with the 2 control points indicated by ofPoint cp1 and cp2, that ends at ofPoint to. For instance, the following:
+~~~~{.cpp}
+line.addVertex(ofPoint(200, 400));
+line.bezierTo(100, 100, 800, 100, 700, 400);
+~~~~
+Creates this:
+![polyline bezier](bezier.png)
+The control points are shown in yellow.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void bezierTo(cx1, cy1, cx2, cy2, x, y, curveResolution = 16)
+
+<!--
+_syntax: bezierTo(cx1, cy1, cx2, cy2, x, y, curveResolution = 16)_
+_name: bezierTo_
+_returns: void_
+_returns_description: _
+_parameters: float cx1, float cy1, float cx2, float cy2, float x, float y, int curveResolution=16_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Creates a cubic bezier line from the current drawing point with the 2 control points indicated by the coordinates cx1, cy1 and cx2, cy2, that ends at the coordinates x, y.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void bezierTo(cx1, cy1, cz1, cx2, cy2, cz2, x, y, z, curveResolution = 16)
+
+<!--
+_syntax: bezierTo(cx1, cy1, cz1, cx2, cy2, cz2, x, y, z, curveResolution = 16)_
+_name: bezierTo_
+_returns: void_
+_returns_description: _
+_parameters: float cx1, float cy1, float cz1, float cx2, float cy2, float cz2, float x, float y, float z, int curveResolution=16_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Creates a cubic bezier line in 3D space from the current drawing point with the 2 control points indicated by the coordinates cx1, cy1, cz1 and cx2, cy2, cz2, that ends at the coordinates x, y, z.
+~~~~{.cpp}
+float cx = ofGetWidth()/2;
+float cy = 200;
+float step = TWO_PI / 60;
+for (float i = 0.0; i < TWO_PI; i+=step) {
+	
+	
+	if(i == 0.0) {
+		line.addVertex(cx + (400*cos(i)), cy+400, 400 * sin(i));
+	} else {
+		line.bezierTo( cx - (200*cos(i)), cy-100, 400 * sin(i), 
+					   cx + (200*cos(i)), cy+600, 400 * sin(i), 
+					   cx + (400*cos(i)), cy+400, 400 * sin(i));
+	}
+}
+~~~~
 
 
 
@@ -1263,10 +657,8 @@ _advanced: False_
 
 _description: _
 
-
 Creates a quadratic bezier line in 3D space from the current drawing point with the beginning indicated by the coordinates cx1, cy1, cz1, the control point at cx2, cy2, cz2, and that ends at the coordinates x, y, z.
 ![polyline curves](curves.png)
-
 
 
 
@@ -1295,9 +687,7 @@ _advanced: False_
 
 _description: _
 
-
 Creates a quadratic bezier line in 2D space from the current drawing point with the beginning indicated by the point p1, the control point at p2, and that ends at the point p3.
-
 
 
 
@@ -1326,7 +716,6 @@ _advanced: False_
 
 _description: _
 
-
 Creates a quadratic bezier line in 3D space from the current drawing point with the beginning indicated by the coordinates cx1, cy1, the control point at cx2, cy2, and that ends at the coordinates x, y.
 
 
@@ -1334,17 +723,16 @@ Creates a quadratic bezier line in 3D space from the current drawing point with 
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###void resize(size)
+###ofPolyline getSmoothed(smoothingSize, smoothingShape = 0)
 
 <!--
-_syntax: resize(size)_
-_name: resize_
-_returns: void_
+_syntax: getSmoothed(smoothingSize, smoothingShape = 0)_
+_name: getSmoothed_
+_returns: ofPolyline_
 _returns_description: _
-_parameters: size_t size_
+_parameters: int smoothingSize, float smoothingShape=0_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -1357,9 +745,7 @@ _advanced: False_
 
 _description: _
 
-
-Resize the number of points in the ofPolyline to the value passed in.
-
+This returns a smoothed version of the ofPolyline.
 
 
 
@@ -1368,43 +754,14 @@ Resize the number of points in the ofPolyline to the value passed in.
 
 <!----------------------------------------------------------------------------->
 
-###void setCircleResolution(res)
+###ofPolyline getResampledBySpacing(spacing)
 
 <!--
-_syntax: setCircleResolution(res)_
-_name: setCircleResolution_
-_returns: void_
+_syntax: getResampledBySpacing(spacing)_
+_name: getResampledBySpacing_
+_returns: ofPolyline_
 _returns_description: _
-_parameters: int res_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setClosed(tf)
-
-<!--
-_syntax: setClosed(tf)_
-_name: setClosed_
-_returns: void_
-_returns_description: _
-_parameters: bool tf_
+_parameters: float spacing_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -1417,9 +774,158 @@ _advanced: False_
 
 _description: _
 
+This resamples the line based on the spacing passed in. The larger the spacing, the more points will be eliminated.
+~~~~{.cpp}
+line.draw();
+ofTranslate(400, 0);
+line.getResampledBySpacing(100).draw();
+~~~~
+![polyline resample](resample.png)
 
-Closes the ofPolyline, meaning that all the vertices will be linked and can be "walked".
 
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPolyline getResampledByCount(count)
+
+<!--
+_syntax: getResampledByCount(count)_
+_name: getResampledByCount_
+_returns: ofPolyline_
+_returns_description: _
+_parameters: int count_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+This resamples the line based on the spacing passed in. The lower the count passed in, the more points will be eliminated. This doesn't add new points to the line though.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofRectangle getBoundingBox()
+
+<!--
+_syntax: getBoundingBox()_
+_name: getBoundingBox_
+_returns: ofRectangle_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Returns the bounding box of the shape, taking into account all the points to determine the extents of the polyline.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPoint getClosestPoint(&target, *nearestIndex = NULL)
+
+<!--
+_syntax: getClosestPoint(&target, *nearestIndex = NULL)_
+_name: getClosestPoint_
+_returns: ofPoint_
+_returns_description: _
+_parameters: const ofPoint &target, unsigned int *nearestIndex=NULL_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+This returns the point on the line closest to the target. You can also optionally pass a pointer to/address of an unsigned int to get the index of the closest vertex.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool inside(x, y)
+
+<!--
+_syntax: inside(x, y)_
+_name: inside_
+_returns: bool_
+_returns_description: _
+_parameters: float x, float y_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Tests whether the x,y coordinates are within a closed ofPolyline.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool inside(&p)
+
+<!--
+_syntax: inside(&p)_
+_name: inside_
+_returns: bool_
+_returns_description: _
+_parameters: const ofPoint &p_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Tests whether the ofPoint is within a closed ofPolyline.
 
 
 
@@ -1448,9 +954,7 @@ _advanced: False_
 
 _description: _
 
-
 Simplifies the polyline, removing un-necessary vertices. The tolerance determines how dis-similar points need to be to stay in the line. Higher tolerance means more points removed, lower tolerance means less points removed.
-
 
 
 
@@ -1479,7 +983,6 @@ _advanced: False_
 
 _description: _
 
-
 The number of points in the ofPolyline.
 
 
@@ -1487,19 +990,18 @@ The number of points in the ofPolyline.
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###void arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)
+###ofPoint operator[](index)
 
 <!--
-_syntax: arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)_
-_name: arc_
-_returns: void_
+_syntax: operator[](index)_
+_name: operator[]_
+_returns: ofPoint_
 _returns_description: _
-_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, bool clockwise, int curveResolution=20_
+_parameters: int index_
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1510,6 +1012,18 @@ _advanced: False_
 
 _description: _
 
+The [] operator allows you to access the points of the ofPolyline just like you would in an array, so to make the points of a line follow the mouse movement, you could do:
+~~~~{.cpp}
+line[0].set(mouseX, mouseY);
+int i = 1;
+while ( i<bounds.size()) {
+	
+	float angle = atan2(line[i-1].y - line[i].y, line[i-1].x - line[i].x);  
+	bounds[i].set(bounds[i-1].x - cos(angle) * 20, bounds[i-1].y - sin(angle) * 20);
+	
+	i++;
+}
+~~~~
 
 
 
@@ -1518,16 +1032,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+###void resize(size)
 
 <!--
-_syntax: arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arcNegative_
+_syntax: resize(size)_
+_name: resize_
 _returns: void_
 _returns_description: _
-_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_parameters: size_t size_
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1538,6 +1052,7 @@ _advanced: False_
 
 _description: _
 
+Resize the number of points in the ofPolyline to the value passed in.
 
 
 
@@ -1546,16 +1061,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+###void setClosed(tf)
 
 <!--
-_syntax: arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arcNegative_
+_syntax: setClosed(tf)_
+_name: setClosed_
 _returns: void_
 _returns_description: _
-_parameters: float x, float y, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_parameters: bool tf_
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1566,6 +1081,7 @@ _advanced: False_
 
 _description: _
 
+Closes the ofPolyline, meaning that all the vertices will be linked and can be "walked".
 
 
 
@@ -1574,16 +1090,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+###bool isClosed()
 
 <!--
-_syntax: arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arcNegative_
-_returns: void_
+_syntax: isClosed()_
+_name: isClosed_
+_returns: bool_
 _returns_description: _
-_parameters: float x, float y, float z, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1594,6 +1110,7 @@ _advanced: False_
 
 _description: _
 
+Whether the shape is closed or not. Certain operations, like getSmoothed() can only be performed on closed shapes.
 
 
 
@@ -1602,16 +1119,277 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float wrapAngle(angleRad)
+###void close()
 
 <!--
-_syntax: wrapAngle(angleRad)_
-_name: wrapAngle_
+_syntax: close()_
+_name: close_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Closes the ofPolyline, meaning that all the vertices will be linked and can be "walked".
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool hasChanged()
+
+<!--
+_syntax: hasChanged()_
+_name: hasChanged_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Returns whether the vertices within the line have changed.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPoint getVertices()
+
+<!--
+_syntax: getVertices()_
+_name: getVertices_
+_returns: ofPoint_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Returns the vector of vertices that the line contains, vector<ofPoint> &.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getPerimeter()
+
+<!--
+_syntax: getPerimeter()_
+_name: getPerimeter_
 _returns: float_
 _returns_description: _
-_parameters: float angleRad_
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Returns the size of the perimeter of the polyline, good for determining length of the line, rather than just the bounding box shape.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getArea()
+
+<!--
+_syntax: getArea()_
+_name: getArea_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Gets the precise area bounded by the line.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPoint getCentroid2D()
+
+<!--
+_syntax: getCentroid2D()_
+_name: getCentroid2D_
+_returns: ofPoint_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Get the center of the area bounded by the line.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw()
+
+<!--
+_syntax: draw()_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Draw the line using the current renderer.
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool inside(x, y, &polyline)
+
+<!--
+_syntax: inside(x, y, &polyline)_
+_name: inside_
+_returns: bool_
+_returns_description: _
+_parameters: float x, float y, const ofPolyline &polyline_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Test whether the x,y point is within anothe polyline, passed in as ofPolyline&
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool inside(&p, &polyline)
+
+<!--
+_syntax: inside(&p, &polyline)_
+_name: inside_
+_returns: bool_
+_returns_description: _
+_parameters: const ofPoint &p, const ofPolyline &polyline_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+Test whether the ofPoint is within anothe polyline, passed in as ofPolyline&
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setCircleResolution(res)
+
+<!--
+_syntax: setCircleResolution(res)_
+_name: setCircleResolution_
+_returns: void_
+_returns_description: _
+_parameters: int res_
 _access: private_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1656,7 +1434,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###ofPoint curveVertices
@@ -1674,7 +1451,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -1706,7 +1482,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###bool bClosed
@@ -1731,7 +1506,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###bool bHasChanged
@@ -1749,7 +1523,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

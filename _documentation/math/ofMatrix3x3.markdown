@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,471 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float determinant()
-
-<!--
-_syntax: determinant()_
-_name: determinant_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float determinant(&A)
-
-<!--
-_syntax: determinant(&A)_
-_name: determinant_
-_returns: float_
-_returns_description: _
-_parameters: const ofMatrix3x3 &A_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix3x3 inverse(&A)
-
-<!--
-_syntax: inverse(&A)_
-_name: inverse_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: const ofMatrix3x3 &A_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void invert()
-
-<!--
-_syntax: invert()_
-_name: invert_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix3x3 operator*(scalar)
-
-<!--
-_syntax: operator*(scalar)_
-_name: operator*_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: float scalar_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix3x3 operator*(&B)
-
-<!--
-_syntax: operator*(&B)_
-_name: operator*_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void operator*=(&B)
-
-<!--
-_syntax: operator*=(&B)_
-_name: operator*=_
-_returns: void_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void operator*=(scalar)
-
-<!--
-_syntax: operator*=(scalar)_
-_name: operator*=_
-_returns: void_
-_returns_description: _
-_parameters: float scalar_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix3x3 operator+(&B)
-
-<!--
-_syntax: operator+(&B)_
-_name: operator+_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void operator+=(&B)
-
-<!--
-_syntax: operator+=(&B)_
-_name: operator+=_
-_returns: void_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix3x3 operator-(&B)
-
-<!--
-_syntax: operator-(&B)_
-_name: operator-_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void operator-=(&B)
-
-<!--
-_syntax: operator-=(&B)_
-_name: operator-=_
-_returns: void_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix3x3 operator/(scalar)
-
-<!--
-_syntax: operator/(scalar)_
-_name: operator/_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: float scalar_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void operator/=(&B)
-
-<!--
-_syntax: operator/=(&B)_
-_name: operator/=_
-_returns: void_
-_returns_description: _
-_parameters: const ofMatrix3x3 &B_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void operator/=(scalar)
-
-<!--
-_syntax: operator/=(scalar)_
-_name: operator/=_
-_returns: void_
-_returns_description: _
-_parameters: float scalar_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float & operator[](&index)
-
-<!--
-_syntax: operator[](&index)_
-_name: operator[]_
-_returns: float &_
-_returns_description: _
-_parameters: const int &index_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -531,6 +65,33 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###float & operator[](&index)
+
+<!--
+_syntax: operator[](&index)_
+_name: operator[]_
+_returns: float &_
+_returns_description: _
+_parameters: const int &index_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
@@ -553,7 +114,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -589,19 +149,410 @@ _description: _
 
 
 
+<!----------------------------------------------------------------------------->
+
+###float determinant()
+
+<!--
+_syntax: determinant()_
+_name: determinant_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
 
 <!----------------------------------------------------------------------------->
 
-###ofMatrix3x3 entrywiseTimes(&A)
+###float determinant(&A)
 
 <!--
-_syntax: entrywiseTimes(&A)_
-_name: entrywiseTimes_
+_syntax: determinant(&A)_
+_name: determinant_
+_returns: float_
+_returns_description: _
+_parameters: const ofMatrix3x3 &A_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void invert()
+
+<!--
+_syntax: invert()_
+_name: invert_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofMatrix3x3 inverse(&A)
+
+<!--
+_syntax: inverse(&A)_
+_name: inverse_
 _returns: ofMatrix3x3_
 _returns_description: _
 _parameters: const ofMatrix3x3 &A_
 _access: public_
-_version_started: 0071_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofMatrix3x3 operator+(&B)
+
+<!--
+_syntax: operator+(&B)_
+_name: operator+_
+_returns: ofMatrix3x3_
+_returns_description: _
+_parameters: const ofMatrix3x3 &B_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void operator+=(&B)
+
+<!--
+_syntax: operator+=(&B)_
+_name: operator+=_
+_returns: void_
+_returns_description: _
+_parameters: const ofMatrix3x3 &B_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofMatrix3x3 operator-(&B)
+
+<!--
+_syntax: operator-(&B)_
+_name: operator-_
+_returns: ofMatrix3x3_
+_returns_description: _
+_parameters: const ofMatrix3x3 &B_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void operator-=(&B)
+
+<!--
+_syntax: operator-=(&B)_
+_name: operator-=_
+_returns: void_
+_returns_description: _
+_parameters: const ofMatrix3x3 &B_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofMatrix3x3 operator*(scalar)
+
+<!--
+_syntax: operator*(scalar)_
+_name: operator*_
+_returns: ofMatrix3x3_
+_returns_description: _
+_parameters: float scalar_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void operator*=(&B)
+
+<!--
+_syntax: operator*=(&B)_
+_name: operator*=_
+_returns: void_
+_returns_description: _
+_parameters: const ofMatrix3x3 &B_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void operator*=(scalar)
+
+<!--
+_syntax: operator*=(scalar)_
+_name: operator*=_
+_returns: void_
+_returns_description: _
+_parameters: float scalar_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofMatrix3x3 operator*(&B)
+
+<!--
+_syntax: operator*(&B)_
+_name: operator*_
+_returns: ofMatrix3x3_
+_returns_description: _
+_parameters: const ofMatrix3x3 &B_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofMatrix3x3 operator/(scalar)
+
+<!--
+_syntax: operator/(scalar)_
+_name: operator/_
+_returns: ofMatrix3x3_
+_returns_description: _
+_parameters: float scalar_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void operator/=(&B)
+
+<!--
+_syntax: operator/=(&B)_
+_name: operator/=_
+_returns: void_
+_returns_description: _
+_parameters: const ofMatrix3x3 &B_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void operator/=(scalar)
+
+<!--
+_syntax: operator/=(scalar)_
+_name: operator/=_
+_returns: void_
+_returns_description: _
+_parameters: float scalar_
+_access: public_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -646,7 +597,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###float b
@@ -664,7 +614,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -696,7 +645,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###float d
@@ -714,7 +662,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -746,7 +693,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###float f
@@ -764,7 +710,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -796,7 +741,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###float h
@@ -821,7 +765,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###float i
@@ -839,7 +782,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

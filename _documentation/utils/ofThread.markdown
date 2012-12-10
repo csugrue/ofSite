@@ -3,7 +3,6 @@
 
 ##Description
 
-
 ofThread is a thread base class with a built in mutex. A [thread](http://en.wikipedia.org/wiki/Thread_(computing)) is essentially a mini processing object you can run in parallel to your main application loop and is useful for running time intensive operations without slowing down your app.
 
 ####Implementing a Thread
@@ -156,10 +155,6 @@ A useful tool in debugging thread timing and access is the ofThread verbose mode
 
 Ok soldier, lock and load … good luck!
 
-
-
-
-
 ##Methods
 
 
@@ -184,13 +179,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
 <!----------------------------------------------------------------------------->
 
 ### ~ofThread()
@@ -213,13 +201,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
 <!----------------------------------------------------------------------------->
 
 ###bool isThreadRunning()
@@ -241,7 +222,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 Returns true if the thread is currently running. This is especially useful inside the thread's `threadedFunction()` when you want it to loop continuously until it's told to exit:
 
@@ -267,47 +247,6 @@ class MyThread : public ofThread {
 };
 
 ~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool lock()
-
-<!--
-_syntax: lock()_
-_name: lock_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Try to lock the mutex.
-
-If the thread was started in blocking mode in `startThread()`, any thread (including your app main loop) will wait until the mutex is unlocked.
-
-If the thread is non-blocking, this call will immediately return a true or false if the mutex is available. It is up to you to make sure the resource is not being used when accessing it. See the [Wikipedia article on Non-blocking](http://en.wikipedia.org/wiki/Non-blocking_algorithm) for reasons as to why using a non-blocking thread might be more advantageous.
-
-
-
-
-
-
 
 <!----------------------------------------------------------------------------->
 
@@ -338,11 +277,61 @@ Set *blocking* to true if you want the [mutex](http://en.wikipedia.org/wiki/Mute
 
 Set *verbose* to true if you want detailed logging on thread and mutex events.
 
+<!----------------------------------------------------------------------------->
+
+###bool lock()
+
+<!--
+_syntax: lock()_
+_name: lock_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
+Try to lock the mutex.
+
+If the thread was started in blocking mode in `startThread()`, any thread (including your app main loop) will wait until the mutex is unlocked.
+
+If the thread is non-blocking, this call will immediately return a true or false if the mutex is available. It is up to you to make sure the resource is not being used when accessing it. See the [Wikipedia article on Non-blocking](http://en.wikipedia.org/wiki/Non-blocking_algorithm) for reasons as to why using a non-blocking thread might be more advantageous.
+
+<!----------------------------------------------------------------------------->
+
+###bool unlock()
+
+<!--
+_syntax: unlock()_
+_name: unlock_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
+Unlock the mutex.
 
+This only unlocks the mutex if the calling thread had previously locked it, otherwise the functions does nothing and does not block.
 
 <!----------------------------------------------------------------------------->
 
@@ -375,40 +364,35 @@ Set *close* to false if you want to signal the thread to exit, then wait for it 
 
 **Note**: Calling this function does not guarantee the thread will stop as it may be stuck waiting for a mutex to be unlocked. **Always** make sure to call `unlock()` if you've previously called `lock()`.
 
-
-
-
-
-
-
 <!----------------------------------------------------------------------------->
 
-###void * thread(*objPtr)
+###void waitForThread(stop = true)
 
 <!--
-_syntax: thread(*objPtr)_
-_name: thread_
-_returns: void *_
+_syntax: waitForThread(stop = true)_
+_name: waitForThread_
+_returns: void_
 _returns_description: _
-_parameters: void *objPtr_
-_access: protected_
+_parameters: bool stop=true_
+_access: public_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: False_
-_visible: False_
+_static: no_
+_visible: True_
 _advanced: False_
 -->
 
 _description: _
 
+Waits for the thread to exit.
 
+This function waits for the thread to exit before it returns to make sure the thread is cleaned up, otherwise you will get errors on exit.
 
+Set *stop* to true if you want to signal the thread to exit before waiting, this is the equivalent to calling stopThread(false).
 
-
-
-
+Set *stop* to false if you have already signaled the thread to exit by calling `stopThread(false)` and only need to wait for it to finish.
 
 <!----------------------------------------------------------------------------->
 
@@ -431,7 +415,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 This is the thread run function, the heart of your thread.
 
@@ -488,305 +471,27 @@ void testApp::exit() {
 
 ~~~~
 
-
-
-
-
-
-
 <!----------------------------------------------------------------------------->
 
-###void unlock()
+###void * thread(*objPtr)
 
 <!--
-_syntax: unlock()_
-_name: unlock_
-_returns: void_
+_syntax: thread(*objPtr)_
+_name: thread_
+_returns: void *_
 _returns_description: _
-_parameters: _
-_access: public_
+_parameters: void *objPtr_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Unlock the mutex.
-
-This only unlocks the mutex if the calling thread had previously locked it, otherwise the functions does nothing and does not block.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void waitForThread(stop = true)
-
-<!--
-_syntax: waitForThread(stop = true)_
-_name: waitForThread_
-_returns: void_
-_returns_description: _
-_parameters: bool stop=true_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Waits for the thread to exit.
-
-This function waits for the thread to exit before it returns to make sure the thread is cleaned up, otherwise you will get errors on exit.
-
-Set *stop* to true if you want to signal the thread to exit before waiting, this is the equivalent to calling stopThread(false).
-
-Set *stop* to false if you have already signaled the thread to exit by calling `stopThread(false)` and only need to wait for it to finish.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int getThreadId()
-
-<!--
-_syntax: getThreadId()_
-_name: getThreadId_
-_returns: int_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###string getThreadName()
-
-<!--
-_syntax: getThreadName()_
-_name: getThreadName_
-_returns: string_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void sleep(sleepMS)
-
-<!--
-_syntax: sleep(sleepMS)_
-_name: sleep_
-_returns: void_
-_returns_description: _
-_parameters: int sleepMS_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void yield()
-
-<!--
-_syntax: yield()_
-_name: yield_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isCurrentThread()
-
-<!--
-_syntax: isCurrentThread()_
-_name: isCurrentThread_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isMainThread()
-
-<!--
-_syntax: isMainThread()_
-_name: isMainThread_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
 _static: yes_
-_visible: True_
+_visible: False_
 _advanced: False_
 -->
 
 _description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofThread getCurrentThread()
-
-<!--
-_syntax: getCurrentThread()_
-_name: getCurrentThread_
-_returns: ofThread_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void run()
-
-<!--
-_syntax: run()_
-_name: run_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
 
 <!----------------------------------------------------------------------------->
 
@@ -810,13 +515,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
 <!----------------------------------------------------------------------------->
 
 ###ofMutex mutex
@@ -835,14 +533,7 @@ _advanced: False_
 
 _description: _
 
-
 This is the internal [mutex](http://en.wikipedia.org/wiki/Mutex) called through `lock()` & `unlock()`. You can use it manually inside your derived class.
-
-
-
-
-
-
 
 <!----------------------------------------------------------------------------->
 
@@ -861,7 +552,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 This is the value returned by `isThreadRunning()`.
 
@@ -882,12 +572,6 @@ void MyThread::threadedFunction() {
 
 ~~~~
 
-
-
-
-
-
-
 <!----------------------------------------------------------------------------->
 
 ###bool blocking
@@ -906,14 +590,7 @@ _advanced: False_
 
 _description: _
 
-
 This is true if the thread was started in blocking mode, ie it is using a blocking mutex.
-
-
-
-
-
-
 
 <!----------------------------------------------------------------------------->
 
@@ -933,40 +610,9 @@ _advanced: False_
 
 _description: _
 
-
 This is true if the thread was started in verbose mode.
 
 This is useful if you want to print special messages inside your derived class for thread debugging.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###Poco::Thread thread
-
-<!--
-_name: thread_
-_type: Poco::Thread_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
 
 <!----------------------------------------------------------------------------->
 

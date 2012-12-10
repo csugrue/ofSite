@@ -8,14 +8,14 @@
 
 <!----------------------------------------------------------------------------->
 
-###void exitApp()
+###bool ofGetMousePressed(button = -1)
 
 <!--
-_syntax: exitApp()_
-_name: exitApp_
-_returns: void_
+_syntax: ofGetMousePressed(button = -1)_
+_name: ofGetMousePressed_
+_returns: bool_
 _returns_description: _
-_parameters: _
+_parameters: int button=-1_
 _version_started: _
 _version_deprecated: _
 _summary: _
@@ -43,33 +43,6 @@ _name: ofGetKeyPressed_
 _returns: bool_
 _returns_description: _
 _parameters: int key=-1_
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool ofGetMousePressed(button = -1)
-
-<!--
-_syntax: ofGetMousePressed(button = -1)_
-_name: ofGetMousePressed_
-_returns: bool_
-_returns_description: _
-_parameters: int button=-1_
 _version_started: _
 _version_deprecated: _
 _summary: _
@@ -197,11 +170,38 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofNotifyDraw()
+###void ofSetEscapeQuitsApp(bQuitOnEsc)
 
 <!--
-_syntax: ofNotifyDraw()_
-_name: ofNotifyDraw_
+_syntax: ofSetEscapeQuitsApp(bQuitOnEsc)_
+_name: ofSetEscapeQuitsApp_
+_returns: void_
+_returns_description: _
+_parameters: bool bQuitOnEsc_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void exitApp()
+
+<!--
+_syntax: exitApp()_
+_name: exitApp_
 _returns: void_
 _returns_description: _
 _parameters: _
@@ -224,11 +224,65 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofNotifyExit()
+###void ofNotifySetup()
 
 <!--
-_syntax: ofNotifyExit()_
-_name: ofNotifyExit_
+_syntax: ofNotifySetup()_
+_name: ofNotifySetup_
+_returns: void_
+_returns_description: _
+_parameters: _
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void ofNotifyUpdate()
+
+<!--
+_syntax: ofNotifyUpdate()_
+_name: ofNotifyUpdate_
+_returns: void_
+_returns_description: _
+_parameters: _
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void ofNotifyDraw()
+
+<!--
+_syntax: ofNotifyDraw()_
+_name: ofNotifyDraw_
 _returns: void_
 _returns_description: _
 _parameters: _
@@ -305,60 +359,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofNotifyMouseDragged(x, y, button)
-
-<!--
-_syntax: ofNotifyMouseDragged(x, y, button)_
-_name: ofNotifyMouseDragged_
-_returns: void_
-_returns_description: _
-_parameters: int x, int y, int button_
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void ofNotifyMouseMoved(x, y)
-
-<!--
-_syntax: ofNotifyMouseMoved(x, y)_
-_name: ofNotifyMouseMoved_
-_returns: void_
-_returns_description: _
-_parameters: int x, int y_
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void ofNotifyMousePressed(x, y, button)
 
 <!--
@@ -413,14 +413,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofNotifySetup()
+###void ofNotifyMouseDragged(x, y, button)
 
 <!--
-_syntax: ofNotifySetup()_
-_name: ofNotifySetup_
+_syntax: ofNotifyMouseDragged(x, y, button)_
+_name: ofNotifyMouseDragged_
 _returns: void_
 _returns_description: _
-_parameters: _
+_parameters: int x, int y, int button_
 _version_started: _
 _version_deprecated: _
 _summary: _
@@ -440,14 +440,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofNotifyUpdate()
+###void ofNotifyMouseMoved(x, y)
 
 <!--
-_syntax: ofNotifyUpdate()_
-_name: ofNotifyUpdate_
+_syntax: ofNotifyMouseMoved(x, y)_
+_name: ofNotifyMouseMoved_
 _returns: void_
 _returns_description: _
-_parameters: _
+_parameters: int x, int y_
 _version_started: _
 _version_deprecated: _
 _summary: _
@@ -467,14 +467,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofNotifyWindowEntry(state)
+###void ofNotifyExit()
 
 <!--
-_syntax: ofNotifyWindowEntry(state)_
-_name: ofNotifyWindowEntry_
+_syntax: ofNotifyExit()_
+_name: ofNotifyExit_
 _returns: void_
 _returns_description: _
-_parameters: int state_
+_parameters: _
 _version_started: _
 _version_deprecated: _
 _summary: _
@@ -521,14 +521,14 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofSetEscapeQuitsApp(bQuitOnEsc)
+###void ofNotifyWindowEntry(state)
 
 <!--
-_syntax: ofSetEscapeQuitsApp(bQuitOnEsc)_
-_name: ofSetEscapeQuitsApp_
+_syntax: ofNotifyWindowEntry(state)_
+_name: ofNotifyWindowEntry_
 _returns: void_
 _returns_description: _
-_parameters: bool bQuitOnEsc_
+_parameters: int state_
 _version_started: _
 _version_deprecated: _
 _summary: _

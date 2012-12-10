@@ -7,7 +7,6 @@
 
 
 
-
 ##Methods
 
 
@@ -31,7 +30,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -67,7 +65,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###ofPoint position
@@ -85,7 +82,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

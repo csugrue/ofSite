@@ -3,9 +3,7 @@
 
 ##Description
 
-
 Extends ofMesh
-
 
 
 
@@ -33,7 +31,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -69,19 +66,18 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-### ofVboMesh()
+###void setUsage(usage)
 
 <!--
-_syntax: ofVboMesh()_
-_name: ofVboMesh_
-_returns: _
+_syntax: setUsage(usage)_
+_name: setUsage_
+_returns: void_
 _returns_description: _
-_parameters: _
+_parameters: int usage_
 _access: public_
-_version_started: 007_
+_version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -91,36 +87,6 @@ _advanced: False_
 -->
 
 _description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVboMesh(&mom)
-
-<!--
-_syntax: ofVboMesh(&mom)_
-_name: ofVboMesh_
-_returns: _
-_returns_description: _
-_parameters: const ofMesh &mom_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -156,19 +122,18 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
-###void setUsage(usage)
+### ofVboMesh()
 
 <!--
-_syntax: setUsage(usage)_
-_name: setUsage_
-_returns: void_
+_syntax: ofVboMesh()_
+_name: ofVboMesh_
+_returns: _
 _returns_description: _
-_parameters: int usage_
+_parameters: _
 _access: public_
-_version_started: _
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -179,6 +144,33 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVboMesh(&mom)
+
+<!--
+_syntax: ofVboMesh(&mom)_
+_name: ofVboMesh_
+_returns: _
+_returns_description: _
+_parameters: const ofMesh &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 
@@ -214,7 +206,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int usage
@@ -232,7 +223,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -264,7 +254,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int vboNumIndices
@@ -282,7 +271,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 
@@ -314,7 +302,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int vboNumTexCoords
@@ -339,7 +326,6 @@ _description: _
 
 
 
-
 <!----------------------------------------------------------------------------->
 
 ###int vboNumColors
@@ -357,7 +343,6 @@ _advanced: False_
 -->
 
 _description: _
-
 
 
 

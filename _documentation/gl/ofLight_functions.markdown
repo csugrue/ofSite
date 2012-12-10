@@ -8,60 +8,6 @@
 
 <!----------------------------------------------------------------------------->
 
-###void ofDisableLighting()
-
-<!--
-_syntax: ofDisableLighting()_
-_name: ofDisableLighting_
-_returns: void_
-_returns_description: _
-_parameters: _
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void ofDisableSeparateSpecularLight()
-
-<!--
-_syntax: ofDisableSeparateSpecularLight()_
-_name: ofDisableSeparateSpecularLight_
-_returns: void_
-_returns_description: _
-_parameters: _
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void ofEnableLighting()
 
 <!--
@@ -89,11 +35,65 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void ofDisableLighting()
+
+<!--
+_syntax: ofDisableLighting()_
+_name: ofDisableLighting_
+_returns: void_
+_returns_description: _
+_parameters: _
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void ofEnableSeparateSpecularLight()
 
 <!--
 _syntax: ofEnableSeparateSpecularLight()_
 _name: ofEnableSeparateSpecularLight_
+_returns: void_
+_returns_description: _
+_parameters: _
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void ofDisableSeparateSpecularLight()
+
+<!--
+_syntax: ofDisableSeparateSpecularLight()_
+_name: ofDisableSeparateSpecularLight_
 _returns: void_
 _returns_description: _
 _parameters: _
