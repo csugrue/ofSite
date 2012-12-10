@@ -3,7 +3,9 @@
 
 ##Description
 
+
 Extends ofMesh
+
 
 
 
@@ -31,6 +33,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -66,61 +69,6 @@ _description: _
 
 
 
-<!----------------------------------------------------------------------------->
-
-###void setUsage(usage)
-
-<!--
-_syntax: setUsage(usage)_
-_name: setUsage_
-_returns: void_
-_returns_description: _
-_parameters: int usage_
-_access: public_
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(drawMode)
-
-<!--
-_syntax: draw(drawMode)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofPolyRenderMode drawMode_
-_access: protected_
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
 
 <!----------------------------------------------------------------------------->
 
@@ -143,6 +91,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -178,6 +127,65 @@ _description: _
 
 
 
+
+<!----------------------------------------------------------------------------->
+
+###void draw(drawMode)
+
+<!--
+_syntax: draw(drawMode)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofPolyRenderMode drawMode_
+_access: protected_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setUsage(usage)
+
+<!--
+_syntax: setUsage(usage)_
+_name: setUsage_
+_returns: void_
+_returns_description: _
+_parameters: int usage_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
 <!----------------------------------------------------------------------------->
 
 ##Variables
@@ -199,6 +207,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -230,6 +239,7 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
 ###int vboNumVerts
@@ -247,6 +257,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -278,6 +289,7 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
 ###int vboNumNormals
@@ -295,6 +307,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -326,6 +339,7 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
 ###int vboNumColors
@@ -343,6 +357,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 

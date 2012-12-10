@@ -3,7 +3,9 @@
 
 ##Description
 
+
 ofStyle class contains general information about the style of our ofGraphics elements such as color, line width and others.
+
 
 
 
@@ -31,6 +33,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -66,6 +69,7 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
 ##Variables
@@ -88,7 +92,9 @@ _advanced: False_
 
 _description: _
 
+
 color variable contain the color information for the style object.
+
 
 
 
@@ -113,6 +119,7 @@ _advanced: False_
 
 _description: _
 
+
 polyMode variable contains information about the drawing behavior for ovelapping parts of the same polygon when we create a shape.
 
 Possible modes are:
@@ -121,6 +128,7 @@ OF_POLY_WINDING_NONZERO -
 OF_POLY_WINDING_POSITIVE -
 OF_POLY_WINDING_NEGATIVE -
 OF_POLY_WINDING_ABS_GEQ_TWO - 
+
 
 
 
@@ -145,8 +153,10 @@ _advanced: False_
 
 _description: _
 
+
 rectMode contains information about the mode for drawing rectangles.
 If they are corner aligned, or drawn so that the x,y position is the center of the rectangle. Possible options are OF_RECTMODE_CENTER and OF_RECTMODE_CORNER
+
 
 
 
@@ -171,7 +181,9 @@ _advanced: False_
 
 _description: _
 
+
 bFill variable contains information about how the graphics have to be drawed: Fill or noFill(empty)
+
 
 
 
@@ -196,7 +208,9 @@ _advanced: False_
 
 _description: _
 
+
 blending contains style information about allow the use of alpha channel in our graphics. 
+
 
 
 
@@ -221,7 +235,9 @@ _advanced: False_
 
 _description: _
 
+
 smoothing variable contanins the information about if smoothing effect is activated or not.
+
 
 
 
@@ -246,7 +262,9 @@ _advanced: False_
 
 _description: _
 
+
 circleResolution variable contains the resolution of a ofCircle.
+
 
 
 
@@ -271,7 +289,9 @@ _advanced: False_
 
 _description: _
 
+
 lineWidth contains information about the width of the line for our ofLine.
+
 
 
 
@@ -295,6 +315,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -326,6 +347,7 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
 ###ofBlendMode blendingMode
@@ -343,6 +365,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -374,6 +397,7 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
 ###int curveResolution
@@ -391,6 +415,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 

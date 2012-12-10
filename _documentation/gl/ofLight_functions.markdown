@@ -8,33 +8,6 @@
 
 <!----------------------------------------------------------------------------->
 
-###void ofEnableLighting()
-
-<!--
-_syntax: ofEnableLighting()_
-_name: ofEnableLighting_
-_returns: void_
-_returns_description: _
-_parameters: _
-_version_started: _
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void ofDisableLighting()
 
 <!--
@@ -62,11 +35,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofEnableSeparateSpecularLight()
+###void ofDisableSeparateSpecularLight()
 
 <!--
-_syntax: ofEnableSeparateSpecularLight()_
-_name: ofEnableSeparateSpecularLight_
+_syntax: ofDisableSeparateSpecularLight()_
+_name: ofDisableSeparateSpecularLight_
 _returns: void_
 _returns_description: _
 _parameters: _
@@ -89,11 +62,38 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void ofDisableSeparateSpecularLight()
+###void ofEnableLighting()
 
 <!--
-_syntax: ofDisableSeparateSpecularLight()_
-_name: ofDisableSeparateSpecularLight_
+_syntax: ofEnableLighting()_
+_name: ofEnableLighting_
+_returns: void_
+_returns_description: _
+_parameters: _
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void ofEnableSeparateSpecularLight()
+
+<!--
+_syntax: ofEnableSeparateSpecularLight()_
+_name: ofEnableSeparateSpecularLight_
 _returns: void_
 _returns_description: _
 _parameters: _

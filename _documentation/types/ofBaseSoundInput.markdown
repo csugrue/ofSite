@@ -7,6 +7,7 @@
 
 
 
+
 ##Methods
 
 
@@ -30,6 +31,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -65,6 +67,7 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
 ###void audioIn(*input, bufferSize, nChannels)
@@ -93,6 +96,7 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
 ###void audioReceived(*input, bufferSize, nChannels)
@@ -114,6 +118,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
