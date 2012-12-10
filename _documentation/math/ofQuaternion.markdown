@@ -12,151 +12,6 @@
 
 
 
-### ofQuaternion()
-
-<!--
-_syntax: ofQuaternion()_
-_name: ofQuaternion_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofQuaternion(x, y, z, w)
-
-<!--
-_syntax: ofQuaternion(x, y, z, w)_
-_name: ofQuaternion_
-_returns: _
-_returns_description: _
-_parameters: float x, float y, float z, float w_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofQuaternion(&v)
-
-<!--
-_syntax: ofQuaternion(&v)_
-_name: ofQuaternion_
-_returns: _
-_returns_description: _
-_parameters: const ofVec4f &v_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofQuaternion(angle, &axis)
-
-<!--
-_syntax: ofQuaternion(angle, &axis)_
-_name: ofQuaternion_
-_returns: _
-_returns_description: _
-_parameters: float angle, const ofVec3f &axis_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofQuaternion(angle1, &axis1, angle2, &axis2, angle3, &axis3)
-
-<!--
-_syntax: ofQuaternion(angle1, &axis1, angle2, &axis2, angle3, &axis3)_
-_name: ofQuaternion_
-_returns: _
-_returns_description: _
-_parameters: float angle1, const ofVec3f &axis1, float angle2, const ofVec3f &axis2, float angle3, const ofVec3f &axis3_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofVec3f asVec3()
 
 <!--
@@ -571,6 +426,180 @@ _name: makeRotate_original_
 _returns: void_
 _returns_description: _
 _parameters: const ofVec3f &vec1, const ofVec3f &vec2_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void normalize()
+
+<!--
+_syntax: normalize()_
+_name: normalize_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofQuaternion()
+
+<!--
+_syntax: ofQuaternion()_
+_name: ofQuaternion_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofQuaternion(x, y, z, w)
+
+<!--
+_syntax: ofQuaternion(x, y, z, w)_
+_name: ofQuaternion_
+_returns: _
+_returns_description: _
+_parameters: float x, float y, float z, float w_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofQuaternion(&v)
+
+<!--
+_syntax: ofQuaternion(&v)_
+_name: ofQuaternion_
+_returns: _
+_returns_description: _
+_parameters: const ofVec4f &v_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofQuaternion(angle, &axis)
+
+<!--
+_syntax: ofQuaternion(angle, &axis)_
+_name: ofQuaternion_
+_returns: _
+_returns_description: _
+_parameters: float angle, const ofVec3f &axis_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofQuaternion(angle1, &axis1, angle2, &axis2, angle3, &axis3)
+
+<!--
+_syntax: ofQuaternion(angle1, &axis1, angle2, &axis2, angle3, &axis3)_
+_name: ofQuaternion_
+_returns: _
+_returns_description: _
+_parameters: float angle1, const ofVec3f &axis1, float angle2, const ofVec3f &axis2, float angle3, const ofVec3f &axis3_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -1424,34 +1453,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void normalize()
-
-<!--
-_syntax: normalize()_
-_name: normalize_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

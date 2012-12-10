@@ -49,115 +49,6 @@ As you can see this really makes dealing with vectors as easy as dealing with si
 
 
 
-### ofVec2f(_x = 0.f, _y = 0.f)
-
-<!--
-_syntax: ofVec2f(_x = 0.f, _y = 0.f)_
-_name: ofVec2f_
-_returns: _
-_returns_description: _
-_parameters: float _x=0.f, float _y=0.f_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Construct a 2D vector. Defaults to (0,0).
-
-~~~~{.cpp}
-ofVec2f v1; // default: v1.x is 0, v1.y is 0
-ofVec2f v2 = ofVec2f(40, 20); // v2.x is 40, v2.y is 20
-ofVec3f v3(0.1, 0.3); // v3.x is 0.1, v3.y is 0.3
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec2f(&vec)
-
-<!--
-_syntax: ofVec2f(&vec)_
-_name: ofVec2f_
-_returns: _
-_returns_description: _
-_parameters: const ofVec3f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Create a 2D vector (`ofVec2f`) from a 3D vector (`ofVec3f`) by throwing away the `z` component of the 3D vector.
-
-~~~~{.cpp}
-ofVec3f mom3d(40, 20, 50); // 3d vector 
-ofVec2f v(mom3d); // v.x is 40, v.y is 20
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec2f(&vec)
-
-<!--
-_syntax: ofVec2f(&vec)_
-_name: ofVec2f_
-_returns: _
-_returns_description: _
-_parameters: const ofVec4f &vec_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Create a 2D vector (`ofVec2f`) from a 4D vector (`ofVec4f`) by throwing away the `z` and `w` components of the 4D vector.
-
-~~~~{.cpp}
-ofVec3f mom4d(40, 20, 50, 80); // 4d vector 
-ofVec2f v(mom4d); // v.x is 40, v.y is 20
-~~~~
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool align(&vec, tolerance = 0.0001)
 
 <!--
@@ -972,6 +863,64 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###bool isAligned(&vec, tolerance = 0.0001)
+
+<!--
+_syntax: isAligned(&vec, tolerance = 0.0001)_
+_name: isAligned_
+_returns: bool_
+_returns_description: _
+_parameters: const ofVec2f &vec, float tolerance=0.0001_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isAlignedRad(&vec, tolerance = 0.0001)
+
+<!--
+_syntax: isAlignedRad(&vec, tolerance = 0.0001)_
+_name: isAlignedRad_
+_returns: bool_
+_returns_description: _
+_parameters: const ofVec2f &vec, float tolerance=0.0001_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###float length()
 
 <!--
@@ -1335,6 +1284,144 @@ _summary: _
 _constant: False_
 _static: no_
 _visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVec2f(_x = 0.f, _y = 0.f)
+
+<!--
+_syntax: ofVec2f(_x = 0.f, _y = 0.f)_
+_name: ofVec2f_
+_returns: _
+_returns_description: _
+_parameters: float _x=0.f, float _y=0.f_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Construct a 2D vector. Defaults to (0,0).
+
+~~~~{.cpp}
+ofVec2f v1; // default: v1.x is 0, v1.y is 0
+ofVec2f v2 = ofVec2f(40, 20); // v2.x is 40, v2.y is 20
+ofVec3f v3(0.1, 0.3); // v3.x is 0.1, v3.y is 0.3
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVec2f(&vec)
+
+<!--
+_syntax: ofVec2f(&vec)_
+_name: ofVec2f_
+_returns: _
+_returns_description: _
+_parameters: const ofVec3f &vec_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Create a 2D vector (`ofVec2f`) from a 3D vector (`ofVec3f`) by throwing away the `z` component of the 3D vector.
+
+~~~~{.cpp}
+ofVec3f mom3d(40, 20, 50); // 3d vector 
+ofVec2f v(mom3d); // v.x is 40, v.y is 20
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVec2f(&vec)
+
+<!--
+_syntax: ofVec2f(&vec)_
+_name: ofVec2f_
+_returns: _
+_returns_description: _
+_parameters: const ofVec4f &vec_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Create a 2D vector (`ofVec2f`) from a 4D vector (`ofVec4f`) by throwing away the `z` and `w` components of the 4D vector.
+
+~~~~{.cpp}
+ofVec3f mom4d(40, 20, 50, 80); // 4d vector 
+ofVec2f v(mom4d); // v.x is 40, v.y is 20
+~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec2f one()
+
+<!--
+_syntax: one()_
+_name: one_
+_returns: ofVec2f_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
 _advanced: False_
 -->
 
@@ -2575,7 +2662,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2591,62 +2678,6 @@ float len = v.length(); // len is 5 (3,4,5 triangle)
 ~~~~
 
 Use as a much faster alternative to [`length`](#length) if you don't need to know an accurate length but rather just a rough idea of a length (for example when finding the shortest distance of a bunch of points to a reference point, where it doesn't matter exactly what the lengths are, you just want the shortest). It avoids the square root calculation that is ordinarily required to calculate a length.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isAligned(&vec, tolerance = 0.0001)
-
-<!--
-_syntax: isAligned(&vec, tolerance = 0.0001)_
-_name: isAligned_
-_returns: bool_
-_returns_description: _
-_parameters: const ofVec2f &vec, float tolerance=0.0001_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isAlignedRad(&vec, tolerance = 0.0001)
-
-<!--
-_syntax: isAlignedRad(&vec, tolerance = 0.0001)_
-_name: isAlignedRad_
-_returns: bool_
-_returns_description: _
-_parameters: const ofVec2f &vec, float tolerance=0.0001_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 
@@ -2682,14 +2713,15 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
-###ofVec2f one()
+### ofVec2f()
 
 <!--
-_syntax: one()_
-_name: one_
-_returns: ofVec2f_
+_syntax: ofVec2f()_
+_name: ofVec2f_
+_returns: _
 _returns_description: _
 _parameters: _
 _access: public_
@@ -2697,7 +2729,91 @@ _version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: yes_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVec2f(_scalar)
+
+<!--
+_syntax: ofVec2f(_scalar)_
+_name: ofVec2f_
+_returns: _
+_returns_description: _
+_parameters: float _scalar_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void set(_scalar)
+
+<!--
+_syntax: set(_scalar)_
+_name: set_
+_returns: void_
+_returns_description: _
+_parameters: float _scalar_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### OF_DEPRECATED_MSG(instead.", const)
+
+<!--
+_syntax: OF_DEPRECATED_MSG(instead.", const)_
+_name: OF_DEPRECATED_MSG_
+_returns: _
+_returns_description: _
+_parameters: "Use ofVec2f::lengthSquared() instead.", float squareLength() const_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -2715,6 +2831,31 @@ _description: _
 ##Variables
 
 
+
+###const int DIM
+
+<!--
+_name: DIM_
+_type: const int_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
 
 ###float x
 
@@ -2761,30 +2902,6 @@ _description: _
 
 
 Stores the Y component of this vector.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###const int DIM
-
-<!--
-_name: DIM_
-_type: const int_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

@@ -12,35 +12,6 @@
 
 
 
-### ofMaterial()
-
-<!--
-_syntax: ofMaterial()_
-_name: ofMaterial_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void begin()
 
 <!--
@@ -244,6 +215,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ofMaterial()
+
+<!--
+_syntax: ofMaterial()_
+_name: ofMaterial_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setAmbientColor(oAmbient)
 
 <!--
@@ -422,31 +422,6 @@ _description: _
 
 
 
-###ofFloatColor diffuse
-
-<!--
-_name: diffuse_
-_type: ofFloatColor_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofFloatColor ambient
 
 <!--
@@ -472,10 +447,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofFloatColor specular
+###ofFloatColor diffuse
 
 <!--
-_name: specular_
+_name: diffuse_
 _type: ofFloatColor_
 _access: private_
 _version_started: 007_
@@ -522,56 +497,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float shininess
-
-<!--
-_name: shininess_
-_type: float_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofFloatColor prev_diffuse
-
-<!--
-_name: prev_diffuse_
-_type: ofFloatColor_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofFloatColor prev_ambient
 
 <!--
@@ -597,10 +522,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofFloatColor prev_specular
+###ofFloatColor prev_diffuse
 
 <!--
-_name: prev_specular_
+_name: prev_diffuse_
 _type: ofFloatColor_
 _access: private_
 _version_started: 007_
@@ -652,6 +577,81 @@ _description: _
 <!--
 _name: prev_shininess_
 _type: float_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofFloatColor prev_specular
+
+<!--
+_name: prev_specular_
+_type: ofFloatColor_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float shininess
+
+<!--
+_name: shininess_
+_type: float_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofFloatColor specular
+
+<!--
+_name: specular_
+_type: ofFloatColor_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

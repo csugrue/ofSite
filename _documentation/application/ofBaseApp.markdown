@@ -16,66 +16,6 @@ In versions pre 0.06 this class was called ofSimpleApp
 
 
 
-### ofBaseApp()
-
-<!--
-_syntax: ofBaseApp()_
-_name: ofBaseApp_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-The openframeworks engine is contained in the "app" category. The project works, similar to processing, in that you have a base class which extends a class that already exists. In the case of OF, there is a class called "ofBaseApp" which contains various event driven functions. When you create an OF project, you use a main.cpp which is the boot-strap, that kicks off the application and another class, which inherits the properties of ofSimpleApp. Essentially, when you write code in the testApp, you are re-writing already defined functions that exist in OF, such as update, draw, etc. 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofBaseApp()
-
-<!--
-_syntax: ~ofBaseApp()_
-_name: ~ofBaseApp_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void audioReceived(input, bufferSize, nChannels)
 
 <!--
@@ -523,6 +463,37 @@ This function gets called when the mouse is released. The button (left, right, c
 
 <!----------------------------------------------------------------------------->
 
+### ofBaseApp()
+
+<!--
+_syntax: ofBaseApp()_
+_name: ofBaseApp_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+The openframeworks engine is contained in the "app" category. The project works, similar to processing, in that you have a base class which extends a class that already exists. In the case of OF, there is a class called "ofBaseApp" which contains various event driven functions. When you create an OF project, you use a main.cpp which is the boot-strap, that kicks off the application and another class, which inherits the properties of ofSimpleApp. Essentially, when you write code in the testApp, you are re-writing already defined functions that exist in OF, such as update, draw, etc. 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setup()
 
 <!--
@@ -652,6 +623,35 @@ _description: _
 
 
 This function gets called when ever we resize the application window. You receive the new width (w) and the new height (h) of the window.
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofBaseApp()
+
+<!--
+_syntax: ~ofBaseApp()_
+_name: ~ofBaseApp_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
 
 
 

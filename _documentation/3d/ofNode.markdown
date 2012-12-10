@@ -12,64 +12,6 @@
 
 
 
-### ofNode()
-
-<!--
-_syntax: ofNode()_
-_name: ofNode_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofNode()
-
-<!--
-_syntax: ~ofNode()_
-_name: ~ofNode_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void boom(amount)
 
 <!--
@@ -895,7 +837,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -948,6 +890,35 @@ _name: move_
 _returns: void_
 _returns_description: _
 _parameters: const ofVec3f &offset_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofNode()
+
+<!--
+_syntax: ofNode()_
+_name: ofNode_
+_returns: _
+_returns_description: _
+_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -1810,9 +1781,169 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ~ofNode()
+
+<!--
+_syntax: ~ofNode()_
+_name: ~ofNode_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec3f getGlobalScale()
+
+<!--
+_syntax: getGlobalScale()_
+_name: getGlobalScale_
+_returns: ofVec3f_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void lookAt(&lookAtNode, &upVector = ofVec3f(0, 1, 0))
+
+<!--
+_syntax: lookAt(&lookAtNode, &upVector = ofVec3f(0, 1, 0))_
+_name: lookAt_
+_returns: void_
+_returns_description: _
+_parameters: const ofNode &lookAtNode, const ofVec3f &upVector=ofVec3f(0, 1, 0)_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ##Variables
 
 
+
+###ofVec3f axis
+
+<!--
+_name: axis_
+_type: ofVec3f_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofMatrix4x4 localTransformMatrix
+
+<!--
+_name: localTransformMatrix_
+_type: ofMatrix4x4_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofQuaternion orientation
+
+<!--
+_name: orientation_
+_type: ofQuaternion_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
 
 ###ofNode parent
 
@@ -1864,86 +1995,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofQuaternion orientation
-
-<!--
-_name: orientation_
-_type: ofQuaternion_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofVec3f scale
 
 <!--
 _name: scale_
 _type: ofVec3f_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofVec3f axis
-
-<!--
-_name: axis_
-_type: ofVec3f_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix4x4 localTransformMatrix
-
-<!--
-_name: localTransformMatrix_
-_type: ofMatrix4x4_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

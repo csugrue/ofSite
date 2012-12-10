@@ -14,66 +14,6 @@ The ofSoundPlayer class wraps one of several underlying audio utility libraries,
 
 
 
-### ofSoundPlayer()
-
-<!--
-_syntax: ofSoundPlayer()_
-_name: ofSoundPlayer_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates the ofSoundPlayer instance and initializes the underlying properties in the underlying engine.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void ~ofSoundPlayer()
-
-<!--
-_syntax: ~ofSoundPlayer()_
-_name: ~ofSoundPlayer_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool getIsPlaying()
 
 <!--
@@ -302,12 +242,70 @@ Example:
 
 <!----------------------------------------------------------------------------->
 
-###void loadSound(fileName, stream)
+###float getVolume()
+
+<!--
+_syntax: getVolume()_
+_name: getVolume_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isLoaded()
+
+<!--
+_syntax: isLoaded()_
+_name: isLoaded_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool loadSound(fileName, stream)
 
 <!--
 _syntax: loadSound(fileName, stream)_
 _name: loadSound_
-_returns: void_
+_returns: bool_
 _returns_description: _
 _parameters: string fileName, bool stream_
 _access: public_
@@ -339,6 +337,37 @@ ofSoundPlayer mySound;
 mySound.loadSound("sounds/beat.mp3");
 ~~~~
   
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofSoundPlayer()
+
+<!--
+_syntax: ofSoundPlayer()_
+_name: ofSoundPlayer_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+Creates the ofSoundPlayer instance and initializes the underlying properties in the underlying engine.
 
 
 
@@ -824,53 +853,26 @@ mySound.unloadSound(); //Stops sound from playing, unloads "beat.mp3"
 
 <!----------------------------------------------------------------------------->
 
-###float getVolume()
+###void ~ofSoundPlayer()
 
 <!--
-_syntax: getVolume()_
-_name: getVolume_
-_returns: float_
+_syntax: ~ofSoundPlayer()_
+_name: ~ofSoundPlayer_
+_returns: void_
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 006_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
-_visible: True_
+_static: False_
+_visible: False_
 _advanced: False_
 -->
 
 _description: _
 
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isLoaded()
-
-<!--
-_syntax: isLoaded()_
-_name: isLoaded_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 
@@ -884,10 +886,10 @@ _description: _
 
 
 
-###bool isStreaming
+###bool bLoadedOk
 
 <!--
-_name: isStreaming_
+_name: bLoadedOk_
 _type: bool_
 _access: public_
 _version_started: 006_
@@ -901,34 +903,7 @@ _advanced: False_
 _description: _
 
 
-This boolean variable tells if the sound we are using is streaming or not.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bMultiPlay
-
-<!--
-_name: bMultiPlay_
-_type: bool_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-Allows a sound to be played multiple times at once. See setMultiPlay(bool bMp) function for more info.
+bLoadedOk is a boolean variable containing true if the sound was successfully loaded.  
 
 
 
@@ -965,10 +940,10 @@ bLoop variable controls if we are playing the sound as a loop.
 
 <!----------------------------------------------------------------------------->
 
-###bool bLoadedOk
+###bool bMultiPlay
 
 <!--
-_name: bLoadedOk_
+_name: bMultiPlay_
 _type: bool_
 _access: public_
 _version_started: 006_
@@ -982,7 +957,7 @@ _advanced: False_
 _description: _
 
 
-bLoadedOk is a boolean variable containing true if the sound was successfully loaded.  
+Allows a sound to be played multiple times at once. See setMultiPlay(bool bMp) function for more info.
 
 
 
@@ -1019,51 +994,22 @@ bPaused contain true if we pause the sound.
 
 <!----------------------------------------------------------------------------->
 
-###float pan
+###FMOD_CHANNEL * channel
 
 <!--
-_name: pan_
-_type: float_
+_name: channel_
+_type: FMOD_CHANNEL *_
 _access: public_
 _version_started: 006_
 _version_deprecated: _
 _summary: _
 _visible: True_
 _constant: False_
-_advanced: False_
+_advanced: True_
 -->
 
 _description: _
 
-
-Contains the pan position of the sound. Going from -1 to 1.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float volume
-
-<!--
-_name: volume_
-_type: float_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-Contains the value of the volume of our sound.
 
 
 
@@ -1100,11 +1046,11 @@ Contains the frequency value of the sound. It is set by default to 44100.
 
 <!----------------------------------------------------------------------------->
 
-###float speed
+###bool isStreaming
 
 <!--
-_name: speed_
-_type: float_
+_name: isStreaming_
+_type: bool_
 _access: public_
 _version_started: 006_
 _version_deprecated: _
@@ -1117,7 +1063,7 @@ _advanced: False_
 _description: _
 
 
-Contains the playback speed of the sound. 1.0 is the normal speed. 2.0 is double the normal speed, -1 is backwards etc. 
+This boolean variable tells if the sound we are using is streaming or not.
 
 
 
@@ -1138,6 +1084,58 @@ _version_deprecated: _
 _summary: _
 _visible: True_
 _constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float pan
+
+<!--
+_name: pan_
+_type: float_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+Contains the pan position of the sound. Going from -1 to 1.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPtr player
+
+<!--
+_name: player_
+_type: ofPtr_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
 _advanced: False_
 -->
 
@@ -1177,31 +1175,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###FMOD_CHANNEL * channel
-
-<!--
-_name: channel_
-_type: FMOD_CHANNEL *_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: True_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###FMOD_SOUND * sound
 
 <!--
@@ -1227,22 +1200,51 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPtr player
+###float speed
 
 <!--
-_name: player_
-_type: ofPtr_
-_access: protected_
-_version_started: 007_
+_name: speed_
+_type: float_
+_access: public_
+_version_started: 006_
 _version_deprecated: _
 _summary: _
 _visible: True_
-_constant: True_
+_constant: False_
 _advanced: False_
 -->
 
 _description: _
 
+
+Contains the playback speed of the sound. 1.0 is the normal speed. 2.0 is double the normal speed, -1 is backwards etc. 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float volume
+
+<!--
+_name: volume_
+_type: float_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+Contains the value of the volume of our sound.
 
 
 

@@ -12,64 +12,6 @@
 
 
 
-### ofGstVideoUtils()
-
-<!--
-_syntax: ofGstVideoUtils()_
-_name: ofGstVideoUtils_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofGstVideoUtils()
-
-<!--
-_syntax: ~ofGstVideoUtils()_
-_name: ~ofGstVideoUtils_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool allocate(w, h, bpp)
 
 <!--
@@ -331,6 +273,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ofGstVideoUtils()
+
+<!--
+_syntax: ofGstVideoUtils()_
+_name: ofGstVideoUtils_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###GstFlowReturn preroll_cb(*buffer)
 
 <!--
@@ -418,17 +389,146 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ~ofGstVideoUtils()
+
+<!--
+_syntax: ~ofGstVideoUtils()_
+_name: ~ofGstVideoUtils_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ##Variables
 
 
 
-###ofPixels prerollEvent
+###bool bBackPixelsChanged
 
 <!--
-_name: prerollEvent_
-_type: ofPixels_
-_access: public_
+_name: bBackPixelsChanged_
+_type: bool_
+_access: private_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bHavePixelsChanged
+
+<!--
+_name: bHavePixelsChanged_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bIsFrameNew
+
+<!--
+_name: bIsFrameNew_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixels backPixels
+
+<!--
+_name: backPixels_
+_type: ofPixels_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GstBuffer * buffer
+
+<!--
+_name: buffer_
+_type: GstBuffer *_
+_access: private_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -497,131 +597,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPixels pixels
-
-<!--
-_name: pixels_
-_type: ofPixels_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPixels backPixels
-
-<!--
-_name: backPixels_
-_type: ofPixels_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bIsFrameNew
-
-<!--
-_name: bIsFrameNew_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bHavePixelsChanged
-
-<!--
-_name: bHavePixelsChanged_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bBackPixelsChanged
-
-<!--
-_name: bBackPixelsChanged_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofMutex mutex
 
 <!--
@@ -647,10 +622,60 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###GstBuffer * buffer
+###ofPixels pixels
 
 <!--
-_name: buffer_
+_name: pixels_
+_type: ofPixels_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixels prerollEvent
+
+<!--
+_name: prerollEvent_
+_type: ofPixels_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GstBuffer * prevBuffer
+
+<!--
+_name: prevBuffer_
 _type: GstBuffer *_
 _access: private_
 _version_started: 0071_
@@ -669,14 +694,15 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
-###GstBuffer * prevBuffer
+###ofPixels eventPixels
 
 <!--
-_name: prevBuffer_
-_type: GstBuffer *_
-_access: private_
+_name: eventPixels_
+_type: ofPixels_
+_access: protected_
 _version_started: 0071_
 _version_deprecated: _
 _summary: _

@@ -12,64 +12,6 @@
 
 
 
-### ofGstVideoPlayer()
-
-<!--
-_syntax: ofGstVideoPlayer()_
-_name: ofGstVideoPlayer_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofGstVideoPlayer()
-
-<!--
-_syntax: ~ofGstVideoPlayer()_
-_name: ~ofGstVideoPlayer_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool allocate()
 
 <!--
@@ -84,6 +26,35 @@ _version_deprecated: _
 _summary: _
 _constant: False_
 _static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool allocate(bpp)
+
+<!--
+_syntax: allocate(bpp)_
+_name: allocate_
+_returns: bool_
+_returns_description: _
+_parameters: int bpp_
+_access: protected_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -302,12 +273,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int getLoopState()
+###ofLoopType getLoopState()
 
 <!--
 _syntax: getLoopState()_
 _name: getLoopState_
-_returns: int_
+_returns: ofLoopType_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -708,6 +679,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ofGstVideoPlayer()
+
+<!--
+_syntax: ofGstVideoPlayer()_
+_name: ofGstVideoPlayer_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool on_message(*msg)
 
 <!--
@@ -940,12 +940,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setPixelFormat(pixelFormat)
+###bool setPixelFormat(pixelFormat)
 
 <!--
 _syntax: setPixelFormat(pixelFormat)_
 _name: setPixelFormat_
-_returns: void_
+_returns: bool_
 _returns_description: _
 _parameters: ofPixelFormat pixelFormat_
 _access: public_
@@ -1027,6 +1027,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void setThreadAppSink(threaded)
+
+<!--
+_syntax: setThreadAppSink(threaded)_
+_name: setThreadAppSink_
+_returns: void_
+_returns_description: _
+_parameters: bool threaded_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setVolume(volume)
 
 <!--
@@ -1040,7 +1069,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -1114,14 +1143,43 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setThreadAppSink(threaded)
+### ~ofGstVideoPlayer()
 
 <!--
-_syntax: setThreadAppSink(threaded)_
-_name: setThreadAppSink_
-_returns: void_
+_syntax: ~ofGstVideoPlayer()_
+_name: ~ofGstVideoPlayer_
+_returns: _
 _returns_description: _
-_parameters: bool threaded_
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelFormat getPixelFormat()
+
+<!--
+_syntax: getPixelFormat()_
+_name: getPixelFormat_
+_returns: ofPixelFormat_
+_returns_description: _
+_parameters: _
 _access: public_
 _version_started: 0071_
 _version_deprecated: _
@@ -1142,15 +1200,15 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool allocate(bpp)
+###void setVolume(volume)
 
 <!--
-_syntax: allocate(bpp)_
-_name: allocate_
-_returns: bool_
+_syntax: setVolume(volume)_
+_name: setVolume_
+_returns: void_
 _returns_description: _
-_parameters: int bpp_
-_access: protected_
+_parameters: float volume_
+_access: public_
 _version_started: 0071_
 _version_deprecated: _
 _summary: _
@@ -1173,6 +1231,106 @@ _description: _
 ##Variables
 
 
+
+###bool bIsAllocated
+
+<!--
+_name: bIsAllocated_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bIsStream
+
+<!--
+_name: bIsStream_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int fps_d
+
+<!--
+_name: fps_d_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int fps_n
+
+<!--
+_name: fps_n_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
 
 ###ofPixelFormat internalPixelFormat
 
@@ -1224,88 +1382,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int fps_n
+###bool threadAppSink
 
 <!--
-_name: fps_n_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int fps_d
-
-<!--
-_name: fps_d_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bIsStream
-
-<!--
-_name: bIsStream_
+_name: threadAppSink_
 _type: bool_
 _access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bIsAllocated
-
-<!--
-_name: bIsAllocated_
-_type: bool_
-_access: private_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1340,30 +1423,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool threadAppSink
-
-<!--
-_name: threadAppSink_
-_type: bool_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

@@ -532,6 +532,122 @@ Draws the ofImage into the x,y,z location with the default height and width. You
 
 <!----------------------------------------------------------------------------->
 
+###void drawSubsection(x, y, w, h, sx, sy)
+
+<!--
+_syntax: drawSubsection(x, y, w, h, sx, sy)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h, float sx, float sy_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, z, w, h, sx, sy)
+
+<!--
+_syntax: drawSubsection(x, y, z, w, h, sx, sy)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float w, float h, float sx, float sy_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: drawSubsection(x, y, w, h, sx, sy, sw, sh)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: drawSubsection(x, y, z, w, h, sx, sy, sw, sh)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofColor_ getColor(x, y)
 
 <!--
@@ -3074,6 +3190,180 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ofImage_()
+
+<!--
+_syntax: ofImage_()_
+_name: ofImage_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofImage_(&pix)
+
+<!--
+_syntax: ofImage_(&pix)_
+_name: ofImage_
+_returns: _
+_returns_description: _
+_parameters: const ofPixels_< PixelType > &pix_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofImage_(&file)
+
+<!--
+_syntax: ofImage_(&file)_
+_name: ofImage_
+_returns: _
+_returns_description: _
+_parameters: const ofFile &file_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofImage_(&filename)
+
+<!--
+_syntax: ofImage_(&filename)_
+_name: ofImage_
+_returns: _
+_returns_description: _
+_parameters: const string &filename_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofImage_(&mom)
+
+<!--
+_syntax: ofImage_(&mom)_
+_name: ofImage_
+_returns: _
+_returns_description: _
+_parameters: const ofImage_< PixelType > &mom_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofImage_(&mom)
+
+<!--
+_syntax: ofImage_(&mom)_
+_name: ofImage_
+_returns: _
+_returns_description: _
+_parameters: const ofImage_< SrcType > &mom_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ### operator ofPixels_< PixelType > &()
 
 <!--
@@ -4216,6 +4506,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ~ofImage_()
+
+<!--
+_syntax: ~ofImage_()_
+_name: ~ofImage_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ### ofImage_()
 
 <!--
@@ -4412,128 +4731,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void drawSubsection(x, y, w, h, sx, sy)
-
-<!--
-_syntax: drawSubsection(x, y, w, h, sx, sy)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float w, float h, float sx, float sy_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, z, w, h, sx, sy)
-
-<!--
-_syntax: drawSubsection(x, y, z, w, h, sx, sy)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float w, float h, float sx, float sy_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: drawSubsection(x, y, w, h, sx, sy, sw, sh)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, z, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: drawSubsection(x, y, z, w, h, sx, sy, sw, sh)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
 
-###int width
+###bool bUseTexture
 
 <!--
-_name: width_
-_type: int_
-_access: public_
+_name: bUseTexture_
+_type: bool_
+_access: protected_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -4544,35 +4751,6 @@ _advanced: False_
 
 _description: _
 
-
-Width of the image in pixels.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int height
-
-<!--
-_name: height_
-_type: int_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Height of the image in pixels.
 
 
 
@@ -4609,10 +4787,10 @@ Bytes per pixels of the image. This will be 3 for OF_IMAGE_COLOR with unsigned c
 
 <!----------------------------------------------------------------------------->
 
-###int type
+###int height
 
 <!--
-_name: type_
+_name: height_
 _type: int_
 _access: public_
 _version_started: 007_
@@ -4626,7 +4804,7 @@ _advanced: False_
 _description: _
 
 
-Returns the type of image, OF_IMAGE_COLOR, OF_IMAGE_COLOR_ALPHA, or OF_IMAGE_GRAYSCALE
+Height of the image in pixels.
 
 
 
@@ -4641,31 +4819,6 @@ Returns the type of image, OF_IMAGE_COLOR, OF_IMAGE_COLOR_ALPHA, or OF_IMAGE_GRA
 <!--
 _name: pixels_
 _type: ofPixels_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bUseTexture
-
-<!--
-_name: bUseTexture_
-_type: bool_
 _access: protected_
 _version_started: 007_
 _version_deprecated: _
@@ -4702,6 +4855,60 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int type
+
+<!--
+_name: type_
+_type: int_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Returns the type of image, OF_IMAGE_COLOR, OF_IMAGE_COLOR_ALPHA, or OF_IMAGE_GRAYSCALE
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int width
+
+<!--
+_name: width_
+_type: int_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Width of the image in pixels.
 
 
 

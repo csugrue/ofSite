@@ -12,64 +12,6 @@
 
 
 
-### ofDirectShowGrabber()
-
-<!--
-_syntax: ofDirectShowGrabber()_
-_name: ofDirectShowGrabber_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofDirectShowGrabber()
-
-<!--
-_syntax: ~ofDirectShowGrabber()_
-_name: ~ofDirectShowGrabber_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void clearMemory()
 
 <!--
@@ -331,6 +273,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ofDirectShowGrabber()
+
+<!--
+_syntax: ofDirectShowGrabber()_
+_name: ofDirectShowGrabber_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setDesiredFrameRate(framerate)
 
 <!--
@@ -476,21 +447,21 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-##Variables
-
-
-
-###bool bChooseDevice
+### ~ofDirectShowGrabber()
 
 <!--
-_name: bChooseDevice_
-_type: bool_
-_access: protected_
+_syntax: ~ofDirectShowGrabber()_
+_name: ~ofDirectShowGrabber_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
+_constant: False_
+_static: no_
 _visible: True_
-_constant: True_
 _advanced: False_
 -->
 
@@ -505,10 +476,70 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int deviceID
+###bool setPixelFormat(pixelFormat)
 
 <!--
-_name: deviceID_
+_syntax: setPixelFormat(pixelFormat)_
+_name: setPixelFormat_
+_returns: bool_
+_returns_description: _
+_parameters: ofPixelFormat pixelFormat_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelFormat getPixelFormat()
+
+<!--
+_syntax: getPixelFormat()_
+_name: getPixelFormat_
+_returns: ofPixelFormat_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###int attemptFramerate
+
+<!--
+_name: attemptFramerate_
 _type: int_
 _access: protected_
 _version_started: 007_
@@ -530,10 +561,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool bVerbose
+###bool bChooseDevice
 
 <!--
-_name: bVerbose_
+_name: bChooseDevice_
 _type: bool_
 _access: protected_
 _version_started: 007_
@@ -580,56 +611,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPixels pixels
-
-<!--
-_name: pixels_
-_type: ofPixels_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int attemptFramerate
-
-<!--
-_name: attemptFramerate_
-_type: int_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool bIsFrameNew
 
 <!--
@@ -655,10 +636,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int width
+###bool bVerbose
 
 <!--
-_name: width_
+_name: bVerbose_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int deviceID
+
+<!--
+_name: deviceID_
 _type: int_
 _access: protected_
 _version_started: 007_
@@ -684,6 +690,56 @@ _description: _
 
 <!--
 _name: height_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixels pixels
+
+<!--
+_name: pixels_
+_type: ofPixels_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int width
+
+<!--
+_name: width_
 _type: int_
 _access: protected_
 _version_started: 007_

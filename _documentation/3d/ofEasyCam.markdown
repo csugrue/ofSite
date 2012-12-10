@@ -20,64 +20,6 @@ Controls:
 
 
 
-### ofEasyCam()
-
-<!--
-_syntax: ofEasyCam()_
-_name: ofEasyCam_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofEasyCam()
-
-<!--
-_syntax: ~ofEasyCam()_
-_name: ~ofEasyCam_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void begin(viewport = ofGetCurrentViewport())
 
 <!--
@@ -305,7 +247,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -334,7 +276,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -363,7 +305,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -387,6 +329,35 @@ _name: mouseReleased_
 _returns: void_
 _returns_description: _
 _parameters: ofMouseEventArgs &mouse_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofEasyCam()
+
+<!--
+_syntax: ofEasyCam()_
+_name: ofEasyCam_
+_returns: _
+_returns_description: _
+_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -582,65 +553,296 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ~ofEasyCam()
+
+<!--
+_syntax: ~ofEasyCam()_
+_name: ~ofEasyCam_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setTranslationKey(key)
+
+<!--
+_syntax: setTranslationKey(key)_
+_name: setTranslationKey_
+_returns: void_
+_returns_description: _
+_parameters: char key_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###char getTranslationKey()
+
+<!--
+_syntax: getTranslationKey()_
+_name: getTranslationKey_
+_returns: char_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void enableMouseMiddleButton()
+
+<!--
+_syntax: enableMouseMiddleButton()_
+_name: enableMouseMiddleButton_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void disableMouseMiddleButton()
+
+<!--
+_syntax: disableMouseMiddleButton()_
+_name: disableMouseMiddleButton_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool getMouseMiddleButtonEnabled()
+
+<!--
+_syntax: getMouseMiddleButtonEnabled()_
+_name: getMouseMiddleButtonEnabled_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void updateRotation()
+
+<!--
+_syntax: updateRotation()_
+_name: updateRotation_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void updateTranslation()
+
+<!--
+_syntax: updateTranslation()_
+_name: updateTranslation_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void update(&args)
+
+<!--
+_syntax: update(&args)_
+_name: update_
+_returns: void_
+_returns_description: _
+_parameters: ofEventArgs &args_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void updateMouse()
+
+<!--
+_syntax: updateMouse()_
+_name: updateMouse_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ##Variables
 
 
 
-###ofNode target
+###bool bDistanceSet
 
 <!--
-_name: target_
-_type: ofNode_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float drag
-
-<!--
-_name: drag_
-_type: float_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float zoomSpeed
-
-<!--
-_name: zoomSpeed_
-_type: float_
+_name: bDistanceSet_
+_type: bool_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -686,11 +888,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofVec3f mousePosViewPrev
+###float distanceScaleVelocity
 
 <!--
-_name: mousePosViewPrev_
-_type: ofVec3f_
+_name: distanceScaleVelocity_
+_type: float_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -711,11 +913,36 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofVec3f mousePosScreenPrev
+###float drag
 
 <!--
-_name: mousePosScreenPrev_
-_type: ofVec3f_
+_name: drag_
+_type: float_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float lastDistance
+
+<!--
+_name: lastDistance_
+_type: float_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -786,86 +1013,61 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###ofVec3f mousePosScreenPrev
+
+<!--
+_name: mousePosScreenPrev_
+_type: ofVec3f_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec3f mousePosViewPrev
+
+<!--
+_name: mousePosViewPrev_
+_type: ofVec3f_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool mousePressedPrev
 
 <!--
 _name: mousePressedPrev_
 _type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bDistanceSet
-
-<!--
-_name: bDistanceSet_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float lastDistance
-
-<!--
-_name: lastDistance_
-_type: float_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float distanceScaleVelocity
-
-<!--
-_name: distanceScaleVelocity_
-_type: float_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -911,6 +1113,31 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###ofNode target
+
+<!--
+_name: target_
+_type: ofNode_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofVec3f translation
 
 <!--
@@ -927,6 +1154,559 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float zoomSpeed
+
+<!--
+_name: zoomSpeed_
+_type: float_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bEnableMouseMiddleButton
+
+<!--
+_name: bEnableMouseMiddleButton_
+_type: bool_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bApplyInertia
+
+<!--
+_name: bApplyInertia_
+_type: bool_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bDoTranslate
+
+<!--
+_name: bDoTranslate_
+_type: bool_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bDoRotate
+
+<!--
+_name: bDoRotate_
+_type: bool_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bValidClick
+
+<!--
+_name: bValidClick_
+_type: bool_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bInsideArcball
+
+<!--
+_name: bInsideArcball_
+_type: bool_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float xRot
+
+<!--
+_name: xRot_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float yRot
+
+<!--
+_name: yRot_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float zRot
+
+<!--
+_name: zRot_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float moveX
+
+<!--
+_name: moveX_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float moveY
+
+<!--
+_name: moveY_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float moveZ
+
+<!--
+_name: moveZ_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float sensitivityXY
+
+<!--
+_name: sensitivityXY_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float sensitivityZ
+
+<!--
+_name: sensitivityZ_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float sensitivityRot
+
+<!--
+_name: sensitivityRot_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float rotationFactor
+
+<!--
+_name: rotationFactor_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec2f mouse
+
+<!--
+_name: mouse_
+_type: ofVec2f_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec2f lastMouse
+
+<!--
+_name: lastMouse_
+_type: ofVec2f_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec2f mouseVel
+
+<!--
+_name: mouseVel_
+_type: ofVec2f_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###char doTranslationKey
+
+<!--
+_name: doTranslationKey_
+_type: char_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofQuaternion curRot
+
+<!--
+_name: curRot_
+_type: ofQuaternion_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofRectangle viewport
+
+<!--
+_name: viewport_
+_type: ofRectangle_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
 
 
 

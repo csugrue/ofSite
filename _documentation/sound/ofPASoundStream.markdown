@@ -12,64 +12,6 @@
 
 
 
-### ofPASoundStream()
-
-<!--
-_syntax: ofPASoundStream()_
-_name: ofPASoundStream_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofPASoundStream()
-
-<!--
-_syntax: ~ofPASoundStream()_
-_name: ~ofPASoundStream_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void close()
 
 <!--
@@ -192,6 +134,35 @@ _description: _
 _syntax: listDevices()_
 _name: listDevices_
 _returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofPASoundStream()
+
+<!--
+_syntax: ofPASoundStream()_
+_name: ofPASoundStream_
+_returns: _
 _returns_description: _
 _parameters: _
 _access: public_
@@ -447,21 +418,21 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-##Variables
-
-
-
-###long unsigned long tickCount
+### ~ofPASoundStream()
 
 <!--
-_name: tickCount_
-_type: long unsigned long_
-_access: private_
+_syntax: ~ofPASoundStream()_
+_name: ~ofPASoundStream_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
+_constant: False_
+_static: no_
 _visible: True_
-_constant: True_
 _advanced: False_
 -->
 
@@ -475,6 +446,10 @@ _description: _
 
 
 <!----------------------------------------------------------------------------->
+
+##Variables
+
+
 
 ###PaStream audio
 
@@ -501,10 +476,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int sampleRate
+###int deviceID
 
 <!--
-_name: sampleRate_
+_name: deviceID_
 _type: int_
 _access: private_
 _version_started: 007_
@@ -526,11 +501,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int deviceID
+###bool initialized
 
 <!--
-_name: deviceID_
-_type: int_
+_name: initialized_
+_type: bool_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -580,6 +555,31 @@ _description: _
 
 <!--
 _name: nOutputChannels_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int sampleRate
+
+<!--
+_name: sampleRate_
 _type: int_
 _access: private_
 _version_started: 007_
@@ -651,11 +651,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool initialized
+###long unsigned long tickCount
 
 <!--
-_name: initialized_
-_type: bool_
+_name: tickCount_
+_type: long unsigned long_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

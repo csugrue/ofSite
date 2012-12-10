@@ -12,64 +12,6 @@
 
 
 
-### ofGstVideoGrabber()
-
-<!--
-_syntax: ofGstVideoGrabber()_
-_name: ofGstVideoGrabber_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofGstVideoGrabber()
-
-<!--
-_syntax: ~ofGstVideoGrabber()_
-_name: ~ofGstVideoGrabber_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void close()
 
 <!--
@@ -331,6 +273,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ofGstVideoGrabber()
+
+<!--
+_syntax: ofGstVideoGrabber()_
+_name: ofGstVideoGrabber_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofGstVideoFormat selectFormat(w, h, desired_framerate)
 
 <!--
@@ -418,12 +389,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setPixelFormat(pixelFormat)
+###bool setPixelFormat(pixelFormat)
 
 <!--
 _syntax: setPixelFormat(pixelFormat)_
 _name: setPixelFormat_
-_returns: void_
+_returns: bool_
 _returns_description: _
 _parameters: ofPixelFormat pixelFormat_
 _access: public_
@@ -534,15 +505,72 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ~ofGstVideoGrabber()
+
+<!--
+_syntax: ~ofGstVideoGrabber()_
+_name: ~ofGstVideoGrabber_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixelFormat getPixelFormat()
+
+<!--
+_syntax: getPixelFormat()_
+_name: getPixelFormat_
+_returns: ofPixelFormat_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ##Variables
 
 
 
-###ofGstCamData camData
+###int attemptFramerate
 
 <!--
-_name: camData_
-_type: ofGstCamData_
+_name: attemptFramerate_
+_type: int_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -588,11 +616,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int attemptFramerate
+###ofGstCamData camData
 
 <!--
-_name: attemptFramerate_
-_type: int_
+_name: camData_
+_type: ofGstCamData_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

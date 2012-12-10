@@ -12,64 +12,6 @@
 
 
 
-### ofGstUtils()
-
-<!--
-_syntax: ofGstUtils()_
-_name: ofGstUtils_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofGstUtils()
-
-<!--
-_syntax: ~ofGstUtils()_
-_name: ~ofGstUtils_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###GstFlowReturn buffer_cb(*buffer)
 
 <!--
@@ -186,12 +128,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###guint64 getDurationNanos()
+###int64_t getDurationNanos()
 
 <!--
 _syntax: getDurationNanos()_
 _name: getDurationNanos_
-_returns: guint64_
+_returns: int64_t_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -244,12 +186,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int getLoopState()
+###ofLoopType getLoopState()
 
 <!--
 _syntax: getLoopState()_
 _name: getLoopState_
-_returns: int_
+_returns: ofLoopType_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -273,12 +215,70 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###GstElement * getPipeline()
+###unsigned long getMaxLatencyNanos()
+
+<!--
+_syntax: getMaxLatencyNanos()_
+_name: getMaxLatencyNanos_
+_returns: unsigned long_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###unsigned long getMinLatencyNanos()
+
+<!--
+_syntax: getMinLatencyNanos()_
+_name: getMinLatencyNanos_
+_returns: unsigned long_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GstElement getPipeline()
 
 <!--
 _syntax: getPipeline()_
 _name: getPipeline_
-_returns: GstElement *_
+_returns: GstElement_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -331,12 +331,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###GstElement * getSink()
+###GstElement getSink()
 
 <!--
 _syntax: getSink()_
 _name: getSink_
-_returns: GstElement *_
+_returns: GstElement_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -511,6 +511,35 @@ _description: _
 _syntax: isPlaying()_
 _name: isPlaying_
 _returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofGstUtils()
+
+<!--
+_syntax: ofGstUtils()_
+_name: ofGstUtils_
+_returns: _
 _returns_description: _
 _parameters: _
 _access: public_
@@ -837,7 +866,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -940,14 +969,43 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###unsigned long getMinLatencyNanos()
+### ~ofGstUtils()
 
 <!--
-_syntax: getMinLatencyNanos()_
-_name: getMinLatencyNanos_
-_returns: unsigned long_
+_syntax: ~ofGstUtils()_
+_name: ~ofGstUtils_
+_returns: _
 _returns_description: _
 _parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setVolume(volume)
+
+<!--
+_syntax: setVolume(volume)_
+_name: setVolume_
+_returns: void_
+_returns_description: _
+_parameters: float volume_
 _access: public_
 _version_started: 0071_
 _version_deprecated: _
@@ -968,12 +1026,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###unsigned long getMaxLatencyNanos()
+###void startGstMainLoop()
 
 <!--
-_syntax: getMaxLatencyNanos()_
-_name: getMaxLatencyNanos_
-_returns: unsigned long_
+_syntax: startGstMainLoop()_
+_name: startGstMainLoop_
+_returns: void_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -981,7 +1039,7 @@ _version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: yes_
 _visible: True_
 _advanced: False_
 -->
@@ -1000,11 +1058,11 @@ _description: _
 
 
 
-###bool bPlaying
+###ofGstAppSink appsink
 
 <!--
-_name: bPlaying_
-_type: bool_
+_name: appsink_
+_type: ofGstAppSink_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -1025,10 +1083,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool bPaused
+###bool bFrameByFrame
 
 <!--
-_name: bPaused_
+_name: bFrameByFrame_
 _type: bool_
 _access: private_
 _version_started: 007_
@@ -1100,10 +1158,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool bFrameByFrame
+###bool bPaused
 
 <!--
-_name: bFrameByFrame_
+_name: bPaused_
 _type: bool_
 _access: private_
 _version_started: 007_
@@ -1125,11 +1183,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofLoopType loopMode
+###bool bPlaying
 
 <!--
-_name: loopMode_
-_type: ofLoopType_
+_name: bPlaying_
+_type: bool_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -1150,11 +1208,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###GstElement * gstSink
+###gint64 durationNanos
 
 <!--
-_name: gstSink_
-_type: GstElement *_
+_name: durationNanos_
+_type: gint64_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -1200,111 +1258,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofGstAppSink appsink
+###GstElement * gstSink
 
 <!--
-_name: appsink_
-_type: ofGstAppSink_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool posChangingPaused
-
-<!--
-_name: posChangingPaused_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int pipelineState
-
-<!--
-_name: pipelineState_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float speed
-
-<!--
-_name: speed_
-_type: float_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###gint64 durationNanos
-
-<!--
-_name: durationNanos_
-_type: gint64_
+_name: gstSink_
+_type: GstElement *_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -1355,6 +1313,106 @@ _description: _
 <!--
 _name: isStream_
 _type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofLoopType loopMode
+
+<!--
+_name: loopMode_
+_type: ofLoopType_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int pipelineState
+
+<!--
+_name: pipelineState_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool posChangingPaused
+
+<!--
+_name: posChangingPaused_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float speed
+
+<!--
+_name: speed_
+_type: float_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

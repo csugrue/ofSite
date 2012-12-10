@@ -14,126 +14,6 @@ ofTexture is used to create textures that live on your graphics card from bitmap
 
 
 
-### ofTexture()
-
-<!--
-_syntax: ofTexture()_
-_name: ofTexture_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-Creates an empty ofTexture instance. You can't draw a texture right after it's been created as it has actually uploaded any data to the graphics card that can be drawn yet.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofTexture()
-
-<!--
-_syntax: ~ofTexture()_
-_name: ~ofTexture_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void ofTexture(mom)
-
-<!--
-_syntax: ofTexture(mom)_
-_name: ofTexture_
-_returns: void_
-_returns_description: _
-_parameters: const ofTexture & mom_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: False_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Copy constructor, which copies all of the texture data from mom into the ofTexture that the method is being called on.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofTexture(&mom)
-
-<!--
-_syntax: ofTexture(&mom)_
-_name: ofTexture_
-_returns: _
-_returns_description: _
-_parameters: const ofTexture &mom_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void allocate(w, h, internalGlDataType)
 
 <!--
@@ -240,6 +120,35 @@ _returns_description: _
 _parameters: const ofTextureData &textureData_
 _access: public_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void allocate(&pix)
+
+<!--
+_syntax: allocate(&pix)_
+_name: allocate_
+_returns: void_
+_returns_description: _
+_parameters: const ofPixels &pix_
+_access: public_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -675,6 +584,151 @@ _version_deprecated: _
 _summary: _
 _constant: False_
 _static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&p1, &p2, &p3, &p4)
+
+<!--
+_syntax: draw(&p1, &p2, &p3, &p4)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &p1, const ofPoint &p2, const ofPoint &p3, const ofPoint &p4_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, w, h, sx, sy)
+
+<!--
+_syntax: drawSubsection(x, y, w, h, sx, sy)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h, float sx, float sy_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, z, w, h, sx, sy)
+
+<!--
+_syntax: drawSubsection(x, y, z, w, h, sx, sy)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float w, float h, float sx, float sy_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: drawSubsection(x, y, w, h, sx, sy, sw, sh)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: drawSubsection(x, y, z, w, h, sx, sy, sw, sh)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -1314,6 +1368,180 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void loadData(data, w, h, glFormat)
+
+<!--
+_syntax: loadData(data, w, h, glFormat)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const unsigned char *const data, int w, int h, int glFormat_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(*data, w, h, glFormat)
+
+<!--
+_syntax: loadData(*data, w, h, glFormat)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const unsigned short *data, int w, int h, int glFormat_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(*data, w, h, glFormat)
+
+<!--
+_syntax: loadData(*data, w, h, glFormat)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const float *data, int w, int h, int glFormat_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(&pix)
+
+<!--
+_syntax: loadData(&pix)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const ofPixels &pix_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(&pix)
+
+<!--
+_syntax: loadData(&pix)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const ofShortPixels &pix_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(&pix)
+
+<!--
+_syntax: loadData(&pix)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const ofFloatPixels &pix_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void loadScreenData(x, y, w, h)
 
 <!--
@@ -1337,6 +1565,97 @@ _description: _
 
 Grabs a region of the screen and loads it into the texture. Specifiy the position (x,y) you wish to grab from, with the width (w) and height (h) of the region. Make sure that you have allocated your texture (using allocate()) to be large enough to hold the region of the screen you wish to load.
 Load data from the current screen into this texture. Grabs a region of the screen and loads it into the texture. Specifiy the position (x,y) you wish to grab from, with the width (w) and height (h) of the region. Make sure that you have allocated your texture (using allocate()) to be large enough to hold the region of the screen you wish to load.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofTexture()
+
+<!--
+_syntax: ofTexture()_
+_name: ofTexture_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+Creates an empty ofTexture instance. You can't draw a texture right after it's been created as it has actually uploaded any data to the graphics card that can be drawn yet.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void ofTexture(mom)
+
+<!--
+_syntax: ofTexture(mom)_
+_name: ofTexture_
+_returns: void_
+_returns_description: _
+_parameters: const ofTexture & mom_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Copy constructor, which copies all of the texture data from mom into the ofTexture that the method is being called on.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofTexture(&mom)
+
+<!--
+_syntax: ofTexture(&mom)_
+_name: ofTexture_
+_returns: _
+_returns_description: _
+_parameters: const ofTexture &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -1849,21 +2168,21 @@ This for the advanced user who wants to draw textures in their own way. This sto
 
 <!----------------------------------------------------------------------------->
 
-###void allocate(&pix)
+### ~ofTexture()
 
 <!--
-_syntax: allocate(&pix)_
-_name: allocate_
-_returns: void_
+_syntax: ~ofTexture()_
+_name: ~ofTexture_
+_returns: _
 _returns_description: _
-_parameters: const ofPixels &pix_
+_parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 006_
 _version_deprecated: _
 _summary: _
 _constant: False_
 _static: no_
-_visible: True_
+_visible: False_
 _advanced: False_
 -->
 
@@ -1875,296 +2194,17 @@ _description: _
 
 
 
-<!----------------------------------------------------------------------------->
-
-###void loadData(data, w, h, glFormat)
-
-<!--
-_syntax: loadData(data, w, h, glFormat)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const unsigned char *const data, int w, int h, int glFormat_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
 
 <!----------------------------------------------------------------------------->
 
-###void loadData(*data, w, h, glFormat)
+###void setUseExternalTextureID(externTexID)
 
 <!--
-_syntax: loadData(*data, w, h, glFormat)_
-_name: loadData_
+_syntax: setUseExternalTextureID(externTexID)_
+_name: setUseExternalTextureID_
 _returns: void_
 _returns_description: _
-_parameters: const unsigned short *data, int w, int h, int glFormat_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(*data, w, h, glFormat)
-
-<!--
-_syntax: loadData(*data, w, h, glFormat)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const float *data, int w, int h, int glFormat_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(&pix)
-
-<!--
-_syntax: loadData(&pix)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const ofPixels &pix_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(&pix)
-
-<!--
-_syntax: loadData(&pix)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const ofShortPixels &pix_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(&pix)
-
-<!--
-_syntax: loadData(&pix)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const ofFloatPixels &pix_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&p1, &p2, &p3, &p4)
-
-<!--
-_syntax: draw(&p1, &p2, &p3, &p4)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &p1, const ofPoint &p2, const ofPoint &p3, const ofPoint &p4_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, w, h, sx, sy)
-
-<!--
-_syntax: drawSubsection(x, y, w, h, sx, sy)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float w, float h, float sx, float sy_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, z, w, h, sx, sy)
-
-<!--
-_syntax: drawSubsection(x, y, z, w, h, sx, sy)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float w, float h, float sx, float sy_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: drawSubsection(x, y, w, h, sx, sy, sw, sh)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, z, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: drawSubsection(x, y, z, w, h, sx, sy, sw, sh)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_parameters: GLuint externTexID_
 _access: public_
 _version_started: 0071_
 _version_deprecated: _
@@ -2188,33 +2228,6 @@ _description: _
 ##Variables
 
 
-
-###ofTextureData texData
-
-<!--
-_name: texData_
-_type: ofTextureData_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: True_
--->
-
-_description: _
-
-
-texData is a variable type ofTextureData. ofTextureData is a structure containing information about the texture such as size. 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
 
 ###ofPoint anchor
 
@@ -2257,6 +2270,33 @@ _advanced: False_
 
 _description: _
 
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofTextureData texData
+
+<!--
+_name: texData_
+_type: ofTextureData_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: True_
+-->
+
+_description: _
+
+
+texData is a variable type ofTextureData. ofTextureData is a structure containing information about the texture such as size. 
 
 
 

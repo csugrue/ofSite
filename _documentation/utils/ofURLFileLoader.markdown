@@ -12,35 +12,6 @@
 
 
 
-### ofURLFileLoader()
-
-<!--
-_syntax: ofURLFileLoader()_
-_name: ofURLFileLoader_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void clear()
 
 <!--
@@ -137,6 +108,35 @@ _returns: ofHttpResponse_
 _returns_description: _
 _parameters: ofHttpRequest request_
 _access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofURLFileLoader()
+
+<!--
+_syntax: ofURLFileLoader()_
+_name: ofURLFileLoader_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -364,6 +364,31 @@ _description: _
 
 
 
+###Poco condition
+
+<!--
+_name: condition_
+_type: Poco_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofHttpRequest requests
 
 <!--
@@ -394,31 +419,6 @@ _description: _
 <!--
 _name: responses_
 _type: ofHttpResponse_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###Poco condition
-
-<!--
-_name: condition_
-_type: Poco_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

@@ -14,64 +14,6 @@ The ofTrueTypeFont class provides an interface to load fonts into openframeworks
 
 
 
-### ofTrueTypeFont()
-
-<!--
-_syntax: ofTrueTypeFont()_
-_name: ofTrueTypeFont_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofTrueTypeFont()
-
-<!--
-_syntax: ~ofTrueTypeFont()_
-_name: ~ofTrueTypeFont_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void bind()
 
 <!--
@@ -716,6 +658,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ofTrueTypeFont()
+
+<!--
+_syntax: ofTrueTypeFont()_
+_name: ofTrueTypeFont_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void reloadTextures()
 
 <!--
@@ -981,28 +952,26 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-##Variables
-
-
-
-###bool bLoadedOk
+### ~ofTrueTypeFont()
 
 <!--
-_name: bLoadedOk_
-_type: bool_
+_syntax: ~ofTrueTypeFont()_
+_name: ~ofTrueTypeFont_
+_returns: _
+_returns_description: _
+_parameters: _
 _access: public_
 _version_started: 006_
 _version_deprecated: _
 _summary: _
-_visible: True_
 _constant: False_
+_static: no_
+_visible: False_
 _advanced: False_
 -->
 
 _description: _
 
-
-bLoadedOk is a boolean variable containing true if the font was successfully loaded.   
 
 
 
@@ -1012,17 +981,21 @@ bLoadedOk is a boolean variable containing true if the font was successfully loa
 
 <!----------------------------------------------------------------------------->
 
-###vector< ofTTFCharacter > charOutlines
+##Variables
+
+
+
+###bool bAntiAliased
 
 <!--
-_name: charOutlines_
-_type: vector< ofTTFCharacter >_
+_name: bAntiAliased_
+_type: bool_
 _access: protected_
-_version_started: 006_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _visible: True_
-_constant: False_
+_constant: True_
 _advanced: False_
 -->
 
@@ -1064,31 +1037,6 @@ A variable which tells you if the font is antiAliased.
 
 <!----------------------------------------------------------------------------->
 
-###float lineHeight
-
-<!--
-_name: lineHeight_
-_type: float_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool bFullCharacterSet
 
 <!--
@@ -1116,11 +1064,263 @@ A variable which tells you if the font contains the full character set, or a sub
 
 <!----------------------------------------------------------------------------->
 
+###bool bLoadedOk
+
+<!--
+_name: bLoadedOk_
+_type: bool_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+bLoadedOk is a boolean variable containing true if the font was successfully loaded.   
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bMakeContours
+
+<!--
+_name: bMakeContours_
+_type: bool_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool binded
+
+<!--
+_name: binded_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int border
+
+<!--
+_name: border_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###vector< ofTTFCharacter > charOutlines
+
+<!--
+_name: charOutlines_
+_type: vector< ofTTFCharacter >_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###charProps * cps
 
 <!--
 _name: cps_
 _type: charProps *_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int dpi
+
+<!--
+_name: dpi_
+_type: int_
+_access: protected_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###string filename
+
+<!--
+_name: filename_
+_type: string_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int fontSize
+
+<!--
+_name: fontSize_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float letterSpacing
+
+<!--
+_name: letterSpacing_
+_type: float_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float lineHeight
+
+<!--
+_name: lineHeight_
+_type: float_
 _access: protected_
 _version_started: 006_
 _version_deprecated: _
@@ -1168,163 +1368,13 @@ nCharacters contains the number of characters that our font has.
 
 <!----------------------------------------------------------------------------->
 
-###GLuint * texNames
+###float simplifyAmt
 
 <!--
-_name: texNames_
-_type: GLuint *_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int fontSize
-
-<!--
-_name: fontSize_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bMakeContours
-
-<!--
-_name: bMakeContours_
-_type: bool_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int border
-
-<!--
-_name: border_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int visibleBorder
-
-<!--
-_name: visibleBorder_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bAntiAliased
-
-<!--
-_name: bAntiAliased_
-_type: bool_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float letterSpacing
-
-<!--
-_name: letterSpacing_
+_name: simplifyAmt_
 _type: float_
 _access: protected_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1348,81 +1398,6 @@ _description: _
 <!--
 _name: spaceSize_
 _type: float_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###string filename
-
-<!--
-_name: filename_
-_type: string_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofTexture texAtlas
-
-<!--
-_name: texAtlas_
-_type: ofTexture_
-_access: protected_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool binded
-
-<!--
-_name: binded_
-_type: bool_
 _access: protected_
 _version_started: 007_
 _version_deprecated: _
@@ -1468,13 +1443,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float simplifyAmt
+###ofTexture texAtlas
 
 <!--
-_name: simplifyAmt_
-_type: float_
+_name: texAtlas_
+_type: ofTexture_
 _access: protected_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1483,6 +1458,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -1492,21 +1468,47 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int dpi
+###GLuint * texNames
 
 <!--
-_name: dpi_
-_type: int_
+_name: texNames_
+_type: GLuint *_
 _access: protected_
-_version_started: 0071_
+_version_started: 006_
 _version_deprecated: _
 _summary: _
 _visible: True_
-_constant: True_
+_constant: False_
 _advanced: False_
 -->
 
 _description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int visibleBorder
+
+<!--
+_name: visibleBorder_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 

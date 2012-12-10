@@ -12,93 +12,6 @@
 
 
 
-### ofLight()
-
-<!--
-_syntax: ofLight()_
-_name: ofLight_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofLight(&mom)
-
-<!--
-_syntax: ofLight(&mom)_
-_name: ofLight_
-_returns: _
-_returns_description: _
-_parameters: const ofLight &mom_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofLight()
-
-<!--
-_syntax: ~ofLight()_
-_name: ~ofLight_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void customDraw()
 
 <!--
@@ -225,6 +138,93 @@ _returns_description: _
 _parameters: _
 _access: public_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getAttenuationConstant()
+
+<!--
+_syntax: getAttenuationConstant()_
+_name: getAttenuationConstant_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getAttenuationLinear()
+
+<!--
+_syntax: getAttenuationLinear()_
+_name: getAttenuationLinear_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getAttenuationQuadratic()
+
+<!--
+_syntax: getAttenuationQuadratic()_
+_name: getAttenuationQuadratic_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -447,6 +447,64 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###float getSpotConcentration()
+
+<!--
+_syntax: getSpotConcentration()_
+_name: getSpotConcentration_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getSpotlightCutOff()
+
+<!--
+_syntax: getSpotlightCutOff()_
+_name: getSpotlightCutOff_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###int getType()
 
 <!--
@@ -455,6 +513,64 @@ _name: getType_
 _returns: int_
 _returns_description: _
 _parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofLight()
+
+<!--
+_syntax: ofLight()_
+_name: ofLight_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofLight(&mom)
+
+<!--
+_syntax: ofLight(&mom)_
+_name: ofLight_
+_returns: _
+_returns_description: _
+_parameters: const ofLight &mom_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -850,18 +966,19 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
-###float getSpotlightCutOff()
+### ~ofLight()
 
 <!--
-_syntax: getSpotlightCutOff()_
-_name: getSpotlightCutOff_
-_returns: float_
+_syntax: ~ofLight()_
+_name: ~ofLight_
+_returns: _
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -872,117 +989,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getSpotConcentration()
-
-<!--
-_syntax: getSpotConcentration()_
-_name: getSpotConcentration_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getAttenuationConstant()
-
-<!--
-_syntax: getAttenuationConstant()_
-_name: getAttenuationConstant_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getAttenuationLinear()
-
-<!--
-_syntax: getAttenuationLinear()_
-_name: getAttenuationLinear_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getAttenuationQuadratic()
-
-<!--
-_syntax: getAttenuationQuadratic()_
-_name: getAttenuationQuadratic_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 
@@ -1003,6 +1009,81 @@ _name: ambientColor_
 _type: ofFloatColor_
 _access: private_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float attenuation_constant
+
+<!--
+_name: attenuation_constant_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float attenuation_linear
+
+<!--
+_name: attenuation_linear_
+_type: float_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float attenuation_quadratic
+
+<!--
+_name: attenuation_quadratic_
+_type: float_
+_access: private_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1046,38 +1127,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofFloatColor specularColor
+###float exponent
 
 <!--
-_name: specularColor_
-_type: ofFloatColor_
+_name: exponent_
+_type: float_
 _access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofLightType lightType
-
-<!--
-_name: lightType_
-_type: ofLightType_
-_access: private_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1100,31 +1156,6 @@ _description: _
 
 <!--
 _name: glIndex_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int isEnabled
-
-<!--
-_name: isEnabled_
 _type: int_
 _access: private_
 _version_started: 007_
@@ -1171,6 +1202,31 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###int isEnabled
+
+<!--
+_name: isEnabled_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool isSpotlight
 
 <!--
@@ -1196,13 +1252,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float attenuation_constant
+###ofLightType lightType
 
 <!--
-_name: attenuation_constant_
-_type: float_
+_name: lightType_
+_type: ofLightType_
 _access: private_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1211,6 +1267,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -1220,13 +1277,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float attenuation_linear
+###ofFloatColor specularColor
 
 <!--
-_name: attenuation_linear_
-_type: float_
+_name: specularColor_
+_type: ofFloatColor_
 _access: private_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1236,29 +1293,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float attenuation_quadratic
-
-<!--
-_name: attenuation_quadratic_
-_type: float_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
 
 
 
@@ -1284,29 +1318,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float exponent
-
-<!--
-_name: exponent_
-_type: float_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

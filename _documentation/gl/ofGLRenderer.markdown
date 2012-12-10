@@ -12,64 +12,6 @@
 
 
 
-### ofGLRenderer(useShapeColor = true)
-
-<!--
-_syntax: ofGLRenderer(useShapeColor = true)_
-_name: ofGLRenderer_
-_returns: _
-_returns_description: _
-_parameters: bool useShapeColor=true_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofGLRenderer()
-
-<!--
-_syntax: ~ofGLRenderer()_
-_name: ~ofGLRenderer_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool bClearBg()
 
 <!--
@@ -563,6 +505,151 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void draw(&vertexData, useColors = true, useTextures = true, useNormals = true)
+
+<!--
+_syntax: draw(&vertexData, useColors = true, useTextures = true, useNormals = true)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofMesh &vertexData, bool useColors=true, bool useTextures=true, bool useNormals=true_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&vertexData, renderType, useColors = true, useTextures = true, useNormals = true)
+
+<!--
+_syntax: draw(&vertexData, renderType, useColors = true, useTextures = true, useNormals = true)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofMesh &vertexData, ofPolyRenderMode renderType, bool useColors=true, bool useTextures=true, bool useNormals=true_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofFloatImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofShortImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void drawCircle(x, y, z, radius)
 
 <!--
@@ -660,6 +747,35 @@ _returns_description: _
 _parameters: float x, float y, float z, float w, float h_
 _access: public_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSphere(x, y, z, radius)
+
+<!--
+_syntax: drawSphere(x, y, z, radius)_
+_name: drawSphere_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float radius_
+_access: public_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1006,6 +1122,35 @@ _name: getViewportWidth_
 _returns: int_
 _returns_description: _
 _parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofGLRenderer(useShapeColor = true)
+
+<!--
+_syntax: ofGLRenderer(useShapeColor = true)_
+_name: ofGLRenderer_
+_returns: _
+_returns_description: _
+_parameters: bool useShapeColor=true_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -1781,6 +1926,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void setSphereResolution(res)
+
+<!--
+_syntax: setSphereResolution(res)_
+_name: setSphereResolution_
+_returns: void_
+_returns_description: _
+_parameters: int res_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setupGraphicDefaults()
 
 <!--
@@ -2071,16 +2245,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void draw(&vertexData, useColors = true, useTextures = true, useNormals = true)
+### ~ofGLRenderer()
 
 <!--
-_syntax: draw(&vertexData, useColors = true, useTextures = true, useNormals = true)_
-_name: draw_
-_returns: void_
+_syntax: ~ofGLRenderer()_
+_name: ~ofGLRenderer_
+_returns: _
 _returns_description: _
-_parameters: ofMesh &vertexData, bool useColors=true, bool useTextures=true, bool useNormals=true_
+_parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2091,173 +2265,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&vertexData, renderType, useColors = true, useTextures = true, useNormals = true)
-
-<!--
-_syntax: draw(&vertexData, renderType, useColors = true, useTextures = true, useNormals = true)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofMesh &vertexData, ofPolyRenderMode renderType, bool useColors=true, bool useTextures=true, bool useNormals=true_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofFloatImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofShortImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setSphereResolution(res)
-
-<!--
-_syntax: setSphereResolution(res)_
-_name: setSphereResolution_
-_returns: void_
-_returns_description: _
-_parameters: int res_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSphere(x, y, z, radius)
-
-<!--
-_syntax: drawSphere(x, y, z, radius)_
-_name: drawSphere_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float radius_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 
@@ -2271,211 +2278,11 @@ _description: _
 
 
 
-###ofHandednessType coordHandedness
-
-<!--
-_name: coordHandedness_
-_type: ofHandednessType_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofRectangle viewportHistory
-
-<!--
-_name: viewportHistory_
-_type: ofRectangle_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool bBackgroundAuto
 
 <!--
 _name: bBackgroundAuto_
 _type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofFloatColor bgColor
-
-<!--
-_name: bgColor_
-_type: ofFloatColor_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPoint linePoints
-
-<!--
-_name: linePoints_
-_type: ofPoint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPoint rectPoints
-
-<!--
-_name: rectPoints_
-_type: ofPoint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPoint triPoints
-
-<!--
-_name: triPoints_
-_type: ofPoint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPoint circlePoints
-
-<!--
-_name: circlePoints_
-_type: ofPoint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofPolyline circlePolyline
-
-<!--
-_name: circlePolyline_
-_type: ofPolyline_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -2546,11 +2353,86 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofRectMode rectMode
+###ofFloatColor bgColor
 
 <!--
-_name: rectMode_
-_type: ofRectMode_
+_name: bgColor_
+_type: ofFloatColor_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPoint circlePoints
+
+<!--
+_name: circlePoints_
+_type: ofPoint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPolyline circlePolyline
+
+<!--
+_name: circlePolyline_
+_type: ofPolyline_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofHandednessType coordHandedness
+
+<!--
+_name: coordHandedness_
+_type: ofHandednessType_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -2576,6 +2458,31 @@ _description: _
 <!--
 _name: currentFbo_
 _type: ofFbo_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPoint linePoints
+
+<!--
+_name: linePoints_
+_type: ofPoint_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -2646,6 +2553,56 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###ofRectMode rectMode
+
+<!--
+_name: rectMode_
+_type: ofRectMode_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPoint rectPoints
+
+<!--
+_name: rectPoints_
+_type: ofPoint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofMesh sphereMesh
 
 <!--
@@ -2661,6 +2618,57 @@ _advanced: False_
 -->
 
 _description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPoint triPoints
+
+<!--
+_name: triPoints_
+_type: ofPoint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofRectangle viewportHistory
+
+<!--
+_name: viewportHistory_
+_type: ofRectangle_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 

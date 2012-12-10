@@ -27,64 +27,6 @@ sets pin 9 to be a PWM out pin. Note that this only works on pins that are PWM e
 
 
 
-### ofArduino()
-
-<!--
-_syntax: ofArduino()_
-_name: ofArduino_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofArduino()
-
-<!--
-_syntax: ~ofArduino()_
-_name: ~ofArduino_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool connect(device, baud)
 
 <!--
@@ -830,6 +772,35 @@ _description: _
 
 
 returns true if a succesfull connection has been established and the Arduino has reported a firmware
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofArduino()
+
+<!--
+_syntax: ofArduino()_
+_name: ofArduino_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -1703,6 +1674,35 @@ polls data from the serial port, this has to be called periodically
 
 <!----------------------------------------------------------------------------->
 
+### ~ofArduino()
+
+<!--
+_syntax: ~ofArduino()_
+_name: ~ofArduino_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void ~ofStandardFirmata()
 
 <!--
@@ -1736,33 +1736,6 @@ _description: _
 
 
 
-###ofEvent< const int > EDigitalPinChanged
-
-<!--
-_name: EDigitalPinChanged_
-_type: ofEvent< const int >_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: True_
--->
-
-_description: _
-
-
-triggered when a digital pin changes value, the pin that changed is passed as an argument
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofEvent< const int > EAnalogPinChanged
 
 <!--
@@ -1790,37 +1763,10 @@ triggered when an analog pin changes value, the pin that changed is passed as an
 
 <!----------------------------------------------------------------------------->
 
-###ofEvent< const vector< unsigned char > > ESysExReceived
+###ofEvent< const int > EDigitalPinChanged
 
 <!--
-_name: ESysExReceived_
-_type: ofEvent< const vector< unsigned char > >_
-_access: public_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: True_
--->
-
-_description: _
-
-
-triggered when a SysEx message that isn't in the extended command set is received, the SysEx message is passed as an argument
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofEvent< const int > EProtocolVersionReceived
-
-<!--
-_name: EProtocolVersionReceived_
+_name: EDigitalPinChanged_
 _type: ofEvent< const int >_
 _access: public_
 _version_started: 006_
@@ -1834,7 +1780,7 @@ _advanced: True_
 _description: _
 
 
-triggered when a protocol version is received, the major version is passed as an argument
+triggered when a digital pin changes value, the pin that changed is passed as an argument
 
 
 
@@ -1899,6 +1845,33 @@ from this point it's safe to send to the Arduino.
 
 <!----------------------------------------------------------------------------->
 
+###ofEvent< const int > EProtocolVersionReceived
+
+<!--
+_name: EProtocolVersionReceived_
+_type: ofEvent< const int >_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: True_
+-->
+
+_description: _
+
+
+triggered when a protocol version is received, the major version is passed as an argument
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofEvent< const string > EStringReceived
 
 <!--
@@ -1926,622 +1899,24 @@ triggered when a string is received, the string is passed as an argument
 
 <!----------------------------------------------------------------------------->
 
-###bool _initialized
+###ofEvent< const vector< unsigned char > > ESysExReceived
 
 <!--
-_name: _initialized_
-_type: bool_
-_access: protected_
+_name: ESysExReceived_
+_type: ofEvent< const vector< unsigned char > >_
+_access: public_
 _version_started: 006_
 _version_deprecated: _
 _summary: _
 _visible: True_
 _constant: False_
-_advanced: False_
+_advanced: True_
 -->
 
 _description: _
 
 
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bUseDelay
-
-<!--
-_name: bUseDelay_
-_type: bool_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofSerial _port
-
-<!--
-_name: _port_
-_type: ofSerial_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool connected
-
-<!--
-_name: connected_
-_type: bool_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _portStatus
-
-<!--
-_name: _portStatus_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float connectTime
-
-<!--
-_name: connectTime_
-_type: float_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _analogHistoryLength
-
-<!--
-_name: _analogHistoryLength_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _servoValue
-
-<!--
-_name: _servoValue_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _digitalHistoryLength
-
-<!--
-_name: _digitalHistoryLength_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float _temp
-
-<!--
-_name: _temp_
-_type: float_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _stringHistoryLength
-
-<!--
-_name: _stringHistoryLength_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float _humidity
-
-<!--
-_name: _humidity_
-_type: float_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _sysExHistoryLength
-
-<!--
-_name: _sysExHistoryLength_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _waitForData
-
-<!--
-_name: _waitForData_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _executeMultiByteCommand
-
-<!--
-_name: _executeMultiByteCommand_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _multiByteChannel
-
-<!--
-_name: _multiByteChannel_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###unsigned char _storedInputData
-
-<!--
-_name: _storedInputData_
-_type: unsigned char_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###vector< unsigned char > _sysExData
-
-<!--
-_name: _sysExData_
-_type: vector< unsigned char >_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _majorProtocolVersion
-
-<!--
-_name: _majorProtocolVersion_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _minorProtocolVersion
-
-<!--
-_name: _minorProtocolVersion_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _majorFirmwareVersion
-
-<!--
-_name: _majorFirmwareVersion_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _minorFirmwareVersion
-
-<!--
-_name: _minorFirmwareVersion_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###string _firmwareName
-
-<!--
-_name: _firmwareName_
-_type: string_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###list< vector< unsigned char > > _sysExHistory
-
-<!--
-_name: _sysExHistory_
-_type: list< vector< unsigned char > >_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###list< string > _stringHistory
-
-<!--
-_name: _stringHistory_
-_type: list< string >_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
+triggered when a SysEx message that isn't in the extended command set is received, the SysEx message is passed as an argument
 
 
 
@@ -2576,135 +1951,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###list< int > _digitalHistory
+###int _analogHistoryLength
 
 <!--
-_name: _digitalHistory_
-_type: list< int >_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _digitalPinMode
-
-<!--
-_name: _digitalPinMode_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _digitalPinValue
-
-<!--
-_name: _digitalPinValue_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _digitalPortValue
-
-<!--
-_name: _digitalPortValue_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _digitalPortReporting
-
-<!--
-_name: _digitalPortReporting_
-_type: int_
-_access: protected_
-_version_started: 006_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: False_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int _digitalPinReporting
-
-<!--
-_name: _digitalPinReporting_
+_name: _analogHistoryLength_
 _type: int_
 _access: protected_
 _version_started: 006_
@@ -2751,17 +2001,217 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int _totalDigitalPins
+###list< int > _digitalHistory
 
 <!--
-_name: _totalDigitalPins_
-_type: int_
+_name: _digitalHistory_
+_type: list< int >_
 _access: protected_
-_version_started: 007_
+_version_started: 006_
 _version_deprecated: _
 _summary: _
 _visible: True_
-_constant: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _digitalHistoryLength
+
+<!--
+_name: _digitalHistoryLength_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _digitalPinMode
+
+<!--
+_name: _digitalPinMode_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _digitalPinReporting
+
+<!--
+_name: _digitalPinReporting_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _digitalPinValue
+
+<!--
+_name: _digitalPinValue_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _digitalPortReporting
+
+<!--
+_name: _digitalPortReporting_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _digitalPortValue
+
+<!--
+_name: _digitalPortValue_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _executeMultiByteCommand
+
+<!--
+_name: _executeMultiByteCommand_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###string _firmwareName
+
+<!--
+_name: _firmwareName_
+_type: string_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
 _advanced: False_
 -->
 
@@ -2787,6 +2237,556 @@ _version_deprecated: _
 _summary: _
 _visible: True_
 _constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float _humidity
+
+<!--
+_name: _humidity_
+_type: float_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool _initialized
+
+<!--
+_name: _initialized_
+_type: bool_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _majorFirmwareVersion
+
+<!--
+_name: _majorFirmwareVersion_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _majorProtocolVersion
+
+<!--
+_name: _majorProtocolVersion_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _minorFirmwareVersion
+
+<!--
+_name: _minorFirmwareVersion_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _minorProtocolVersion
+
+<!--
+_name: _minorProtocolVersion_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _multiByteChannel
+
+<!--
+_name: _multiByteChannel_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofSerial _port
+
+<!--
+_name: _port_
+_type: ofSerial_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _portStatus
+
+<!--
+_name: _portStatus_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _servoValue
+
+<!--
+_name: _servoValue_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###unsigned char _storedInputData
+
+<!--
+_name: _storedInputData_
+_type: unsigned char_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###list< string > _stringHistory
+
+<!--
+_name: _stringHistory_
+_type: list< string >_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _stringHistoryLength
+
+<!--
+_name: _stringHistoryLength_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###vector< unsigned char > _sysExData
+
+<!--
+_name: _sysExData_
+_type: vector< unsigned char >_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###list< vector< unsigned char > > _sysExHistory
+
+<!--
+_name: _sysExHistory_
+_type: list< vector< unsigned char > >_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _sysExHistoryLength
+
+<!--
+_name: _sysExHistoryLength_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float _temp
+
+<!--
+_name: _temp_
+_type: float_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _totalDigitalPins
+
+<!--
+_name: _totalDigitalPins_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int _waitForData
+
+<!--
+_name: _waitForData_
+_type: int_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool bUseDelay
+
+<!--
+_name: bUseDelay_
+_type: bool_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float connectTime
+
+<!--
+_name: connectTime_
+_type: float_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool connected
+
+<!--
+_name: connected_
+_type: bool_
+_access: protected_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
 _advanced: False_
 -->
 

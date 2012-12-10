@@ -16,35 +16,6 @@ The far and near clip planes are the boundaries of what's visible in the camera.
 
 
 
-### ofCamera()
-
-<!--
-_syntax: ofCamera()_
-_name: ofCamera_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void begin(viewport =  ofGetCurrentViewport)
 
 <!--
@@ -318,6 +289,35 @@ set the matrices
 
 <!----------------------------------------------------------------------------->
 
+###float getFarClip()
+
+<!--
+_syntax: getFarClip()_
+_name: getFarClip_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###float getFov()
 
 <!--
@@ -498,6 +498,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###float getNearClip()
+
+<!--
+_syntax: getNearClip()_
+_name: getNearClip_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool getOrtho()
 
 <!--
@@ -568,6 +597,35 @@ _name: getProjectionMatrix_
 _returns: ofMatrix4x4_
 _returns_description: _
 _parameters: ofRectangle viewport=ofGetCurrentViewport()_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofCamera()
+
+<!--
+_syntax: ofCamera()_
+_name: ofCamera_
+_returns: _
+_returns_description: _
+_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -742,6 +800,35 @@ This sets the near clip plane.
 
 <!----------------------------------------------------------------------------->
 
+###void setupPerspective(vFlip = true, fov = 60, nearDist = 0, farDist = 0)
+
+<!--
+_syntax: setupPerspective(vFlip = true, fov = 60, nearDist = 0, farDist = 0)_
+_name: setupPerspective_
+_returns: void_
+_returns_description: _
+_parameters: bool vFlip=true, float fov=60, float nearDist=0, float farDist=0_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofVec3f worldToCamera(WorldXYZ, viewport =  ofGetCurrentViewport)
 
 <!--
@@ -862,149 +949,15 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###float getNearClip()
-
-<!--
-_syntax: getNearClip()_
-_name: getNearClip_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getFarClip()
-
-<!--
-_syntax: getFarClip()_
-_name: getFarClip_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setupPerspective(vFlip = true, fov = 60, nearDist = 0, farDist = 0)
-
-<!--
-_syntax: setupPerspective(vFlip = true, fov = 60, nearDist = 0, farDist = 0)_
-_name: setupPerspective_
-_returns: void_
-_returns_description: _
-_parameters: bool vFlip=true, float fov=60, float nearDist=0, float farDist=0_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
 
-###bool isOrtho
+###bool bCacheMatrices
 
 <!--
-_name: isOrtho_
+_name: bCacheMatrices_
 _type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float fov
-
-<!--
-_name: fov_
-_type: float_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float nearClip
-
-<!--
-_name: nearClip_
-_type: float_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -1050,11 +1003,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool isActive
+###float fov
 
 <!--
-_name: isActive_
-_type: bool_
+_name: fov_
+_type: float_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -1100,11 +1053,36 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofMatrix4x4 matProjection
+###bool isActive
 
 <!--
-_name: matProjection_
-_type: ofMatrix4x4_
+_name: isActive_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isOrtho
+
+<!--
+_name: isOrtho_
+_type: bool_
 _access: private_
 _version_started: 007_
 _version_deprecated: _
@@ -1150,11 +1128,36 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool bCacheMatrices
+###ofMatrix4x4 matProjection
 
 <!--
-_name: bCacheMatrices_
-_type: bool_
+_name: matProjection_
+_type: ofMatrix4x4_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float nearClip
+
+<!--
+_name: nearClip_
+_type: float_
 _access: private_
 _version_started: 007_
 _version_deprecated: _

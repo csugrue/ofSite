@@ -48,78 +48,16 @@ Bloom effects are also often done with FBO objects as as Multiple Render to Text
 
 
 
-### ofFbo()
+###void activateAllDrawBuffers()
 
 <!--
-_syntax: ofFbo()_
-_name: ofFbo_
-_returns: _
+_syntax: activateAllDrawBuffers()_
+_name: activateAllDrawBuffers_
+_returns: void_
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-This is the default constructor for the ofFbo.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofFbo(&mom)
-
-<!--
-_syntax: ofFbo(&mom)_
-_name: ofFbo_
-_returns: _
-_returns_description: _
-_parameters: const ofFbo &mom_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-Copies all data from the mom fbo
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofFbo()
-
-<!--
-_syntax: ~ofFbo()_
-_name: ~ofFbo_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -335,6 +273,35 @@ _returns_description: _
 _parameters: _
 _access: private_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void createAndAttachDepthStencilTexture(target, internalformat, format, type, attachment)
+
+<!--
+_syntax: createAndAttachDepthStencilTexture(target, internalformat, format, type, attachment)_
+_name: createAndAttachDepthStencilTexture_
+_returns: void_
+_returns_description: _
+_parameters: GLenum target, GLint internalformat, GLenum format, GLenum type, GLenum attachment_
+_access: private_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -596,6 +563,35 @@ This gives you the OpenGL id of the depthBuffer that the fbo contains.
 
 <!----------------------------------------------------------------------------->
 
+###ofTexture getDepthTexture()
+
+<!--
+_syntax: getDepthTexture()_
+_name: getDepthTexture_
+_returns: ofTexture_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###GLuint getFbo()
 
 <!--
@@ -813,6 +809,35 @@ This returns the width of the fbo that was set when it was allocated. This is ju
 
 <!----------------------------------------------------------------------------->
 
+###bool isAllocated()
+
+<!--
+_syntax: isAllocated()_
+_name: isAllocated_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###int maxColorAttachments()
 
 <!--
@@ -897,6 +922,68 @@ _description: _
 
 
 This is the maximum number of MSAA samples that your graphic card supports.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofFbo()
+
+<!--
+_syntax: ofFbo()_
+_name: ofFbo_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+This is the default constructor for the ofFbo.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofFbo(&mom)
+
+<!--
+_syntax: ofFbo(&mom)_
+_name: ofFbo_
+_returns: _
+_returns_description: _
+_parameters: const ofFbo &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+Copies all data from the mom fbo
 
 
 
@@ -1052,6 +1139,64 @@ _description: _
 
 
 This allows you reset the anchor position.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setActiveDrawBuffer(i)
+
+<!--
+_syntax: setActiveDrawBuffer(i)_
+_name: setActiveDrawBuffer_
+_returns: void_
+_returns_description: _
+_parameters: int i_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setActiveDrawBuffers(&i)
+
+<!--
+_syntax: setActiveDrawBuffers(&i)_
+_name: setActiveDrawBuffers_
+_returns: void_
+_returns_description: _
+_parameters: const vector< int > &i_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -1245,16 +1390,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool isAllocated()
+### ~ofFbo()
 
 <!--
-_syntax: isAllocated()_
-_name: isAllocated_
-_returns: bool_
+_syntax: ~ofFbo()_
+_name: ~ofFbo_
+_returns: _
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1265,145 +1410,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofTexture getDepthTexture()
-
-<!--
-_syntax: getDepthTexture()_
-_name: getDepthTexture_
-_returns: ofTexture_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setActiveDrawBuffer(i)
-
-<!--
-_syntax: setActiveDrawBuffer(i)_
-_name: setActiveDrawBuffer_
-_returns: void_
-_returns_description: _
-_parameters: int i_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setActiveDrawBuffers(&i)
-
-<!--
-_syntax: setActiveDrawBuffers(&i)_
-_name: setActiveDrawBuffers_
-_returns: void_
-_returns_description: _
-_parameters: const vector< int > &i_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void activateAllDrawBuffers()
-
-<!--
-_syntax: activateAllDrawBuffers()_
-_name: activateAllDrawBuffers_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void createAndAttachDepthStencilTexture(target, internalformat, format, type, attachment)
-
-<!--
-_syntax: createAndAttachDepthStencilTexture(target, internalformat, format, type, attachment)_
-_name: createAndAttachDepthStencilTexture_
-_returns: void_
-_returns_description: _
-_parameters: GLenum target, GLint internalformat, GLenum format, GLenum type, GLenum attachment_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 
@@ -1416,281 +1422,6 @@ _description: _
 ##Variables
 
 
-
-###Settings settings
-
-<!--
-_name: settings_
-_type: Settings_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int isBound
-
-<!--
-_name: isBound_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GLuint fbo
-
-<!--
-_name: fbo_
-_type: GLuint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GLuint fboTextures
-
-<!--
-_name: fboTextures_
-_type: GLuint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GLuint depthBuffer
-
-<!--
-_name: depthBuffer_
-_type: GLuint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GLuint stencilBuffer
-
-<!--
-_name: stencilBuffer_
-_type: GLuint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###GLint savedFramebuffer
-
-<!--
-_name: savedFramebuffer_
-_type: GLint_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###vector< GLuint > colorBuffers
-
-<!--
-_name: colorBuffers_
-_type: vector< GLuint >_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofTexture textures
-
-<!--
-_name: textures_
-_type: ofTexture_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool dirty
-
-<!--
-_name: dirty_
-_type: bool_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int defaultTextureIndex
-
-<!--
-_name: defaultTextureIndex_
-_type: int_
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
 
 ###int _maxColorAttachments
 
@@ -1767,6 +1498,106 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###bool bIsAllocated
+
+<!--
+_name: bIsAllocated_
+_type: bool_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###vector< GLuint > colorBuffers
+
+<!--
+_name: colorBuffers_
+_type: vector< GLuint >_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int defaultTextureIndex
+
+<!--
+_name: defaultTextureIndex_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLuint depthBuffer
+
+<!--
+_name: depthBuffer_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofTexture depthBufferTex
 
 <!--
@@ -1789,15 +1620,16 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
-###bool bIsAllocated
+###bool dirty
 
 <!--
-_name: bIsAllocated_
+_name: dirty_
 _type: bool_
 _access: private_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1806,6 +1638,182 @@ _advanced: False_
 -->
 
 _description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLuint fbo
+
+<!--
+_name: fbo_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLuint fboTextures
+
+<!--
+_name: fboTextures_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int isBound
+
+<!--
+_name: isBound_
+_type: int_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLint savedFramebuffer
+
+<!--
+_name: savedFramebuffer_
+_type: GLint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###Settings settings
+
+<!--
+_name: settings_
+_type: Settings_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###GLuint stencilBuffer
+
+<!--
+_name: stencilBuffer_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofTexture textures
+
+<!--
+_name: textures_
+_type: ofTexture_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 

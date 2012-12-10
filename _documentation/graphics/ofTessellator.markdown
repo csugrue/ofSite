@@ -18,15 +18,15 @@ The fairly simple shape shown on the left needs to be broken into triangles to b
 
 
 
-### ofTessellator()
+###void init()
 
 <!--
-_syntax: ofTessellator()_
-_name: ofTessellator_
-_returns: _
+_syntax: init()_
+_name: init_
+_returns: void_
 _returns_description: _
 _parameters: _
-_access: public_
+_access: private_
 _version_started: 007_
 _version_deprecated: _
 _summary: _
@@ -47,11 +47,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ~ofTessellator()
+### ofTessellator()
 
 <!--
-_syntax: ~ofTessellator()_
-_name: ~ofTessellator_
+_syntax: ofTessellator()_
+_name: ofTessellator_
 _returns: _
 _returns_description: _
 _parameters: _
@@ -98,35 +98,6 @@ _description: _
 
 
 Copy constructor to copy properties from one tessellator to another. 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void init()
-
-<!--
-_syntax: init()_
-_name: init_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: private_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
 
 
 
@@ -347,6 +318,35 @@ ofPolyline destination;
 // ... fill vec
 tess.performTessellation(destination, OF_POLY_WINDING_ODD, sources, true ); // true is for 2d
 ~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofTessellator()
+
+<!--
+_syntax: ~ofTessellator()_
+_name: ~ofTessellator_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 

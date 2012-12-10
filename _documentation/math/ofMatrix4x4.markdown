@@ -12,180 +12,6 @@
 
 
 
-### ofMatrix4x4()
-
-<!--
-_syntax: ofMatrix4x4()_
-_name: ofMatrix4x4_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofMatrix4x4(&mat)
-
-<!--
-_syntax: ofMatrix4x4(&mat)_
-_name: ofMatrix4x4_
-_returns: _
-_returns_description: _
-_parameters: const ofMatrix4x4 &mat_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofMatrix4x4(ptr)
-
-<!--
-_syntax: ofMatrix4x4(ptr)_
-_name: ofMatrix4x4_
-_returns: _
-_returns_description: _
-_parameters: float const *const ptr_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofMatrix4x4(&quat)
-
-<!--
-_syntax: ofMatrix4x4(&quat)_
-_name: ofMatrix4x4_
-_returns: _
-_returns_description: _
-_parameters: const ofQuaternion &quat_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofMatrix4x4(a00, a01, a02, a03, a10, a11, a12, a13, a20, a21, a22, a23, a30, a31, a32, a33)
-
-<!--
-_syntax: ofMatrix4x4(a00, a01, a02, a03, a10, a11, a12, a13, a20, a21, a22, a23, a30, a31, a32, a33)_
-_name: ofMatrix4x4_
-_returns: _
-_returns_description: _
-_parameters: float a00, float a01, float a02, float a03, float a10, float a11, float a12, float a13, float a20, float a21, float a22, float a23, float a30, float a31, float a32, float a33_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ~ofMatrix4x4()
-
-<!--
-_syntax: ~ofMatrix4x4()_
-_name: ~ofMatrix4x4_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###void decompose(&translation, &rotation, &scale, &so)
 
 <!--
@@ -1897,6 +1723,151 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+### ofMatrix4x4()
+
+<!--
+_syntax: ofMatrix4x4()_
+_name: ofMatrix4x4_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofMatrix4x4(&mat)
+
+<!--
+_syntax: ofMatrix4x4(&mat)_
+_name: ofMatrix4x4_
+_returns: _
+_returns_description: _
+_parameters: const ofMatrix4x4 &mat_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofMatrix4x4(ptr)
+
+<!--
+_syntax: ofMatrix4x4(ptr)_
+_name: ofMatrix4x4_
+_returns: _
+_returns_description: _
+_parameters: float const *const ptr_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofMatrix4x4(&quat)
+
+<!--
+_syntax: ofMatrix4x4(&quat)_
+_name: ofMatrix4x4_
+_returns: _
+_returns_description: _
+_parameters: const ofQuaternion &quat_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofMatrix4x4(a00, a01, a02, a03, a10, a11, a12, a13, a20, a21, a22, a23, a30, a31, a32, a33)
+
+<!--
+_syntax: ofMatrix4x4(a00, a01, a02, a03, a10, a11, a12, a13, a20, a21, a22, a23, a30, a31, a32, a33)_
+_name: ofMatrix4x4_
+_returns: _
+_returns_description: _
+_parameters: float a00, float a01, float a02, float a03, float a10, float a11, float a12, float a13, float a20, float a21, float a22, float a23, float a30, float a31, float a32, float a33_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###float operator()(row, col)
 
 <!--
@@ -2949,6 +2920,35 @@ _name: translate_
 _returns: void_
 _returns_description: _
 _parameters: const ofVec3f &v_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ~ofMatrix4x4()
+
+<!--
+_syntax: ~ofMatrix4x4()_
+_name: ~ofMatrix4x4_
+_returns: _
+_returns_description: _
+_parameters: _
 _access: public_
 _version_started: 007_
 _version_deprecated: _

@@ -228,7 +228,7 @@ _returns: void_
 _returns_description: _
 _parameters: ofPtr< ofBaseLoggerChannel > loggerChannel_
 _version_started: _
-_version_deprecated: 007_
+_version_deprecated: _
 _summary: _
 _constant: False_
 _static: False_
@@ -238,55 +238,6 @@ _advanced: False_
 
 _description: _
 
-Sets the logging channel that receives log messages. This can be one of the predefined OF channels:
-	
-	ofConsoleLoggerChannel
-	ofFileLoggerChannel
-or a custom channel derived from `ofBaseLoggerChannel`. Here is an example that adds a custom header to all messages before printing.
-Declaration in a .h file:
-~~~~{.cpp}
-// make a simple custom logging class derived from ofBaseLoggerChannel
-// see libs/openframeworks/util/ofLog.cpp for a more detailed example
-class MyLoggerChannel: public ofBaseLoggerChannel {
-public:
-	MyLoggerChannel(string myHeader="woo hooo") {
-		header = myHeader;
-	};
-	
-	void log(ofLogLevel level, const string & module, const string & message) {
-		cout << header<< " " << module << ": " << ofGetLogLevelName(level) << ": " << message << endl;
-	}
-	
-	// va_lists are a fun C/C++ pain … read the following link for more info:
-	// http://www.ozzu.com/cpp-tutorials/tutorial-writing-custom-printf-wrapper-function-t89166.html
-	virtual void log(ofLogLevel logLevel, const string & module, const char* format, ...) {
-		va_list args;
-		va_start(args, format);
-		log(logLevel, module, format, args);
-		va_end(args);
-	}
-	
-	// note: the c_str() C++ string member function returns a C string needed by C functions like printf
-	virtual void log(ofLogLevel logLevel, const string & module, const char* format, va_list args) {
-		printf("%s %s: %s: ", header.c_str(), module.c_str(), ofGetLogLevelName(logLevel).c_str());
-		vprintf(format, args);
-		printf("\n");
-	}
-protected:
-	string header;
-};
-~~~~
-Use it in a .cpp file:
-~~~~{.cpp}
-// create using an ofPtr smart pointer
-ofPtr<MyLoggerChannel> myChannel(new MyLoggerChannel("this is my header!"));
-// tell OF to use our custom channel
-ofSetLoggerChannel(myChannel);
-// now logging as normal should have a "this is my header!" added to the front
-ofLog() << "a test string";
-~~~~
-The default logging channel is `ofConsoleLoggerChannel`.
-Note: It's easier to use the predefined logging channels through the ofLogToFile() & ofLogToConsole().
 
 
 

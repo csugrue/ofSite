@@ -12,12 +12,12 @@
 
 
 
-### ~ofBaseUpdates()
+###void update()
 
 <!--
-_syntax: ~ofBaseUpdates()_
-_name: ~ofBaseUpdates_
-_returns: _
+_syntax: update()_
+_name: update_
+_returns: void_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -41,12 +41,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void update()
+### ~ofBaseUpdates()
 
 <!--
-_syntax: update()_
-_name: update_
-_returns: void_
+_syntax: ~ofBaseUpdates()_
+_name: ~ofBaseUpdates_
+_returns: _
 _returns_description: _
 _parameters: _
 _access: public_

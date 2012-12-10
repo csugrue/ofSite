@@ -132,31 +132,6 @@ _description: _
 
 
 
-###ofHttpRequest request
-
-<!--
-_name: request_
-_type: ofHttpRequest_
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###ofBuffer data
 
 <!--
@@ -182,11 +157,11 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int status
+###string error
 
 <!--
-_name: status_
-_type: int_
+_name: error_
+_type: string_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
@@ -207,11 +182,36 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###string error
+###ofHttpRequest request
 
 <!--
-_name: error_
-_type: string_
+_name: request_
+_type: ofHttpRequest_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int status
+
+<!--
+_name: status_
+_type: int_
 _access: public_
 _version_started: 007_
 _version_deprecated: _
