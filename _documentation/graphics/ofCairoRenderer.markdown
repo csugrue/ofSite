@@ -534,6 +534,151 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void draw(&vertexData, useColors = true, useTextures = true, useNormals = true)
+
+<!--
+_syntax: draw(&vertexData, useColors = true, useTextures = true, useNormals = true)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofMesh &vertexData, bool useColors=true, bool useTextures=true, bool useNormals=true_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&vertexData, mode, useColors = false, useTextures = false, useNormals = false)
+
+<!--
+_syntax: draw(&vertexData, mode, useColors = false, useTextures = false, useNormals = false)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofMesh &vertexData, ofPolyRenderMode mode, bool useColors=false, bool useTextures=false, bool useNormals=false_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&img, x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: draw(&img, x, y, z, w, h, sx, sy, sw, sh)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofImage &img, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofFloatImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofShortImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void drawCircle(x, y, z, radius)
 
 <!--
@@ -631,6 +776,35 @@ _returns_description: _
 _parameters: float x, float y, float z, float w, float h_
 _access: public_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSphere(x, y, z, radius)
+
+<!--
+_syntax: drawSphere(x, y, z, radius)_
+_name: drawSphere_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float radius_
+_access: public_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1781,20 +1955,20 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setup(filename, type = ofCairoRenderer
+###void setSphereResolution(res)
 
 <!--
-_syntax: setup(filename, type = ofCairoRenderer_
-_name: setup_
+_syntax: setSphereResolution(res)_
+_name: setSphereResolution_
 _returns: void_
 _returns_description: _
-_parameters: string filename, Type type=ofCairoRenderer_
+_parameters: int res_
 _access: public_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -2110,6 +2284,64 @@ _returns_description: _
 _parameters: string filename, Type type=ofCairoRenderer_
 _access: public_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setup(filename, type = ofCairoRenderer
+
+<!--
+_syntax: setup(filename, type = ofCairoRenderer_
+_name: setup_
+_returns: void_
+_returns_description: _
+_parameters: string filename, Type type=ofCairoRenderer_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setup(filename, type = ofCairoRenderer
+
+<!--
+_syntax: setup(filename, type = ofCairoRenderer_
+_name: setup_
+_returns: void_
+_returns_description: _
+_parameters: string filename, Type type=ofCairoRenderer_
+_access: public_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2448,16 +2680,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setup(filename, type = ofCairoRenderer::PDF, multiPage = true, b3D = false, viewport = ofRectangle(0, 0, 0, 0))
+###void setup(filename, type = ofCairoRenderer::FROM_FILE_EXTENSION, multiPage = true, b3D = false, viewport = ofRectangle(0, 0, 0, 0))
 
 <!--
-_syntax: setup(filename, type = ofCairoRenderer::PDF, multiPage = true, b3D = false, viewport = ofRectangle(0, 0, 0, 0))_
+_syntax: setup(filename, type = ofCairoRenderer::FROM_FILE_EXTENSION, multiPage = true, b3D = false, viewport = ofRectangle(0, 0, 0, 0))_
 _name: setup_
 _returns: void_
 _returns_description: _
-_parameters: string filename, Type type=ofCairoRenderer::PDF, bool multiPage=true, bool b3D=false, ofRectangle viewport=ofRectangle(0, 0, 0, 0)_
+_parameters: string filename, Type type=ofCairoRenderer::FROM_FILE_EXTENSION, bool multiPage=true, bool b3D=false, ofRectangle viewport=ofRectangle(0, 0, 0, 0)_
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2476,16 +2708,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void draw(&vertexData, useColors = true, useTextures = true, useNormals = true)
+###void setupMemoryOnly(_type, multiPage = true, b3D = false, viewport = ofRectangle(0, 0, 0, 0))
 
 <!--
-_syntax: draw(&vertexData, useColors = true, useTextures = true, useNormals = true)_
-_name: draw_
+_syntax: setupMemoryOnly(_type, multiPage = true, b3D = false, viewport = ofRectangle(0, 0, 0, 0))_
+_name: setupMemoryOnly_
 _returns: void_
 _returns_description: _
-_parameters: ofMesh &vertexData, bool useColors=true, bool useTextures=true, bool useNormals=true_
+_parameters: Type _type, bool multiPage=true, bool b3D=false, ofRectangle viewport=ofRectangle(0, 0, 0, 0)_
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2504,16 +2736,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void draw(&vertexData, mode, useColors = false, useTextures = false, useNormals = false)
+###void flush()
 
 <!--
-_syntax: draw(&vertexData, mode, useColors = false, useTextures = false, useNormals = false)_
-_name: draw_
+_syntax: flush()_
+_name: flush_
 _returns: void_
 _returns_description: _
-_parameters: ofMesh &vertexData, ofPolyRenderMode mode, bool useColors=false, bool useTextures=false, bool useNormals=false_
+_parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2532,16 +2764,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void draw(&img, x, y, z, w, h, sx, sy, sw, sh)
+###ofPixels getImageSurfacePixels()
 
 <!--
-_syntax: draw(&img, x, y, z, w, h, sx, sy, sw, sh)_
-_name: draw_
-_returns: void_
+_syntax: getImageSurfacePixels()_
+_name: getImageSurfacePixels_
+_returns: ofPixels_
 _returns_description: _
-_parameters: ofImage &img, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2560,16 +2792,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
+###ofBuffer getContentBuffer()
 
 <!--
-_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
-_name: draw_
-_returns: void_
+_syntax: getContentBuffer()_
+_name: getContentBuffer_
+_returns: ofBuffer_
 _returns_description: _
-_parameters: ofFloatImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2588,16 +2820,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void draw(&image, x, y, z, w, h, sx, sy, sw, sh)
+###void setStyle(&style)
 
 <!--
-_syntax: draw(&image, x, y, z, w, h, sx, sy, sw, sh)_
-_name: draw_
+_syntax: setStyle(&style)_
+_name: setStyle_
 _returns: void_
 _returns_description: _
-_parameters: ofShortImage &image, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
+_parameters: const ofStyle &style_
+_access: private_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -2616,48 +2848,20 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setSphereResolution(res)
+###_cairo_status stream_function(*closure, *data, length)
 
 <!--
-_syntax: setSphereResolution(res)_
-_name: setSphereResolution_
-_returns: void_
+_syntax: stream_function(*closure, *data, length)_
+_name: stream_function_
+_returns: _cairo_status_
 _returns_description: _
-_parameters: int res_
-_access: public_
-_version_started: 0071_
+_parameters: void *closure, const unsigned char *data, unsigned int length_
+_access: private_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSphere(x, y, z, radius)
-
-<!--
-_syntax: drawSphere(x, y, z, radius)_
-_name: drawSphere_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float radius_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
+_static: yes_
 _visible: True_
 _advanced: False_
 -->
@@ -3051,6 +3255,56 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###ofPoint spherePoints
+
+<!--
+_name: spherePoints_
+_type: ofPoint_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPoint sphereVerts
+
+<!--
+_name: sphereVerts_
+_type: ofPoint_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###cairo_surface_t * surface
 
 <!--
@@ -3176,13 +3430,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPoint sphereVerts
+###string filename
 
 <!--
-_name: sphereVerts_
-_type: ofPoint_
+_name: filename_
+_type: string_
 _access: private_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -3200,13 +3454,37 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofPoint spherePoints
+###ofBuffer streamBuffer
 
 <!--
-_name: spherePoints_
-_type: ofPoint_
+_name: streamBuffer_
+_type: ofBuffer_
 _access: private_
-_version_started: 0071_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPixels imageBuffer
+
+<!--
+_name: imageBuffer_
+_type: ofPixels_
+_access: private_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _visible: True_

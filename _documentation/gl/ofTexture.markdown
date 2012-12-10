@@ -139,6 +139,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void allocate(&pix)
+
+<!--
+_syntax: allocate(&pix)_
+_name: allocate_
+_returns: void_
+_returns_description: _
+_parameters: const ofPixels &pix_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool bAllocated()
 
 <!--
@@ -555,6 +584,151 @@ _version_deprecated: _
 _summary: _
 _constant: False_
 _static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&p1, &p2, &p3, &p4)
+
+<!--
+_syntax: draw(&p1, &p2, &p3, &p4)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &p1, const ofPoint &p2, const ofPoint &p3, const ofPoint &p4_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, w, h, sx, sy)
+
+<!--
+_syntax: drawSubsection(x, y, w, h, sx, sy)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h, float sx, float sy_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, z, w, h, sx, sy)
+
+<!--
+_syntax: drawSubsection(x, y, z, w, h, sx, sy)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float w, float h, float sx, float sy_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: drawSubsection(x, y, w, h, sx, sy, sw, sh)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSubsection(x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: drawSubsection(x, y, z, w, h, sx, sy, sw, sh)_
+_name: drawSubsection_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -1175,6 +1349,180 @@ _returns_description: _
 _parameters: void *data, int w, int h, int glFormat_
 _access: protected_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(data, w, h, glFormat)
+
+<!--
+_syntax: loadData(data, w, h, glFormat)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const unsigned char *const data, int w, int h, int glFormat_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(*data, w, h, glFormat)
+
+<!--
+_syntax: loadData(*data, w, h, glFormat)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const unsigned short *data, int w, int h, int glFormat_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(*data, w, h, glFormat)
+
+<!--
+_syntax: loadData(*data, w, h, glFormat)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const float *data, int w, int h, int glFormat_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(&pix)
+
+<!--
+_syntax: loadData(&pix)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const ofPixels &pix_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(&pix)
+
+<!--
+_syntax: loadData(&pix)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const ofShortPixels &pix_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void loadData(&pix)
+
+<!--
+_syntax: loadData(&pix)_
+_name: loadData_
+_returns: void_
+_returns_description: _
+_parameters: const ofFloatPixels &pix_
+_access: public_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1849,324 +2197,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void allocate(&pix)
+###void setUseExternalTextureID(externTexID)
 
 <!--
-_syntax: allocate(&pix)_
-_name: allocate_
+_syntax: setUseExternalTextureID(externTexID)_
+_name: setUseExternalTextureID_
 _returns: void_
 _returns_description: _
-_parameters: const ofPixels &pix_
+_parameters: GLuint externTexID_
 _access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(data, w, h, glFormat)
-
-<!--
-_syntax: loadData(data, w, h, glFormat)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const unsigned char *const data, int w, int h, int glFormat_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(*data, w, h, glFormat)
-
-<!--
-_syntax: loadData(*data, w, h, glFormat)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const unsigned short *data, int w, int h, int glFormat_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(*data, w, h, glFormat)
-
-<!--
-_syntax: loadData(*data, w, h, glFormat)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const float *data, int w, int h, int glFormat_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(&pix)
-
-<!--
-_syntax: loadData(&pix)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const ofPixels &pix_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(&pix)
-
-<!--
-_syntax: loadData(&pix)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const ofShortPixels &pix_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void loadData(&pix)
-
-<!--
-_syntax: loadData(&pix)_
-_name: loadData_
-_returns: void_
-_returns_description: _
-_parameters: const ofFloatPixels &pix_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&p1, &p2, &p3, &p4)
-
-<!--
-_syntax: draw(&p1, &p2, &p3, &p4)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &p1, const ofPoint &p2, const ofPoint &p3, const ofPoint &p4_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, w, h, sx, sy)
-
-<!--
-_syntax: drawSubsection(x, y, w, h, sx, sy)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float w, float h, float sx, float sy_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, z, w, h, sx, sy)
-
-<!--
-_syntax: drawSubsection(x, y, z, w, h, sx, sy)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float w, float h, float sx, float sy_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: drawSubsection(x, y, w, h, sx, sy, sw, sh)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSubsection(x, y, z, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: drawSubsection(x, y, z, w, h, sx, sy, sw, sh)_
-_name: drawSubsection_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_

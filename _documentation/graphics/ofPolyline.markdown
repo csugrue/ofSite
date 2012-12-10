@@ -113,7 +113,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -160,7 +160,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -300,6 +300,122 @@ polyline.arc(ofGetWidth()/2,ofGetHeight()/2,100,100,100,0,360,40); // circle wit
 // at middle and -100 back
 polyline.arc(ofGetWidth()/2,ofGetHeight()/2,100,100,100,0,180,40); // semi-circle with a diameter of 100
 ~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)
+
+<!--
+_syntax: arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)_
+_name: arc_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, bool clockwise, int curveResolution=20_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+
+<!--
+_syntax: arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
+_name: arcNegative_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+
+<!--
+_syntax: arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
+_name: arcNegative_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
+
+<!--
+_syntax: arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
+_name: arcNegative_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -1490,118 +1606,6 @@ The number of points in the ofPolyline.
 
 <!----------------------------------------------------------------------------->
 
-###void arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)
-
-<!--
-_syntax: arc(&center, radiusX, radiusY, angleBegin, angleEnd, clockwise, curveResolution = 20)_
-_name: arc_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, bool clockwise, int curveResolution=20_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
-
-<!--
-_syntax: arcNegative(&center, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arcNegative_
-_returns: void_
-_returns_description: _
-_parameters: const ofPoint &center, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
-
-<!--
-_syntax: arcNegative(x, y, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arcNegative_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)
-
-<!--
-_syntax: arcNegative(x, y, z, radiusX, radiusY, angleBegin, angleEnd, curveResolution = 20)_
-_name: arcNegative_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float radiusX, float radiusY, float angleBegin, float angleEnd, int curveResolution=20_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###float wrapAngle(angleRad)
 
 <!--
@@ -1616,6 +1620,147 @@ _version_deprecated: _
 _summary: _
 _constant: False_
 _static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void addVertices(&verts)
+
+<!--
+_syntax: addVertices(&verts)_
+_name: addVertices_
+_returns: void_
+_returns_description: _
+_parameters: const vector< ofPoint > &verts_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### OF_DEPRECATED_MSG(instead", &verts))
+
+<!--
+_syntax: OF_DEPRECATED_MSG(instead", &verts))_
+_name: OF_DEPRECATED_MSG_
+_returns: _
+_returns_description: _
+_parameters: "Use ofPolyline::addVertices instead", void addVertexes(const vector< ofPoint > &verts)_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void addVertices(*verts, numverts)
+
+<!--
+_syntax: addVertices(*verts, numverts)_
+_name: addVertices_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint *verts, int numverts_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### OF_DEPRECATED_MSG(instead", *verts, numverts))
+
+<!--
+_syntax: OF_DEPRECATED_MSG(instead", *verts, numverts))_
+_name: OF_DEPRECATED_MSG_
+_returns: _
+_returns_description: _
+_parameters: "Use ofPolyline::addVertices instead", void addVertexes(const ofPoint *verts, int numverts)_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofPolyline fromRectangle(&rect)
+
+<!--
+_syntax: fromRectangle(&rect)_
+_name: fromRectangle_
+_returns: ofPolyline_
+_returns_description: _
+_parameters: const ofRectangle &rect_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
 _visible: True_
 _advanced: False_
 -->

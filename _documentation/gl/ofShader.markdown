@@ -106,6 +106,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###bool checkProgramLinkStatus(program)
+
+<!--
+_syntax: checkProgramLinkStatus(program)_
+_name: checkProgramLinkStatus_
+_returns: bool_
+_returns_description: _
+_parameters: GLuint program_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void checkShaderInfoLog(shader, type)
 
 <!--
@@ -2078,6 +2107,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void setUniformMatrix4f(*name, &m)
+
+<!--
+_syntax: setUniformMatrix4f(*name, &m)_
+_name: setUniformMatrix4f_
+_returns: void_
+_returns_description: _
+_parameters: const char *name, const ofMatrix4x4 &m_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setUniformTexture(name, img, textureLocation)
 
 <!--
@@ -2347,62 +2405,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setUniformMatrix4f(*name, &m)
-
-<!--
-_syntax: setUniformMatrix4f(*name, &m)_
-_name: setUniformMatrix4f_
-_returns: void_
-_returns_description: _
-_parameters: const char *name, const ofMatrix4x4 &m_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool checkProgramLinkStatus(program)
-
-<!--
-_syntax: checkProgramLinkStatus(program)_
-_name: checkProgramLinkStatus_
-_returns: bool_
-_returns_description: _
-_parameters: GLuint program_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

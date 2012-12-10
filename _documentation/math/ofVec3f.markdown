@@ -1058,6 +1058,64 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###bool isAligned(&vec, tolerance = 0.0001)
+
+<!--
+_syntax: isAligned(&vec, tolerance = 0.0001)_
+_name: isAligned_
+_returns: bool_
+_returns_description: _
+_parameters: const ofVec3f &vec, float tolerance=0.0001_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isAlignedRad(&vec, tolerance = 0.0001)
+
+<!--
+_syntax: isAlignedRad(&vec, tolerance = 0.0001)_
+_name: isAlignedRad_
+_returns: bool_
+_returns_description: _
+_parameters: const ofVec3f &vec, float tolerance=0.0001_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###float length()
 
 <!--
@@ -1533,6 +1591,64 @@ Construct a new 3D vector (`ofxVec3f`) from a 4D vector `vec` by throwing away t
 ofVec3f mom = ofVec4f(40, 20, 10, 100);
 ofVec3f v(mom); // v is (40, 20, 10)
 ~~~~
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVec3f(&vec)
+
+<!--
+_syntax: ofVec3f(&vec)_
+_name: ofVec3f_
+_returns: _
+_returns_description: _
+_parameters: const ofVec2f &vec_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec3f one()
+
+<!--
+_syntax: one()_
+_name: one_
+_returns: ofVec3f_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -2888,7 +3004,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2904,90 +3020,6 @@ float len = v.length(); // len is 5.0990
 ~~~~
 
 Use as a much faster alternative to [`length`](#length) if you don't need to know an accurate length but rather just a rough idea of a length (for example when finding the shortest distance of a bunch of points to a reference point, where it doesn't matter exactly what the lengths are, you just want the shortest). It avoids the square root calculation that is ordinarily required to calculate a length.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-### ofVec3f(&vec)
-
-<!--
-_syntax: ofVec3f(&vec)_
-_name: ofVec3f_
-_returns: _
-_returns_description: _
-_parameters: const ofVec2f &vec_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isAligned(&vec, tolerance = 0.0001)
-
-<!--
-_syntax: isAligned(&vec, tolerance = 0.0001)_
-_name: isAligned_
-_returns: bool_
-_returns_description: _
-_parameters: const ofVec3f &vec, float tolerance=0.0001_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isAlignedRad(&vec, tolerance = 0.0001)
-
-<!--
-_syntax: isAlignedRad(&vec, tolerance = 0.0001)_
-_name: isAlignedRad_
-_returns: bool_
-_returns_description: _
-_parameters: const ofVec3f &vec, float tolerance=0.0001_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 
@@ -3023,22 +3055,107 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
-###ofVec3f one()
+### ofVec3f()
 
 <!--
-_syntax: one()_
-_name: one_
-_returns: ofVec3f_
+_syntax: ofVec3f()_
+_name: ofVec3f_
+_returns: _
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: yes_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### ofVec3f(_scalar)
+
+<!--
+_syntax: ofVec3f(_scalar)_
+_name: ofVec3f_
+_returns: _
+_returns_description: _
+_parameters: float _scalar_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void set(_scalar)
+
+<!--
+_syntax: set(_scalar)_
+_name: set_
+_returns: void_
+_returns_description: _
+_parameters: float _scalar_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+### OF_DEPRECATED_MSG(instead.", const)
+
+<!--
+_syntax: OF_DEPRECATED_MSG(instead.", const)_
+_name: OF_DEPRECATED_MSG_
+_returns: _
+_returns_description: _
+_parameters: "Use ofVec3f::lengthSquared() instead.", float squareLength() const_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
 _visible: True_
 _advanced: False_
 -->
@@ -3056,6 +3173,31 @@ _description: _
 ##Variables
 
 
+
+###const int DIM
+
+<!--
+_name: DIM_
+_type: const int_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
 
 ###float x
 
@@ -3129,30 +3271,6 @@ _description: _
 
 
 Stores the Z component of this vector.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###const int DIM
-
-<!--
-_name: DIM_
-_type: const int_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

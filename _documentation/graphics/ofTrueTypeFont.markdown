@@ -1216,6 +1216,31 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###int dpi
+
+<!--
+_name: dpi_
+_type: int_
+_access: protected_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###string filename
 
 <!--
@@ -1343,6 +1368,31 @@ nCharacters contains the number of characters that our font has.
 
 <!----------------------------------------------------------------------------->
 
+###float simplifyAmt
+
+<!--
+_name: simplifyAmt_
+_type: float_
+_access: protected_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###float spaceSize
 
 <!--
@@ -1459,54 +1509,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float simplifyAmt
-
-<!--
-_name: simplifyAmt_
-_type: float_
-_access: protected_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int dpi
-
-<!--
-_name: dpi_
-_type: int_
-_access: protected_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

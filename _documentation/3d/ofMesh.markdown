@@ -1117,6 +1117,93 @@ Removes all the vertices.
 
 <!----------------------------------------------------------------------------->
 
+###void disableColors()
+
+<!--
+_syntax: disableColors()_
+_name: disableColors_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void disableNormals()
+
+<!--
+_syntax: disableNormals()_
+_name: disableNormals_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void disableTextures()
+
+<!--
+_syntax: disableTextures()_
+_name: disableTextures_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void draw()
 
 <!--
@@ -1270,6 +1357,93 @@ This draws the mesh as GL_LINES, meaning that you'll have a wireframe.
 
 <!----------------------------------------------------------------------------->
 
+###void enableColors()
+
+<!--
+_syntax: enableColors()_
+_name: enableColors_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void enableNormals()
+
+<!--
+_syntax: enableNormals()_
+_name: enableNormals_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void enableTextures()
+
+<!--
+_syntax: enableTextures()_
+_name: enableTextures_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofVec3f getCentroid()
 
 <!--
@@ -1312,7 +1486,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -1437,7 +1611,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -1562,7 +1736,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -1811,7 +1985,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -1905,7 +2079,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2296,6 +2470,35 @@ If the vertices of the mesh have changed, been added or removed.
 
 <!----------------------------------------------------------------------------->
 
+###void load(path)
+
+<!--
+_syntax: load(path)_
+_name: load_
+_returns: void_
+_returns_description: _
+_parameters: string path_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ### ofMesh()
 
 <!--
@@ -2400,7 +2603,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2431,7 +2634,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2462,7 +2665,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2493,7 +2696,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2524,7 +2727,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2533,6 +2736,35 @@ _description: _
 
 
 Removes the vertex at the index in the vector.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void save(path, useBinary = false)
+
+<!--
+_syntax: save(path, useBinary = false)_
+_name: save_
+_returns: void_
+_returns_description: _
+_parameters: string path, bool useBinary=false_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -2586,7 +2818,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2615,7 +2847,7 @@ _version_started: _
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2739,7 +2971,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2799,7 +3031,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2859,7 +3091,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -2935,259 +3167,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-### ~ofMesh()
-
-<!--
-_syntax: ~ofMesh()_
-_name: ~ofMesh_
-_returns: _
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 007_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void load(path)
-
-<!--
-_syntax: load(path)_
-_name: load_
-_returns: void_
-_returns_description: _
-_parameters: string path_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void save(path, useBinary = false)
-
-<!--
-_syntax: save(path, useBinary = false)_
-_name: save_
-_returns: void_
-_returns_description: _
-_parameters: string path, bool useBinary=false_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void enableColors()
-
-<!--
-_syntax: enableColors()_
-_name: enableColors_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void enableTextures()
-
-<!--
-_syntax: enableTextures()_
-_name: enableTextures_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void enableNormals()
-
-<!--
-_syntax: enableNormals()_
-_name: enableNormals_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void disableColors()
-
-<!--
-_syntax: disableColors()_
-_name: disableColors_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void disableTextures()
-
-<!--
-_syntax: disableTextures()_
-_name: disableTextures_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void disableNormals()
-
-<!--
-_syntax: disableNormals()_
-_name: disableNormals_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###bool usingColors()
 
 <!--
@@ -3207,6 +3186,36 @@ _advanced: False_
 -->
 
 _description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool usingNormals()
+
+<!--
+_syntax: usingNormals()_
+_name: usingNormals_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -3242,18 +3251,524 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
-###bool usingNormals()
+### ~ofMesh()
 
 <!--
-_syntax: usingNormals()_
-_name: usingNormals_
+_syntax: ~ofMesh()_
+_name: ~ofMesh_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec3f getVertex(i)
+
+<!--
+_syntax: getVertex(i)_
+_name: getVertex_
+_returns: ofVec3f_
+_returns_description: _
+_parameters: ofIndexType i_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void removeVertex(index)
+
+<!--
+_syntax: removeVertex(index)_
+_name: removeVertex_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setVertex(index, &v)
+
+<!--
+_syntax: setVertex(index, &v)_
+_name: setVertex_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index, const ofVec3f &v_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec3f getNormal(i)
+
+<!--
+_syntax: getNormal(i)_
+_name: getNormal_
+_returns: ofVec3f_
+_returns_description: _
+_parameters: ofIndexType i_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void removeNormal(index)
+
+<!--
+_syntax: removeNormal(index)_
+_name: removeNormal_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setNormal(index, &n)
+
+<!--
+_syntax: setNormal(index, &n)_
+_name: setNormal_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index, const ofVec3f &n_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofFloatColor getColor(i)
+
+<!--
+_syntax: getColor(i)_
+_name: getColor_
+_returns: ofFloatColor_
+_returns_description: _
+_parameters: ofIndexType i_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void removeColor(index)
+
+<!--
+_syntax: removeColor(index)_
+_name: removeColor_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setColor(index, &c)
+
+<!--
+_syntax: setColor(index, &c)_
+_name: setColor_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index, const ofFloatColor &c_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofVec2f getTexCoord(i)
+
+<!--
+_syntax: getTexCoord(i)_
+_name: getTexCoord_
+_returns: ofVec2f_
+_returns_description: _
+_parameters: ofIndexType i_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void removeTexCoord(index)
+
+<!--
+_syntax: removeTexCoord(index)_
+_name: removeTexCoord_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setTexCoord(index, &t)
+
+<!--
+_syntax: setTexCoord(index, &t)_
+_name: setTexCoord_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index, const ofVec2f &t_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofIndexType getIndex(i)
+
+<!--
+_syntax: getIndex(i)_
+_name: getIndex_
+_returns: ofIndexType_
+_returns_description: _
+_parameters: ofIndexType i_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void removeIndex(index)
+
+<!--
+_syntax: removeIndex(index)_
+_name: removeIndex_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setIndex(index, val)
+
+<!--
+_syntax: setIndex(index, val)_
+_name: setIndex_
+_returns: void_
+_returns_description: _
+_parameters: ofIndexType index, ofIndexType val_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void enableIndices()
+
+<!--
+_syntax: enableIndices()_
+_name: enableIndices_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void disableIndices()
+
+<!--
+_syntax: disableIndices()_
+_name: disableIndices_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool usingIndices()
+
+<!--
+_syntax: usingIndices()_
+_name: usingIndices_
 _returns: bool_
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -3551,13 +4066,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofVec3f vertices
+###bool useColors
 
 <!--
-_name: vertices_
-_type: ofVec3f_
+_name: useColors_
+_type: bool_
 _access: private_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -3576,10 +4091,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool useColors
+###bool useNormals
 
 <!--
-_name: useColors_
+_name: useNormals_
 _type: bool_
 _access: private_
 _version_started: 0071_
@@ -3591,6 +4106,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 
@@ -3622,15 +4138,41 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
-###bool useNormals
+###ofVec3f vertices
 
 <!--
-_name: useNormals_
+_name: vertices_
+_type: ofVec3f_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool useIndices
+
+<!--
+_name: useIndices_
 _type: bool_
 _access: private_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _visible: True_

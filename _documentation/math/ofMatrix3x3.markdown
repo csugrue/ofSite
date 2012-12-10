@@ -70,6 +70,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###ofMatrix3x3 entrywiseTimes(&A)
+
+<!--
+_syntax: entrywiseTimes(&A)_
+_name: entrywiseTimes_
+_returns: ofMatrix3x3_
+_returns_description: _
+_parameters: const ofMatrix3x3 &A_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofMatrix3x3 inverse(&A)
 
 <!--
@@ -583,34 +612,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofMatrix3x3 entrywiseTimes(&A)
-
-<!--
-_syntax: entrywiseTimes(&A)_
-_name: entrywiseTimes_
-_returns: ofMatrix3x3_
-_returns_description: _
-_parameters: const ofMatrix3x3 &A_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

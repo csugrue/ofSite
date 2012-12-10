@@ -164,6 +164,151 @@ Ok soldier, lock and load … good luck!
 
 
 
+###ofThread getCurrentThread()
+
+<!--
+_syntax: getCurrentThread()_
+_name: getCurrentThread_
+_returns: ofThread_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int getThreadId()
+
+<!--
+_syntax: getThreadId()_
+_name: getThreadId_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###string getThreadName()
+
+<!--
+_syntax: getThreadName()_
+_name: getThreadName_
+_returns: string_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isCurrentThread()
+
+<!--
+_syntax: isCurrentThread()_
+_name: isCurrentThread_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isMainThread()
+
+<!--
+_syntax: isMainThread()_
+_name: isMainThread_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool isThreadRunning()
 
 <!--
@@ -282,6 +427,64 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void run()
+
+<!--
+_syntax: run()_
+_name: run_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void sleep(sleepMS)
+
+<!--
+_syntax: sleep(sleepMS)_
+_name: sleep_
+_returns: void_
+_returns_description: _
+_parameters: int sleepMS_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void startThread(_blocking = true, _verbose = false)
 
 <!--
@@ -330,7 +533,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -537,6 +740,35 @@ Set *stop* to false if you have already signaled the thread to exit by calling `
 
 <!----------------------------------------------------------------------------->
 
+###void yield()
+
+<!--
+_syntax: yield()_
+_name: yield_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ### ~ofThread()
 
 <!--
@@ -566,100 +798,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int getThreadId()
+###void stopThread()
 
 <!--
-_syntax: getThreadId()_
-_name: getThreadId_
-_returns: int_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###string getThreadName()
-
-<!--
-_syntax: getThreadName()_
-_name: getThreadName_
-_returns: string_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void sleep(sleepMS)
-
-<!--
-_syntax: sleep(sleepMS)_
-_name: sleep_
-_returns: void_
-_returns_description: _
-_parameters: int sleepMS_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void yield()
-
-<!--
-_syntax: yield()_
-_name: yield_
+_syntax: stopThread()_
+_name: stopThread_
 _returns: void_
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -678,100 +826,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool isCurrentThread()
+###Poco::Thread & getPocoThread()
 
 <!--
-_syntax: isCurrentThread()_
-_name: isCurrentThread_
-_returns: bool_
+_syntax: getPocoThread()_
+_name: getPocoThread_
+_returns: Poco::Thread &_
 _returns_description: _
 _parameters: _
 _access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isMainThread()
-
-<!--
-_syntax: isMainThread()_
-_name: isMainThread_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofThread getCurrentThread()
-
-<!--
-_syntax: getCurrentThread()_
-_name: getCurrentThread_
-_returns: ofThread_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: yes_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void run()
-
-<!--
-_syntax: run()_
-_name: run_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: private_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -873,6 +937,31 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###Poco thread
+
+<!--
+_name: thread_
+_type: Poco_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###bool threadRunning
 
 <!--
@@ -937,30 +1026,6 @@ _description: _
 This is true if the thread was started in verbose mode.
 
 This is useful if you want to print special messages inside your derived class for thread debugging.
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###Poco::Thread thread
-
-<!--
-_name: thread_
-_type: Poco::Thread_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

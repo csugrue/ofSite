@@ -41,6 +41,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###bool allocate(bpp)
+
+<!--
+_syntax: allocate(bpp)_
+_name: allocate_
+_returns: bool_
+_returns_description: _
+_parameters: int bpp_
+_access: protected_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void close()
 
 <!--
@@ -244,12 +273,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###int getLoopState()
+###ofLoopType getLoopState()
 
 <!--
 _syntax: getLoopState()_
 _name: getLoopState_
-_returns: int_
+_returns: ofLoopType_
 _returns_description: _
 _parameters: _
 _access: public_
@@ -911,12 +940,12 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setPixelFormat(pixelFormat)
+###bool setPixelFormat(pixelFormat)
 
 <!--
 _syntax: setPixelFormat(pixelFormat)_
 _name: setPixelFormat_
-_returns: void_
+_returns: bool_
 _returns_description: _
 _parameters: ofPixelFormat pixelFormat_
 _access: public_
@@ -998,6 +1027,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void setThreadAppSink(threaded)
+
+<!--
+_syntax: setThreadAppSink(threaded)_
+_name: setThreadAppSink_
+_returns: void_
+_returns_description: _
+_parameters: bool threaded_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setVolume(volume)
 
 <!--
@@ -1011,7 +1069,7 @@ _version_started: 007_
 _version_deprecated: _
 _summary: _
 _constant: False_
-_static: no_
+_static: False_
 _visible: True_
 _advanced: False_
 -->
@@ -1114,16 +1172,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setThreadAppSink(threaded)
+###ofPixelFormat getPixelFormat()
 
 <!--
-_syntax: setThreadAppSink(threaded)_
-_name: setThreadAppSink_
-_returns: void_
+_syntax: getPixelFormat()_
+_name: getPixelFormat_
+_returns: ofPixelFormat_
 _returns_description: _
-_parameters: bool threaded_
+_parameters: _
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1142,16 +1200,16 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool allocate(bpp)
+###void setVolume(volume)
 
 <!--
-_syntax: allocate(bpp)_
-_name: allocate_
-_returns: bool_
+_syntax: setVolume(volume)_
+_name: setVolume_
+_returns: void_
 _returns_description: _
-_parameters: int bpp_
-_access: protected_
-_version_started: 0071_
+_parameters: float volume_
+_access: public_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1324,13 +1382,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###ofGstVideoUtils videoUtils
+###bool threadAppSink
 
 <!--
-_name: videoUtils_
-_type: ofGstVideoUtils_
+_name: threadAppSink_
+_type: bool_
 _access: private_
-_version_started: 007_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1349,13 +1407,13 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool threadAppSink
+###ofGstVideoUtils videoUtils
 
 <!--
-_name: threadAppSink_
-_type: bool_
+_name: videoUtils_
+_type: ofGstVideoUtils_
 _access: private_
-_version_started: 0071_
+_version_started: 007_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1364,6 +1422,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 

@@ -447,6 +447,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void normalize()
+
+<!--
+_syntax: normalize()_
+_name: normalize_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ### ofQuaternion()
 
 <!--
@@ -1424,34 +1453,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void normalize()
-
-<!--
-_syntax: normalize()_
-_name: normalize_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

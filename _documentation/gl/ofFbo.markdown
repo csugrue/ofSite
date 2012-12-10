@@ -48,6 +48,35 @@ Bloom effects are also often done with FBO objects as as Multiple Render to Text
 
 
 
+###void activateAllDrawBuffers()
+
+<!--
+_syntax: activateAllDrawBuffers()_
+_name: activateAllDrawBuffers_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void allocate(width, height, internalformat = GL_RGBA, numSamples = 0)
 
 <!--
@@ -244,6 +273,35 @@ _returns_description: _
 _parameters: _
 _access: private_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void createAndAttachDepthStencilTexture(target, internalformat, format, type, attachment)
+
+<!--
+_syntax: createAndAttachDepthStencilTexture(target, internalformat, format, type, attachment)_
+_name: createAndAttachDepthStencilTexture_
+_returns: void_
+_returns_description: _
+_parameters: GLenum target, GLint internalformat, GLenum format, GLenum type, GLenum attachment_
+_access: private_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -505,6 +563,35 @@ This gives you the OpenGL id of the depthBuffer that the fbo contains.
 
 <!----------------------------------------------------------------------------->
 
+###ofTexture getDepthTexture()
+
+<!--
+_syntax: getDepthTexture()_
+_name: getDepthTexture_
+_returns: ofTexture_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###GLuint getFbo()
 
 <!--
@@ -713,6 +800,35 @@ _description: _
 
 
 This returns the width of the fbo that was set when it was allocated. This is just like width of a texture: it sets how many pixels wide the allocated memory on the graphics card is.
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool isAllocated()
+
+<!--
+_syntax: isAllocated()_
+_name: isAllocated_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
 
 
 
@@ -1032,6 +1148,64 @@ This allows you reset the anchor position.
 
 <!----------------------------------------------------------------------------->
 
+###void setActiveDrawBuffer(i)
+
+<!--
+_syntax: setActiveDrawBuffer(i)_
+_name: setActiveDrawBuffer_
+_returns: void_
+_returns_description: _
+_parameters: int i_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setActiveDrawBuffers(&i)
+
+<!--
+_syntax: setActiveDrawBuffers(&i)_
+_name: setActiveDrawBuffers_
+_returns: void_
+_returns_description: _
+_parameters: const vector< int > &i_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setAnchorPercent(xPct, yPct)
 
 <!--
@@ -1245,174 +1419,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool isAllocated()
-
-<!--
-_syntax: isAllocated()_
-_name: isAllocated_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofTexture getDepthTexture()
-
-<!--
-_syntax: getDepthTexture()_
-_name: getDepthTexture_
-_returns: ofTexture_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setActiveDrawBuffer(i)
-
-<!--
-_syntax: setActiveDrawBuffer(i)_
-_name: setActiveDrawBuffer_
-_returns: void_
-_returns_description: _
-_parameters: int i_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setActiveDrawBuffers(&i)
-
-<!--
-_syntax: setActiveDrawBuffers(&i)_
-_name: setActiveDrawBuffers_
-_returns: void_
-_returns_description: _
-_parameters: const vector< int > &i_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void activateAllDrawBuffers()
-
-<!--
-_syntax: activateAllDrawBuffers()_
-_name: activateAllDrawBuffers_
-_returns: void_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void createAndAttachDepthStencilTexture(target, internalformat, format, type, attachment)
-
-<!--
-_syntax: createAndAttachDepthStencilTexture(target, internalformat, format, type, attachment)_
-_name: createAndAttachDepthStencilTexture_
-_returns: void_
-_returns_description: _
-_parameters: GLenum target, GLint internalformat, GLenum format, GLenum type, GLenum attachment_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
@@ -1492,6 +1498,31 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###bool bIsAllocated
+
+<!--
+_name: bIsAllocated_
+_type: bool_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###vector< GLuint > colorBuffers
 
 <!--
@@ -1549,6 +1580,31 @@ _name: depthBuffer_
 _type: GLuint_
 _access: private_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###ofTexture depthBufferTex
+
+<!--
+_name: depthBufferTex_
+_type: ofTexture_
+_access: private_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -1758,54 +1814,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###ofTexture depthBufferTex
-
-<!--
-_name: depthBufferTex_
-_type: ofTexture_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool bIsAllocated
-
-<!--
-_name: bIsAllocated_
-_type: bool_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

@@ -289,6 +289,35 @@ set the matrices
 
 <!----------------------------------------------------------------------------->
 
+###float getFarClip()
+
+<!--
+_syntax: getFarClip()_
+_name: getFarClip_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###float getFov()
 
 <!--
@@ -450,6 +479,35 @@ _returns_description: _
 _parameters: ofRectangle viewport=ofGetCurrentViewport()_
 _access: public_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###float getNearClip()
+
+<!--
+_syntax: getNearClip()_
+_name: getNearClip_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -742,6 +800,35 @@ This sets the near clip plane.
 
 <!----------------------------------------------------------------------------->
 
+###void setupPerspective(vFlip = true, fov = 60, nearDist = 0, farDist = 0)
+
+<!--
+_syntax: setupPerspective(vFlip = true, fov = 60, nearDist = 0, farDist = 0)_
+_name: setupPerspective_
+_returns: void_
+_returns_description: _
+_parameters: bool vFlip=true, float fov=60, float nearDist=0, float farDist=0_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofVec3f worldToCamera(WorldXYZ, viewport =  ofGetCurrentViewport)
 
 <!--
@@ -853,90 +940,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getNearClip()
-
-<!--
-_syntax: getNearClip()_
-_name: getNearClip_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getFarClip()
-
-<!--
-_syntax: getFarClip()_
-_name: getFarClip_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setupPerspective(vFlip = true, fov = 60, nearDist = 0, farDist = 0)
-
-<!--
-_syntax: setupPerspective(vFlip = true, fov = 60, nearDist = 0, farDist = 0)_
-_name: setupPerspective_
-_returns: void_
-_returns_description: _
-_parameters: bool vFlip=true, float fov=60, float nearDist=0, float farDist=0_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

@@ -522,6 +522,31 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###GstBuffer * buffer
+
+<!--
+_name: buffer_
+_type: GstBuffer *_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofPixels bufferEvent
 
 <!--
@@ -647,10 +672,10 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###GstBuffer * buffer
+###GstBuffer * prevBuffer
 
 <!--
-_name: buffer_
+_name: prevBuffer_
 _type: GstBuffer *_
 _access: private_
 _version_started: 0071_
@@ -669,15 +694,16 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
 
-###GstBuffer * prevBuffer
+###ofPixels eventPixels
 
 <!--
-_name: prevBuffer_
-_type: GstBuffer *_
-_access: private_
-_version_started: 0071_
+_name: eventPixels_
+_type: ofPixels_
+_access: protected_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _visible: True_

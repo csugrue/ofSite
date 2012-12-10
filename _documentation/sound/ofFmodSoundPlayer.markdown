@@ -186,6 +186,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###float getVolume()
+
+<!--
+_syntax: getVolume()_
+_name: getVolume_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void initializeFmod()
 
 <!--
@@ -215,12 +244,41 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void loadSound(fileName, stream = false)
+###bool isLoaded()
+
+<!--
+_syntax: isLoaded()_
+_name: isLoaded_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###bool loadSound(fileName, stream = false)
 
 <!--
 _syntax: loadSound(fileName, stream = false)_
 _name: loadSound_
-_returns: void_
+_returns: bool_
 _returns_description: _
 _parameters: string fileName, bool stream=false_
 _access: public_
@@ -612,62 +670,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###float getVolume()
-
-<!--
-_syntax: getVolume()_
-_name: getVolume_
-_returns: float_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###bool isLoaded()
-
-<!--
-_syntax: isLoaded()_
-_name: isLoaded_
-_returns: bool_
-_returns_description: _
-_parameters: _
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

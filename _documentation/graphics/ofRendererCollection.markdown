@@ -505,6 +505,151 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void draw(&vertexData, useColors, useTextures, useNormals)
+
+<!--
+_syntax: draw(&vertexData, useColors, useTextures, useNormals)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofMesh &vertexData, bool useColors, bool useTextures, bool useNormals_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&vertexData, mode, useColors, useTextures, useNormals)
+
+<!--
+_syntax: draw(&vertexData, mode, useColors, useTextures, useNormals)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofMesh &vertexData, ofPolyRenderMode mode, bool useColors, bool useTextures, bool useNormals_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&img, x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: draw(&img, x, y, z, w, h, sx, sy, sw, sh)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofImage &img, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&img, x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: draw(&img, x, y, z, w, h, sx, sy, sw, sh)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofFloatImage &img, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void draw(&img, x, y, z, w, h, sx, sy, sw, sh)
+
+<!--
+_syntax: draw(&img, x, y, z, w, h, sx, sy, sw, sh)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofShortImage &img, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void drawCircle(x, y, z, radius)
 
 <!--
@@ -602,6 +747,35 @@ _returns_description: _
 _parameters: float x, float y, float z, float w, float h_
 _access: public_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void drawSphere(x, y, z, radius)
+
+<!--
+_syntax: drawSphere(x, y, z, radius)_
+_name: drawSphere_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z, float radius_
+_access: public_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -1975,174 +2149,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&vertexData, useColors, useTextures, useNormals)
-
-<!--
-_syntax: draw(&vertexData, useColors, useTextures, useNormals)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofMesh &vertexData, bool useColors, bool useTextures, bool useNormals_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&vertexData, mode, useColors, useTextures, useNormals)
-
-<!--
-_syntax: draw(&vertexData, mode, useColors, useTextures, useNormals)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofMesh &vertexData, ofPolyRenderMode mode, bool useColors, bool useTextures, bool useNormals_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&img, x, y, z, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: draw(&img, x, y, z, w, h, sx, sy, sw, sh)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofImage &img, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&img, x, y, z, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: draw(&img, x, y, z, w, h, sx, sy, sw, sh)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofFloatImage &img, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void draw(&img, x, y, z, w, h, sx, sy, sw, sh)
-
-<!--
-_syntax: draw(&img, x, y, z, w, h, sx, sy, sw, sh)_
-_name: draw_
-_returns: void_
-_returns_description: _
-_parameters: ofShortImage &img, float x, float y, float z, float w, float h, float sx, float sy, float sw, float sh_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void drawSphere(x, y, z, radius)
-
-<!--
-_syntax: drawSphere(x, y, z, radius)_
-_name: drawSphere_
-_returns: void_
-_returns_description: _
-_parameters: float x, float y, float z, float radius_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

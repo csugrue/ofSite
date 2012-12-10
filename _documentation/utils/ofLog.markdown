@@ -423,6 +423,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###ofLog operator<<(&))
+
+<!--
+_syntax: operator<<(&))_
+_name: operator<<_
+_returns: ofLog_
+_returns_description: _
+_parameters: std_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###ofLog operator=(&from)
 
 <!--
@@ -438,6 +467,35 @@ _summary: _
 _constant: False_
 _static: no_
 _visible: False_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setAutoSpace(autoSpace)
+
+<!--
+_syntax: setAutoSpace(autoSpace)_
+_name: setAutoSpace_
+_returns: void_
+_returns_description: _
+_parameters: bool autoSpace_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: yes_
+_visible: True_
 _advanced: False_
 -->
 
@@ -523,7 +581,7 @@ _returns: ofLog_
 _returns_description: _
 _parameters: std::ostream &(*func)(std::ostream &)_
 _access: public_
-_version_started: 0071_
+_version_started: 0072_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -542,21 +600,21 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setAutoSpace(autoSpace)
+##Variables
+
+
+
+###bool bAutoSpace
 
 <!--
-_syntax: setAutoSpace(autoSpace)_
-_name: setAutoSpace_
-_returns: void_
-_returns_description: _
-_parameters: bool autoSpace_
-_access: public_
+_name: bAutoSpace_
+_type: bool_
+_access: private_
 _version_started: 0071_
 _version_deprecated: _
 _summary: _
-_constant: False_
-_static: yes_
 _visible: True_
+_constant: True_
 _advanced: False_
 -->
 
@@ -568,11 +626,8 @@ _description: _
 
 
 
+
 <!----------------------------------------------------------------------------->
-
-##Variables
-
-
 
 ###bool bPrinted
 
@@ -699,30 +754,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###bool bAutoSpace
-
-<!--
-_name: bAutoSpace_
-_type: bool_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ###string padding
 
 <!--
@@ -738,6 +769,7 @@ _advanced: False_
 -->
 
 _description: _
+
 
 
 

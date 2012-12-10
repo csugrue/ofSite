@@ -244,6 +244,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void setInDeviceID(deviceID)
+
+<!--
+_syntax: setInDeviceID(deviceID)_
+_name: setInDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: int deviceID_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setInput(*soundInput)
 
 <!--
@@ -254,6 +283,35 @@ _returns_description: _
 _parameters: ofBaseSoundInput *soundInput_
 _access: public_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###void setOutDeviceID(deviceID)
+
+<!--
+_syntax: setOutDeviceID(deviceID)_
+_name: setOutDeviceID_
+_returns: void_
+_returns_description: _
+_parameters: int deviceID_
+_access: public_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _constant: False_
@@ -447,62 +505,6 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
-###void setInDeviceID(deviceID)
-
-<!--
-_syntax: setInDeviceID(deviceID)_
-_name: setInDeviceID_
-_returns: void_
-_returns_description: _
-_parameters: int deviceID_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setOutDeviceID(deviceID)
-
-<!--
-_syntax: setOutDeviceID(deviceID)_
-_name: setOutDeviceID_
-_returns: void_
-_returns_description: _
-_parameters: int deviceID_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
 ##Variables
 
 
@@ -557,6 +559,31 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###int inDeviceID
+
+<!--
+_name: inDeviceID_
+_type: int_
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###int nInputChannels
 
 <!--
@@ -589,6 +616,31 @@ _name: nOutputChannels_
 _type: int_
 _access: private_
 _version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
+###int outDeviceID
+
+<!--
+_name: outDeviceID_
+_type: int_
+_access: private_
+_version_started: 0071_
 _version_deprecated: _
 _summary: _
 _visible: True_
@@ -698,54 +750,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int outDeviceID
-
-<!--
-_name: outDeviceID_
-_type: int_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###int inDeviceID
-
-<!--
-_name: inDeviceID_
-_type: int_
-_access: private_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_visible: True_
-_constant: True_
-_advanced: False_
--->
-
-_description: _
 
 
 

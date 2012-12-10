@@ -888,6 +888,35 @@ _description: _
 
 <!----------------------------------------------------------------------------->
 
+###void setDoubleBuffering(_bDoubleBuffered)
+
+<!--
+_syntax: setDoubleBuffering(_bDoubleBuffered)_
+_name: setDoubleBuffering_
+_returns: void_
+_returns_description: _
+_parameters: bool _bDoubleBuffered_
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: no_
+_visible: True_
+_advanced: False_
+-->
+
+_description: _
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+
 ###void setFrameRate(targetRate)
 
 <!--
@@ -1256,34 +1285,6 @@ _advanced: False_
 
 _description: _
 
-
-
-
-
-
-
-
-<!----------------------------------------------------------------------------->
-
-###void setDoubleBuffering(_bDoubleBuffered)
-
-<!--
-_syntax: setDoubleBuffering(_bDoubleBuffered)_
-_name: setDoubleBuffering_
-_returns: void_
-_returns_description: _
-_parameters: bool _bDoubleBuffered_
-_access: public_
-_version_started: 0071_
-_version_deprecated: _
-_summary: _
-_constant: False_
-_static: no_
-_visible: True_
-_advanced: False_
--->
-
-_description: _
 
 
 
