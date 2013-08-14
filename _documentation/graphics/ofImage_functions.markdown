@@ -69,7 +69,7 @@ _inlined_description: _
 
 
 _description: _
-
+Loads pixel data from an image file and stores it in an ofPixels object (pix). This is useful when an ofImage object is not needed but the data needs to be loaded from a file.
 
 
 
@@ -104,8 +104,7 @@ _inlined_description: _
 
 
 _description: _
-
-
+Loads pixel data from an ofBuffer into an ofPixels object (pix)
 
 
 
@@ -139,7 +138,7 @@ _inlined_description: _
 
 
 _description: _
-
+Loads pixel data from an image file and stores it in an ofTexture object (tex).
 
 
 
@@ -174,6 +173,7 @@ _inlined_description: _
 
 
 _description: _
+Loads pixel data from an ofBuffer into an ofTexture object (tex).
 
 
 
@@ -349,7 +349,7 @@ _inlined_description: _
 
 
 _description: _
-
+Saves pixel data in an ofPixels object as an image file. The quality level can be specified (default is OF_IMAGE_QUALITY_BEST).
 
 
 
@@ -384,6 +384,7 @@ _inlined_description: _
 
 
 _description: _
+Saves pixel data in an ofBuffer object as an image file. The quality level can be specified (default is OF_IMAGE_QUALITY_BEST).
 
 
 

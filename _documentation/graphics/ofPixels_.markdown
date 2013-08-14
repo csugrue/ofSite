@@ -12,7 +12,9 @@
 
 ##Description
 
-ofPixels is an object for working with blocks of pixels, those pixels can be copied from an image that you've loaded, something that you've drawn using ofGraphics, or a ofVideoGrabber instance. You can create an image from pixels, using on ofPixels object like so:
+ofPixels is an object for working with blocks of pixels. Those pixels can be copied from an image that you've loaded, something that you've drawn using ofGraphics, or an ofVideoGrabber instance. 
+
+You can create an image from pixels, using on ofPixels object like so:
 ~~~~{.cpp}
 ofPixels p;
 ofLoadImage(p, "pathToImage.jpg");
@@ -35,7 +37,7 @@ while( i < pix.size()) {
 }
 ~~~~
 
-You can think of the ofPixels as the CPU side representation of pixel data that can be sent to the GPU as an ofTexture object. To draw pixels, you need to put them into an ofTexture and to manipulate an ofTextures pixel data you need an ofPixels object.
+You can think of the ofPixels as the CPU side representation of pixel data that can be sent to the GPU as an ofTexture object. To draw pixels, you need to put them into an ofTexture and to manipulate an ofTexture's pixel data you need an ofPixels object.
 
 
 
@@ -406,7 +408,7 @@ _inlined_description: _
 _description: _
 
 
-This crops the pixels into the ofPixels reference passed in by toPix. at the x and y and with the new width and height. As a word of caution this reallocates memory and can be a bit expensive if done a lot.
+This copies part of the ofPixels pixel data into the toPix ofPixels object. The pixels are cropped from the position (x,y) with a width and height of (width,height).
 
 
 
@@ -447,8 +449,7 @@ _inlined_description: _
 _description: _
 
 
-This is how large each channel of a pixels is, ofPixels objects that store pixel data as unsigned char are smaller than  ofPixels objects that store pixel data as floats.
-This returns bit, not bytes, so you'll probably see ofPixels<float> as 32 and ofPixels<unsigned char> as 8.
+This is how large in bits each channel of a pixel is. 
 
 
 
@@ -531,7 +532,7 @@ _description: _
 
 
 This is how large each channel of a pixels is, ofPixels objects that store pixel data as unsigned char are smaller than  ofPixels objects that store pixel data as floats.
-This returns bytes, not bits, so you'll probably see ofPixels<float> as 4 and ofPixels<unsigned char> as 1.
+This returns bytes, so you'll probably see ofPixels<float> as 4 and ofPixels<unsigned char> as 1.
 
 
 
@@ -572,7 +573,7 @@ _inlined_description: _
 _description: _
 
 
-Returns the number of the pixels.
+Returns how large (in bytes) each pixel is.
 
 
 
@@ -613,7 +614,7 @@ _inlined_description: _
 _description: _
 
 
-This returns a single channel, for instance, the Red pixel values, from the ofPixels object, this gives you a grayscale representation of that one channel.
+This returns all of the pixel data for a single channel as an ofPixels object. For instance all the red pixel values from the ofPixels object will give you a grayscale representation of that one channel.
 ~~~~{.cpp}
 	ofPixels rpix = pix.getChannel(0);
 	ofPixels gpix = pix.getChannel(1);
@@ -659,7 +660,7 @@ _inlined_description: _
 _description: _
 
 
-This method returns the ofColor that the pixels contains at an x, y pair:
+Returns an ofColor object with the values of the pixel at position x, y:
 ~~~~{.cpp}
 ofColor c = pix.getColor(mouseX, mouseY);
 ~~~~
@@ -785,7 +786,7 @@ _inlined_description: _
 _description: _
 
 
-This returns the number of channels that the ofPixels object contains. RGB is 3 channels, RGBA is 4, and grayscale is 1.
+Returns the number of channels that the ofPixels object contains. RGB is 3 channels, RGBA is 4, and grayscale is 1.
 
 
 
@@ -826,7 +827,7 @@ _inlined_description: _
 _description: _
 
 
-This method tells you want pixel index an x, y pair would be at in the index, for instance:
+Returns the index for the pixel at position x, y :
 ~~~~{.cpp}
 ofColor yellow = ofColor::yellow;
 int ind = pix.getPixelIndex(mouseX, mouseY);
@@ -872,7 +873,7 @@ _inlined_description: _
 _description: _
 
 
-This returns a raw pointer to the pixel data. Changing this will change the value of the pixels in the ofPixels object. One way to inspect the values returns in this pointer would be:
+Returns a raw pointer to the pixel data. Changing this will change the value of the pixels in the ofPixels object. One way to inspect the values returned in this pointer would be:
 ~~~~{.cpp}
 unsigned char* pixPtr = pix.getPixels();
 while(pixPtr) {
@@ -1042,7 +1043,7 @@ _inlined_description: _
 
 
 _description: _
-
+This copies mirrored pixels into the dst ofPixels object.
 
 
 
@@ -1371,9 +1372,10 @@ _description: _
 
 
 This resizes the ofPixels instance to the dstHeight and dstWidth. The options for the interpolation methods are as follows:
-OF_INTERPOLATE_NEAREST_NEIGHBOR =1
-OF_INTERPOLATE_BILINEAR			=2
-OF_INTERPOLATE_BICUBIC			=3
+
+	OF_INTERPOLATE_NEAREST_NEIGHBOR =1
+	OF_INTERPOLATE_BILINEAR			=2 // not yet implemented
+	OF_INTERPOLATE_BICUBIC			=3
 
 
 
@@ -1414,10 +1416,11 @@ _inlined_description: _
 _description: _
 
 
-This resizes the ofPixels instance to the size of the ofPixels object passed in dst. The options for the interpolation methods are as follows:
-OF_INTERPOLATE_NEAREST_NEIGHBOR =1
-OF_INTERPOLATE_BILINEAR			=2
-OF_INTERPOLATE_BICUBIC			=3
+This copies and resizes the pixel data to the size of the ofPixels object passed in dst. The options for the interpolation methods are as follows:
+
+	OF_INTERPOLATE_NEAREST_NEIGHBOR =1
+	OF_INTERPOLATE_BILINEAR			=2 // not yet implemented
+	OF_INTERPOLATE_BICUBIC			=3
 
 
 
@@ -1456,9 +1459,7 @@ _inlined_description: _
 
 
 _description: _
-
-
-crop to a new width and height, this reallocates memory.
+Rotates the image 90 degrees colockwise multiple times (nClockwiseRotations number of times). For instance, if you pass in 2, then the image will be rotated 180 degrees. This method reallocates memory.
 
 
 
@@ -1497,7 +1498,7 @@ _inlined_description: _
 
 
 _description: _
-
+Copies the pixel data to dst rotated 90 degrees nClockwiseRotations number of times. 
 
 
 
@@ -1536,7 +1537,10 @@ _inlined_description: _
 
 
 _description: _
-
+Sets all pixel values to the value in val.
+~~~~{.cpp}
+pixels.set(255);
+~~~~
 
 
 
@@ -1852,7 +1856,7 @@ _inlined_description: _
 
 
 _description: _
-
+Allocates or reallocates memory for the width (w), height (h) and number of channels (channels) and copies the pixel data passed in from newPixels.
 
 
 
@@ -1930,9 +1934,15 @@ _inlined_description: _
 
 
 _description: _
+Sets a new image type reallocating memory.
 
-
-
+ofImageType:
+	
+	OF_IMAGE_GRAYSCALE
+	
+	OF_IMAGE_COLOR
+	
+	OF_IMAGE_COLOR_ALPHA
 
 
 
@@ -1969,7 +1979,7 @@ _inlined_description: _
 
 
 _description: _
-
+Changes the image type based on the number of channels passed in, reallocating memory.
 
 
 
@@ -2049,8 +2059,7 @@ _inlined_description: _
 
 
 _description: _
-
-
+Swaps the pixel data with that in pix. This method calls std::swap. The pixels, width, height and channel data are all swapped.
 
 
 
